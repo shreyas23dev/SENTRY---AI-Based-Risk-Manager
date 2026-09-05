@@ -1,0 +1,48 @@
+{
+  "B0_Baseline": {
+    "fraud_distribution": {
+      "min": 0.00064,
+      "max": 0.999426,
+      "mean": 0.505539,
+      "median": 0.446293,
+      "p90": 0.993445,
+      "p95": 0.996745,
+      "p99": 0.99882
+    },
+    "legitimate_distribution": {
+      "min": 3.9e-05,
+      "max": 0.996335,
+      "mean": 0.052962,
+      "median": 0.015569,
+      "p90": 0.132596,
+      "p95": 0.243619,
+      "p99": 0.568598
+    },
+    "overall_above_threshold": 2068,
+    "frauds_above_threshold": 1313,
+    "legit_above_threshold": 755
+  },
+  "V2_Baseline": {
+    "fraud_distribution": {
+      "min": 1e-06,
+      "max": 0.999999,
+      "mean": 0.39513,
+      "median": 0.170123,
+      "p90": 0.998967,
+      "p95": 0.999797,
+      "p99": 0.999978
+    },
+    "legitimate_distribution": {
+      "min": 0.0,
+      "max": 0.999496,
+      "mean": 0.009565,
+      "median": 0.000473,
+      "p90": 0.008774,
+      "p95": 0.02382,
+      "p99": 0.218248
+    },
+    "overall_above_threshold": 1391,
+    "frauds_above_threshold": 1094,
+    "legit_above_threshold": 297
+  }
+}

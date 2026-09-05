@@ -1,0 +1,30 @@
+{
+  "case_id": "case_02_slow_burn_disagreement",
+  "title": "Case 2: Disagreement / Slow-Burn Only",
+  "description": "Real dataset transaction showing low instantaneous risk but elevated persistent slow-burn risk",
+  "source": "IEEE-CIS Fraud Detection held-out TEST dataset (test_risk_scores.parquet)",
+  "dataset_split": "TEST",
+  "transaction_id": 3531382,
+  "dataset_row_identifier": "3531382",
+  "label": 1,
+  "amount": 61.48,
+  "expected_behavior": {
+    "transaction_analyst": "LOW",
+    "slow_burn_analyst": "CRITICAL",
+    "risk_council": "SLOW_BURN_ONLY",
+    "risk_engine_decision": "ALLOW"
+  },
+  "actual_pipeline_outputs": {
+    "A_t": 0.0392,
+    "P_t": 0.9,
+    "G_t": 0.5563,
+    "R_t": 0.0436,
+    "decision": "ALLOW",
+    "council_status": "SLOW_BURN_ONLY",
+    "evidence_ids": [
+      "RISK_ENGINE"
+    ],
+    "graph_context_exists": true,
+    "sufficient_history_exists": true
+  }
+}

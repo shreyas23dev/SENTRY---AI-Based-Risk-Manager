@@ -1,0 +1,71 @@
+{
+  "phase": "after",
+  "timestamp": "2026-09-01T19:25:33Z",
+  "sample_size": 5000,
+  "warmup_runs": 50,
+  "seed": 42,
+  "components": {
+    "preprocessing": {
+      "mean_ms": 0.9958,
+      "p50_ms": 0.4636,
+      "p95_ms": 2.8831,
+      "p99_ms": 8.1624,
+      "max_ms": 80.706,
+      "min_ms": 0.1712
+    },
+    "model_inference": {
+      "mean_ms": 8.0177,
+      "p50_ms": 6.2376,
+      "p95_ms": 15.7122,
+      "p99_ms": 31.3416,
+      "max_ms": 101.4231,
+      "min_ms": 2.2812
+    },
+    "temporal": {
+      "mean_ms": 0.1039,
+      "p50_ms": 0.0908,
+      "p95_ms": 0.1458,
+      "p99_ms": 0.3766,
+      "max_ms": 5.9451,
+      "min_ms": 0.0416
+    },
+    "relational_graph": {
+      "mean_ms": 0.0423,
+      "p50_ms": 0.0352,
+      "p95_ms": 0.0674,
+      "p99_ms": 0.1731,
+      "max_ms": 1.7091,
+      "min_ms": 0.0186
+    },
+    "fusion": {
+      "mean_ms": 0.056,
+      "p50_ms": 0.0362,
+      "p95_ms": 0.0995,
+      "p99_ms": 0.5456,
+      "max_ms": 3.4313,
+      "min_ms": 0.0126
+    },
+    "policy": {
+      "mean_ms": 0.0076,
+      "p50_ms": 0.0069,
+      "p95_ms": 0.0106,
+      "p99_ms": 0.019,
+      "max_ms": 0.2303,
+      "min_ms": 0.0034
+    },
+    "end_to_end": {
+      "mean_ms": 9.2233,
+      "p50_ms": 7.1719,
+      "p95_ms": 17.6023,
+      "p99_ms": 37.0343,
+      "max_ms": 131.0781,
+      "min_ms": 2.6396
+    }
+  },
+  "batch_throughput_txns_per_sec": 3108,
+  "notes": {
+    "timing_scope": "Single-row dict preprocessing (FastPreprocessor) + model + temporal + graph + fusion + policy",
+    "not_included": "Dataset loading, chronological splitting, graph construction from TRAIN",
+    "preprocessing_path": "FastPreprocessor.transform_single_row(dict) \u2014 zero DataFrame, numpy only"
+  }
+}

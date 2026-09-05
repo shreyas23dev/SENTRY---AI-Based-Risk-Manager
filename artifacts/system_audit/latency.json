@@ -1,0 +1,25 @@
+{
+  "n_samples": 1000,
+  "end_to_end_single_transaction_ms": {
+    "mean": 17.5174,
+    "std": 1.7298,
+    "p50": 17.007,
+    "p95": 20.9483,
+    "p99": 24.0464,
+    "max": 28.672
+  },
+  "component_breakdown_p50_ms": {
+    "preprocessing": 11.8616,
+    "model_inference": 3.3493,
+    "temporal_memory": 1.3098,
+    "relational_graph": 0.09,
+    "conditional_fusion": 0.0114
+  },
+  "component_breakdown_mean_ms": {
+    "preprocessing": 12.2186,
+    "model_inference": 3.8108,
+    "temporal_memory": 1.3786,
+    "relational_graph": 0.096,
+    "conditional_fusion": 0.012
+  }
+}

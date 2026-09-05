@@ -1,0 +1,19 @@
+{
+  "partition": "validation",
+  "threshold": 0.5942984109122026,
+  "total_transactions": 88581,
+  "fraudulent": 3042,
+  "legitimate": 85539,
+  "fraud_prevalence": 0.034341,
+  "roc_auc": 0.925133,
+  "pr_auc": 0.603216,
+  "precision": 0.708134,
+  "recall": 0.486522,
+  "f1": 0.576773,
+  "fpr": 0.007131,
+  "fnr": 0.513478,
+  "tp": 1480,
+  "fp": 610,
+  "tn": 84929,
+  "fn": 1562
+}

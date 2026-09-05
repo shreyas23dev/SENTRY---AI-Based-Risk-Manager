@@ -1,0 +1,42 @@
+[
+  {
+    "component": "Global Temporal",
+    "delta_precision": -0.003966,
+    "delta_recall": 0.0,
+    "delta_f1": -0.001283,
+    "delta_fpr": 0.000152,
+    "additional_frauds": 0,
+    "additional_fp": 13,
+    "interpretation": "Global contamination across interleaved entities (Negative Control)"
+  },
+  {
+    "component": "Entity Temporal",
+    "delta_precision": -0.004343,
+    "delta_recall": 0.000973,
+    "delta_f1": -0.000713,
+    "delta_fpr": 0.000187,
+    "additional_frauds": 3,
+    "additional_fp": 16,
+    "interpretation": "Longitudinal memory recovers entity-specific velocity bursts"
+  },
+  {
+    "component": "Relational (B2 Disjunctive)",
+    "delta_precision": -0.353663,
+    "delta_recall": 0.067467,
+    "delta_f1": -0.151542,
+    "delta_fpr": 0.036633,
+    "additional_frauds": 208,
+    "additional_fp": 3132,
+    "interpretation": "High raw recall gain with severe precision degradation under unweighted disjunction"
+  },
+  {
+    "component": "Conditional Fusion (B3)",
+    "delta_precision": -0.011476,
+    "delta_recall": 0.010704,
+    "delta_f1": 0.00374,
+    "delta_fpr": 0.000678,
+    "additional_frauds": 33,
+    "additional_fp": 58,
+    "interpretation": "Disciplined multi-source contextual boost preserving baseline precision and lifting overall F1"
+  }
+]

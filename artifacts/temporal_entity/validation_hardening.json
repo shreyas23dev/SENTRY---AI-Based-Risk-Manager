@@ -1,0 +1,154 @@
+{
+  "entity_coverage_and_densities": {
+    "validation_partition": {
+      "total_transactions": 88581,
+      "card_email": {
+        "unique_entities_total": 27156,
+        "unique_entities_resolved": 13026,
+        "resolved_transactions": 74451,
+        "resolved_pct": 84.05,
+        "resolved_fraud_rate_pct": 3.526,
+        "unresolved_transactions": 14130,
+        "unresolved_pct": 15.95,
+        "unresolved_fraud_rate_pct": 2.951,
+        "density_mean": 5.72,
+        "density_median": 2.0,
+        "density_p95": 17.0,
+        "density_max": 1124
+      },
+      "card_addr": {
+        "unique_entities_total": 22361,
+        "unique_entities_resolved": 13461,
+        "resolved_transactions": 79681,
+        "resolved_pct": 89.95,
+        "resolved_fraud_rate_pct": 2.401,
+        "unresolved_transactions": 8900,
+        "unresolved_pct": 10.05,
+        "unresolved_fraud_rate_pct": 12.685,
+        "density_mean": 5.92,
+        "density_median": 2.0,
+        "density_p95": 19.0,
+        "density_max": 988
+      },
+      "card_composite": {
+        "unique_entities_total": 7252,
+        "unique_entities_resolved": 6228,
+        "resolved_transactions": 87557,
+        "resolved_pct": 98.84,
+        "resolved_fraud_rate_pct": 3.426,
+        "unresolved_transactions": 1024,
+        "unresolved_pct": 1.16,
+        "unresolved_fraud_rate_pct": 4.102,
+        "density_mean": 14.06,
+        "density_median": 2.0,
+        "density_p95": 43.0,
+        "density_max": 2362
+      },
+      "card1": {
+        "unique_entities_total": 6310,
+        "unique_entities_resolved": 6310,
+        "resolved_transactions": 88581,
+        "resolved_pct": 100.0,
+        "resolved_fraud_rate_pct": 3.434,
+        "unresolved_transactions": 0,
+        "unresolved_pct": 0.0,
+        "unresolved_fraud_rate_pct": 0.0,
+        "density_mean": 14.04,
+        "density_median": 2.0,
+        "density_p95": 43.0,
+        "density_max": 2362
+      }
+    },
+    "test_partition": {
+      "total_transactions": 88580,
+      "card_email": {
+        "unique_entities_total": 28778,
+        "unique_entities_resolved": 12748,
+        "resolved_transactions": 72550,
+        "resolved_pct": 81.9,
+        "resolved_fraud_rate_pct": 3.637,
+        "unresolved_transactions": 16030,
+        "unresolved_pct": 18.1,
+        "unresolved_fraud_rate_pct": 2.77,
+        "density_mean": 5.69,
+        "density_median": 2.0,
+        "density_p95": 17.0,
+        "density_max": 1110
+      },
+      "card_addr": {
+        "unique_entities_total": 22561,
+        "unique_entities_resolved": 13273,
+        "resolved_transactions": 79292,
+        "resolved_pct": 89.51,
+        "resolved_fraud_rate_pct": 2.289,
+        "unresolved_transactions": 9288,
+        "unresolved_pct": 10.49,
+        "unresolved_fraud_rate_pct": 13.652,
+        "density_mean": 5.97,
+        "density_median": 2.0,
+        "density_p95": 19.0,
+        "density_max": 1397
+      },
+      "card_composite": {
+        "unique_entities_total": 7982,
+        "unique_entities_resolved": 6175,
+        "resolved_transactions": 86773,
+        "resolved_pct": 97.96,
+        "resolved_fraud_rate_pct": 3.505,
+        "unresolved_transactions": 1807,
+        "unresolved_pct": 2.04,
+        "unresolved_fraud_rate_pct": 2.324,
+        "density_mean": 14.05,
+        "density_median": 2.0,
+        "density_p95": 43.0,
+        "density_max": 2396
+      },
+      "card1": {
+        "unique_entities_total": 6316,
+        "unique_entities_resolved": 6316,
+        "resolved_transactions": 88580,
+        "resolved_pct": 100.0,
+        "resolved_fraud_rate_pct": 3.48,
+        "unresolved_transactions": 0,
+        "unresolved_pct": 0.0,
+        "unresolved_fraud_rate_pct": 0.0,
+        "density_mean": 14.02,
+        "density_median": 2.0,
+        "density_p95": 43.0,
+        "density_max": 2423
+      }
+    }
+  },
+  "temporal_state_distributions_card_email": {
+    "legitimate": {
+      "count": 85497,
+      "P_t": {
+        "mean": 0.001642,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 1.0
+      },
+      "E_t": {
+        "mean": 0.021058,
+        "median": 0.005118,
+        "p95": 0.093412,
+        "max": 0.998124
+      }
+    },
+    "fraudulent": {
+      "count": 3083,
+      "P_t": {
+        "mean": 0.048719,
+        "median": 0.0,
+        "p95": 0.35,
+        "max": 1.0
+      },
+      "E_t": {
+        "mean": 0.201416,
+        "median": 0.11942,
+        "p95": 0.768402,
+        "max": 0.999411
+      }
+    }
+  }
+}

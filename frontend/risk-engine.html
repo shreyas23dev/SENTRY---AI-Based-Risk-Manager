@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="en"><head><meta charset="utf-8"/><title>SENTRY — AI Payment Risk Manager | Risk Engine</title><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=geist:wght@100..900&family=inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"tertiary-container":"#ff6c66","surface-bright":"#2c3a4c","tertiary":"#ffb3ad","surface-container-lowest":"#010f1f","surface-container-low":"#0d1c2d","on-tertiary-container":"#6e000c","tertiary-fixed-dim":"#ffb3ad","on-surface":"#d4e4fa","primary":"#89ceff","primary-container":"#0ea5e9","secondary-fixed-dim":"#4edea3","on-secondary":"#003824","error-container":"#93000a","on-secondary-fixed-variant":"#005236","on-background":"#d4e4fa","primary-fixed":"#c9e6ff","on-tertiary":"#68000a","secondary-container":"#00a572","inverse-primary":"#006591","outline":"#88929b","surface-tint":"#89ceff","on-secondary-fixed":"#002113","surface-container":"#122131","surface":"#051424","on-primary-fixed-variant":"#004c6e","secondary":"#4edea3","outline-variant":"#3e4850","surface-variant":"#273647","on-primary-container":"#003751","surface-container-highest":"#273647","on-error-container":"#ffdad6","surface-dim":"#051424","on-tertiary-fixed":"#410004","secondary-fixed":"#6ffbbe","on-primary":"#00344d","on-primary-fixed":"#001e2f","primary-fixed-dim":"#89ceff","surface-container-high":"#1c2b3c","error":"#ffb4ab","on-surface-variant":"#bec8d2","tertiary-fixed":"#ffdad7","inverse-on-surface":"#233143","on-tertiary-fixed-variant":"#930013","inverse-surface":"#d4e4fa","background":"#051424","on-error":"#690005","on-secondary-container":"#00311f"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-4xl":"3rem","gutter-tablet":"1rem","gutter-desktop":"1.5rem","space-sm":"0.75rem","space-2xl":"2rem","space-3xl":"2.5rem","space-md":"1rem","gutter-mobile":"0.75rem","space-xl":"1.5rem","space-2xs":"0.25rem","space-lg":"1.25rem","space-xs":"0.5rem"},"fontFamily":{"display-lg":["geist"],"body-lg":["inter"],"mono-sm":["jetbrainsMono"],"display-lg-mobile":["geist"],"headline-lg":["geist"],"headline-sm":["geist"],"mono-md":["jetbrainsMono"],"label-sm":["inter"],"body-sm":["inter"],"headline-md":["geist"],"label-md":["inter"],"body-md":["inter"]},"fontSize":{"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"mono-sm":["11px",{"lineHeight":"16px","letterSpacing":"0em","fontWeight":"500"}],"display-lg-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"mono-md":["13px",{"lineHeight":"18px","letterSpacing":"-0.01em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low border-r border-outline-variant/30 z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-14 px-space-md border-b border-outline-variant/30 flex items-center gap-space-sm"><img alt="SENTRY Logo" class="h-8 w-8 object-contain" src="public/sentry-logo.png"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight tracking-tight font-bold">SENTRY</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none uppercase tracking-wider">AI Payment Risk Manager</span></div></div><div class="px-space-md pt-space-md pb-space-xs"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Navigation Rail</span></div><nav class="flex flex-col px-space-xs gap-space-2xs" data-active-classes="bg-surface-container text-primary font-medium border-l-2 border-primary-container"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="overview" href="index.html"><span class="material-symbols-outlined text-[18px]">grid_view</span><span>Overview</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="transactions" href="transactions.html"><span class="material-symbols-outlined text-[18px]">receipt_long</span><span>Transactions</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="investigations" href="investigations.html"><span class="material-symbols-outlined text-[18px]">hub</span><span>Graph Investigations</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg transition-colors bg-surface-container text-primary font-medium border-l-2 border-primary-container" data-path="risk-engine" href="risk-engine.html"><span class="material-symbols-outlined text-[18px]">shield_with_heart</span><span>Risk Engine</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics" href="risk-engine.html#analytics-section"><span class="material-symbols-outlined text-[18px]">insights</span><span>Analytics</span></a></nav></div><div class="p-space-md border-t border-outline-variant/30 flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs px-space-xs py-space-2xs rounded-lg bg-surface-container-lowest/80 border border-secondary/20"><span class="h-2 w-2 rounded-full bg-secondary shrink-0"></span><span class="font-label-sm text-label-sm text-secondary truncate">All systems operational</span></div><span class="font-mono-sm text-mono-sm text-outline px-space-2xs text-center">SENTRY v4.18.2-prod</span></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-14 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 z-40 px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md"><span class="text-outline hover:text-on-surface transition-colors cursor-pointer">Platform</span><span class="text-outline">/</span><span class="text-on-surface font-semibold">Console</span></div><div class="flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-9 bg-surface-container-lowest border border-outline-variant/50 rounded-lg pl-9 pr-space-md font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:border-primary focus:outline-none transition-colors" placeholder="Search transaction ID (e.g. #3504259)..." type="text"/></div></div><div class="flex items-center gap-space-md shrink-0"><!-- Global Compact DEMO MODE Popover -->
+    <div class="relative inline-block" id="sentinel-demo-wrapper">
+      <button id="btn-sentinel-demo" class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary hover:bg-primary/20 hover:border-primary text-xs font-semibold tracking-wide transition-all shadow-sm cursor-pointer select-none" type="button" title="Select a real held-out test case">
+        <span class="material-symbols-outlined text-[15px] text-amber-400">bolt</span>
+        <span id="sentinel-demo-label">DEMO MODE</span>
+        <span class="material-symbols-outlined text-[14px]">arrow_drop_down</span>
+      </button>
+
+      <!-- Popover Dropdown -->
+      <div id="sentinel-demo-popover" class="hidden absolute right-0 top-full mt-2 w-80 bg-surface-container-low border border-outline-variant/40 rounded-xl shadow-2xl z-50 overflow-hidden flex-col p-2 gap-1.5">
+        <div class="px-3 py-2 border-b border-outline-variant/30 flex flex-col">
+          <div class="flex items-center justify-between">
+            <span class="font-mono-sm text-mono-sm text-primary font-bold tracking-wider uppercase flex items-center gap-1">
+              <span class="material-symbols-outlined text-[16px] text-amber-400">bolt</span> DEMO MODE
+            </span>
+            <span class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-secondary/10 text-secondary border border-secondary/30">TEST SPLIT</span>
+          </div>
+          <span class="text-[11px] text-on-surface-variant mt-0.5">Demo Mode — Real held-out test transaction</span>
+        </div>
+
+        <div class="flex flex-col gap-1 max-h-80 overflow-y-auto" id="demo-cases-list">
+          <!-- Case 1 -->
+          <div class="demo-case-card p-2 rounded-lg bg-surface-container/60 hover:bg-surface-container border border-outline-variant/20 hover:border-primary/50 cursor-pointer transition-all flex flex-col gap-0.5" data-case="1">
+            <div class="flex items-center justify-between">
+              <span class="font-mono-sm text-[10px] font-bold text-primary">CASE 1</span>
+              <span class="font-mono-sm text-[10px] text-on-surface-variant font-mono">Txn #3570805</span>
+            </div>
+            <div class="font-label-md text-xs font-semibold text-on-surface">Agreement → BLOCK</div>
+            <div class="font-body-sm text-[11px] text-on-surface-variant leading-tight">High ML risk & documented prior fraud history. Base ML & Slow-Burn analysts agree.</div>
+          </div>
+
+          <!-- Case 2 -->
+          <div class="demo-case-card p-2 rounded-lg bg-surface-container/60 hover:bg-surface-container border border-outline-variant/20 hover:border-primary/50 cursor-pointer transition-all flex flex-col gap-0.5" data-case="2">
+            <div class="flex items-center justify-between">
+              <span class="font-mono-sm text-[10px] font-bold text-primary">CASE 2</span>
+              <span class="font-mono-sm text-[10px] text-on-surface-variant font-mono">Txn #3531382</span>
+            </div>
+            <div class="font-label-md text-xs font-semibold text-on-surface">Slow-Burn Disagreement</div>
+            <div class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Base ML sees normal transaction; Slow-Burn detects temporal velocity surge.</div>
+          </div>
+
+          <!-- Case 3 -->
+          <div class="demo-case-card p-2 rounded-lg bg-surface-container/60 hover:bg-surface-container border border-outline-variant/20 hover:border-primary/50 cursor-pointer transition-all flex flex-col gap-0.5" data-case="3">
+            <div class="flex items-center justify-between">
+              <span class="font-mono-sm text-[10px] font-bold text-primary">CASE 3</span>
+              <span class="font-mono-sm text-[10px] text-on-surface-variant font-mono">Txn #3488970</span>
+            </div>
+            <div class="font-label-md text-xs font-semibold text-on-surface">Cold Start / Insufficient History</div>
+            <div class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Single isolated txn with no prior behavioral history (Pₜ: No Prior History).</div>
+          </div>
+
+          <!-- Case 4 -->
+          <div class="demo-case-card p-2 rounded-lg bg-surface-container/60 hover:bg-surface-container border border-outline-variant/20 hover:border-primary/50 cursor-pointer transition-all flex flex-col gap-0.5" data-case="4">
+            <div class="flex items-center justify-between">
+              <span class="font-mono-sm text-[10px] font-bold text-primary">CASE 4</span>
+              <span class="font-mono-sm text-[10px] text-on-surface-variant font-mono">Txn #3488964</span>
+            </div>
+            <div class="font-label-md text-xs font-semibold text-on-surface">Clean + Historical Risk Context → ALLOW</div>
+            <div class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Low transaction risk; allowed despite historical risk context in relational association.</div>
+          </div>
+
+          <!-- Case 5 -->
+          <div class="demo-case-card p-2 rounded-lg bg-surface-container/60 hover:bg-surface-container border border-outline-variant/20 hover:border-primary/50 cursor-pointer transition-all flex flex-col gap-0.5" data-case="5">
+            <div class="flex items-center justify-between">
+              <span class="font-mono-sm text-[10px] font-bold text-primary">CASE 5</span>
+              <span class="font-mono-sm text-[10px] text-on-surface-variant font-mono">Txn #3489068</span>
+            </div>
+            <div class="font-label-md text-xs font-semibold text-on-surface">Step-Up Auth → VERIFY</div>
+            <div class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Elevated risk with ₹150 amount. Cost model triggers step-up OTP verification to minimize expected loss.</div>
+          </div>
+
+          <!-- Case 6 -->
+          <div class="demo-case-card p-2 rounded-lg bg-surface-container/60 hover:bg-surface-container border border-outline-variant/20 hover:border-primary/50 cursor-pointer transition-all flex flex-col gap-0.5" data-case="6">
+            <div class="flex items-center justify-between">
+              <span class="font-mono-sm text-[10px] font-bold text-primary">CASE 6</span>
+              <span class="font-mono-sm text-[10px] text-on-surface-variant font-mono">Txn #3512832</span>
+            </div>
+            <div class="font-label-md text-xs font-semibold text-on-surface">Behavioral Velocity → THROTTLE</div>
+            <div class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Low ₹34 amount with slow-burn device multiplexing. Cost engine selectively rate-limits velocity.</div>
+          </div>
+        </div>
+
+        <div class="pt-1.5 border-t border-outline-variant/30 flex items-center justify-between px-2">
+          <span class="text-[10px] text-outline font-mono">REAL HELD-OUT TEST DATA</span>
+          <button id="btn-sentinel-exit-demo" class="text-[11px] text-on-surface-variant hover:text-tertiary-container hover:bg-tertiary-container/10 px-2 py-1 rounded transition-colors font-medium cursor-pointer" type="button">
+            ✕ Exit Demo Mode
+          </button>
+        </div>
+      </div>
+    </div><button class="relative h-8 w-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 h-1.5 w-1.5 rounded-full bg-tertiary-container"></span></button><div class="h-4 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:flex flex-col"><span class="font-label-md text-label-md text-on-surface font-medium leading-none">Alex Vance</span><span class="font-mono-sm text-mono-sm text-outline leading-none mt-1">Risk Operations Lead</span></div></div></div></header><main class="w-full pt-14 px-gutter-desktop pb-space-2xl bg-surface"><div class="flex flex-col w-full gap-space-3xl py-space-lg">
+<!-- Header Block: Refined Executive Presentation -->
+<header class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="flex flex-col gap-space-2xs max-w-2xl">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-high text-primary font-mono-sm text-mono-sm uppercase tracking-wider">Telemetry Engine v4.18</span>
+<span class="text-outline font-mono-sm text-mono-sm">/</span>
+<span class="text-secondary font-mono-sm text-mono-sm flex items-center gap-1">
+<span class="h-1.5 w-1.5 rounded-full bg-secondary"></span>
+          Evaluation Lock Active
+        </span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight">Risk Engine</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+        How SENTRY converts multimodal feature signals into an optimal, cost-aware intervention decision.
+      </p>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-sm rounded-xl self-start md:self-auto shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-outline tracking-wider">Benchmark State</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Frozen Held-Out Evaluation</span>
+</div>
+</div>
+</header>
+<!-- 1. Three Signal Architecture Cards: Visual Sequential Fusion Flow -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono-sm text-mono-sm text-primary uppercase tracking-wider">Phase 01</span>
+<span class="text-outline">/</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Signal Architecture Pipeline</h2>
+</div>
+<span class="font-mono-sm text-mono-sm text-outline"><span id="engine-txid-ref">TXID-REF: #3504259</span></span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg relative">
+<!-- Signal 1: Base ML Risk -->
+<div class="group relative flex flex-col justify-between bg-surface-container-low p-space-xl rounded-xl shadow-md transition-all duration-300 hover:bg-surface-container">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-outline font-mono-sm text-mono-sm uppercase tracking-wider">Signal 01</span>
+<span class="material-symbols-outlined text-outline text-[20px]">table_chart</span>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface font-headline-lg" id="engine-base-ml-score">51.98</span>
+<span class="font-headline-md text-headline-md text-outline">%</span>
+</div>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="font-mono-md text-mono-md text-primary font-medium">Base ML Risk (A<sub>t</sub>)</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Transaction Risk Model transaction-level tabular features. Scored across 182 raw behavioral indicators.
+          </p>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-lowest/50 -mx-space-xl -mb-space-xl p-space-lg rounded-b-xl flex flex-col gap-space-xs">
+<div class="flex justify-between font-mono-sm text-mono-sm">
+<span class="text-outline">Latency Target</span>
+<span class="text-on-surface">14.2 ms</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full rounded-full" id="engine-bar-base-ml" style="width: 51.98%"></div>
+</div>
+</div>
+</div>
+<!-- Signal 2: Graph Context Risk -->
+<div class="group relative flex flex-col justify-between bg-surface-container-low p-space-xl rounded-xl shadow-md transition-all duration-300 hover:bg-surface-container">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container text-secondary font-mono-sm text-mono-sm uppercase tracking-wider">Signal 02</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">hub</span>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface font-headline-lg" id="engine-graph-context-score">65.28</span>
+<span class="font-headline-md text-headline-md text-outline">%</span>
+</div>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="font-mono-md text-mono-md text-secondary font-medium">Graph Context Risk (G<sub>t</sub>)</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            2-Hop Knowledge Graph entity anomaly density. Evaluates card hash, device velocity & merchant clustering.
+          </p>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-lowest/50 -mx-space-xl -mb-space-xl p-space-lg rounded-b-xl flex flex-col gap-space-xs">
+<div class="flex justify-between font-mono-sm text-mono-sm">
+<span class="text-outline">Community Clustering</span>
+<span class="text-secondary font-medium">Elevated risk pool</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary h-full rounded-full" id="engine-bar-graph" style="width: 65.28%"></div>
+</div>
+</div>
+</div>
+<!-- Signal 3: Final Fused Risk -->
+<div class="group relative flex flex-col justify-between bg-surface-container-high p-space-xl rounded-xl shadow-lg transition-all duration-300">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-xs py-space-2xs rounded bg-surface-container-lowest text-primary font-mono-sm text-mono-sm uppercase tracking-wider">Unified Decision</span>
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+</div>
+<div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-primary font-headline-lg" id="engine-final-risk-score">52.29</span>
+<span class="font-headline-md text-headline-md text-primary/70">%</span>
+</div>
+<div class="flex items-center gap-space-xs mt-1">
+<span class="font-mono-md text-mono-md text-on-surface font-semibold">Final Fused Risk (R<sub>t</sub>)</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Conditional non-linear graph fusion output. Dampened via uncertainty multiplier to suppress false alerts.
+          </p>
+</div>
+<div class="mt-space-lg pt-space-md bg-surface-container-lowest/70 -mx-space-xl -mb-space-xl p-space-lg rounded-b-xl flex flex-col gap-space-xs">
+<div class="flex justify-between font-mono-sm text-mono-sm">
+<span class="text-outline">Net Graph Lift</span>
+<span class="text-primary font-medium">+0.31% adjusted</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" id="engine-bar-final" style="width: 52.29%"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Mathematical Formulation & Interactive Inspector -->
+<section class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono-sm text-mono-sm text-primary uppercase tracking-wider">Phase 02</span>
+<span class="text-outline">/</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Mathematical Formulation</h2>
+</div>
+<button class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-colors text-label-md font-label-md" id="toggle-trace-btn" onclick="toggleTrace()">
+<span class="material-symbols-outlined text-[16px] text-primary">terminal</span>
+<span id="trace-toggle-label">View Technical Trace</span>
+</button>
+</div>
+<!-- Core Formula Card -->
+<div class="flex flex-col bg-surface-container-low rounded-xl shadow-md overflow-hidden">
+<div class="p-space-xl flex flex-col lg:flex-row lg:items-center justify-between gap-space-xl">
+<div class="flex flex-col gap-space-sm max-w-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Conditional Graph Fusion Model</span>
+<div class="font-mono-md text-[20px] md:text-[24px] text-primary tracking-wide py-space-2xs select-all">
+            R<sub>t</sub> = clip(A<sub>t</sub> + β · G<sub>t</sub> · (1 − A<sub>t</sub>), 0, 1)
+          </div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Non-linear reinforcement with diminishing risk returns. Amplifies context risk strictly when the tabular base model (<span class="text-on-surface font-mono-sm">A<sub>t</sub></span>) is uncertain, inherently preventing runaway double-counting on extreme probability clusters.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md">
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-2xs min-w-[170px]">
+<span class="font-mono-sm text-mono-sm text-outline uppercase">Fusion Parameter</span>
+<div class="flex items-baseline gap-space-2xs">
+<span class="font-headline-md text-headline-md text-secondary">β = 0.05</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Calibrated graph coefficient</span>
+</div>
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-2xs min-w-[170px]">
+<span class="font-mono-sm text-mono-sm text-outline uppercase">Uncertainty Weight</span>
+<div class="flex items-baseline gap-space-2xs">
+<span class="font-headline-md text-headline-md text-on-surface">1 − A<sub>t</sub> = 0.4802</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Marginal headroom factor</span>
+</div>
+</div>
+    <!-- Live Calculation Steps (Progressive Disclosure) -->
+    <div class="hidden bg-surface-container-lowest p-space-xl flex-col gap-space-md" id="technical-trace">
+      <div class="flex items-center justify-between">
+        <span class="font-mono-sm text-mono-sm uppercase text-outline tracking-wider flex items-center gap-space-xs">
+          <span class="material-symbols-outlined text-[16px] text-primary">data_object</span>
+          Deterministic Execution Pipeline Breakdown
+        </span>
+        <span class="font-mono-sm text-mono-sm text-secondary">All sanity constraints verified: [0, 1]</span>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-space-md font-mono-sm">
+        <div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-1">
+          <span class="text-outline">Step 1: Base Residual</span>
+          <span class="text-on-surface font-medium" id="trace-step1-val">1 - 0.5198 = 0.4802</span>
+          <span class="text-on-surface-variant text-[10px]">Headroom factor (1 - At)</span>
+        </div>
+        <div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-1">
+          <span class="text-outline">Step 2: Weighted Context</span>
+          <span class="text-on-surface font-medium" id="trace-step2-val">0.05 × 0.6528 = 0.03264</span>
+          <span class="text-on-surface-variant text-[10px]">Scaled by calibrated beta (0.05)</span>
+        </div>
+        <div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-1">
+          <span class="text-outline">Step 3: Graph Lift Product</span>
+          <span class="text-on-surface font-medium" id="trace-step3-val">0.03264 × 0.4802 = 0.0031</span>
+          <span class="text-on-surface-variant text-[10px]">Net additive lift (+0.31%)</span>
+        </div>
+        <div class="bg-surface-container-low p-space-md rounded-lg flex flex-col gap-1">
+          <span class="text-outline">Step 4: Bound Clipping</span>
+          <span class="text-primary font-medium" id="trace-step4-val">clip(0.5229, 0, 1) → 0.5229</span>
+          <span class="text-on-surface-variant text-[10px]">Final decision score evaluated</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. Cost-Aware Decision Model & Optimal Action Showcase -->
+<section id="analytics-section" class="flex flex-col gap-space-md scroll-mt-20">
+  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+    <div class="flex items-center gap-space-xs">
+      <span class="font-mono-sm text-mono-sm text-primary uppercase tracking-wider">Phase 03</span>
+      <span class="text-outline">/</span>
+      <h2 class="font-headline-sm text-headline-sm text-on-surface">Expected Business Loss by Intervention</h2>
+    </div>
+    <!-- Scenario Switcher Pills -->
+    <div class="flex items-center gap-space-xs bg-surface-container p-1 rounded-lg self-start sm:self-auto">
+      <button data-scenario="balanced" class="px-space-sm py-1 text-label-sm font-label-sm rounded-lg bg-surface-container-high text-primary font-semibold transition-colors" type="button">Balanced</button>
+      <button data-scenario="conservative" class="px-space-sm py-1 text-label-sm font-label-sm rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" type="button">Conservative</button>
+      <button data-scenario="aggressive" class="px-space-sm py-1 text-label-sm font-label-sm rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" type="button">Aggressive</button>
+    </div>
+  </div>
+  <!-- Highlighted Optimal Action Banner -->
+  <div class="relative bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-low p-space-xl rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg">
+    <div class="absolute -right-8 -bottom-8 w-48 h-48 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+    <div class="flex items-start gap-space-md z-10">
+      <div class="w-12 h-12 rounded-lg bg-tertiary-container flex items-center justify-center text-on-tertiary-container shrink-0 mt-1">
+        <span class="material-symbols-outlined text-[28px]" id="optimal-action-icon">gavel</span>
+      </div>
+      <div class="flex flex-col gap-space-2xs">
+        <div class="flex items-center gap-space-xs">
+          <span class="px-space-xs py-space-2xs rounded bg-tertiary/20 text-tertiary font-mono-sm text-mono-sm uppercase tracking-wider font-semibold">Optimal Recommendation</span>
+          <span class="font-mono-sm text-mono-sm text-outline" id="optimal-scenario-badge">· Balanced Cost Policy</span>
+        </div>
+        <h3 class="font-headline-lg text-headline-lg text-on-surface" id="optimal-decision-title">Decision: HARD BLOCK EXECUTION</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant max-w-xl" id="optimal-decision-desc">
+          SENTRY's economic policy evaluates direct fraud default liability against user friction attrition.
+        </p>
+      </div>
+    </div>
+    <div class="flex items-center gap-space-xl bg-surface-container-lowest/80 px-space-xl py-space-md rounded-xl z-10 self-stretch md:self-auto justify-between md:justify-start">
+      <div class="flex flex-col">
+        <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Optimal Loss</span>
+        <span class="font-headline-lg text-headline-lg text-secondary font-mono-md" id="optimal-loss-val">₹23.85</span>
+      </div>
+      <div class="h-8 w-px bg-surface-variant"></div>
+      <div class="flex flex-col">
+        <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Unmitigated Cost</span>
+        <span class="font-headline-lg text-headline-lg text-error font-mono-md" id="unmitigated-loss-val">₹124.00</span>
+      </div>
+      <div class="h-8 w-px bg-surface-variant"></div>
+      <div class="flex flex-col">
+        <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Net Transaction Alpha</span>
+        <span class="font-headline-lg text-headline-lg text-primary font-mono-md" id="net-alpha-val">+₹100.15</span>
+      </div>
+    </div>
+  </div>
+    <!-- 4 Intervention Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md" id="intervention-cards-grid">
+      <!-- 1. ALLOW -->
+      <div class="flex flex-col justify-between bg-surface-container-low p-space-lg rounded-xl shadow-sm" id="card-action-allow">
+        <div class="flex flex-col gap-space-sm">
+          <div class="flex items-center justify-between">
+            <span class="font-mono-sm text-mono-sm text-outline uppercase">Intervention A</span>
+            <span class="material-symbols-outlined text-outline text-[18px]">check_circle</span>
+          </div>
+          <span class="font-headline-sm text-headline-sm text-on-surface">ALLOW</span>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">
+            Full unmitigated transaction authorization. Zero friction, total chargeback default liability.
+          </p>
+        </div>
+        <div class="mt-space-lg pt-space-md flex flex-col gap-space-2xs">
+          <span class="font-label-sm text-label-sm text-outline uppercase">Expected Loss</span>
+          <div class="flex items-baseline justify-between">
+            <span class="font-headline-md text-headline-md text-error font-mono-md" id="loss-allow-val">₹124.00</span>
+            <span class="font-mono-sm text-mono-sm text-error/80" id="diff-allow-val">+₹100.15 vs opt</span>
+          </div>
+        </div>
+      </div>
+      <!-- 2. VERIFY -->
+      <div class="flex flex-col justify-between bg-surface-container-low p-space-lg rounded-xl shadow-sm" id="card-action-verify">
+        <div class="flex flex-col gap-space-sm">
+          <div class="flex items-center justify-between">
+            <span class="font-mono-sm text-mono-sm text-outline uppercase">Intervention B</span>
+            <span class="material-symbols-outlined text-outline text-[18px]">password</span>
+          </div>
+          <span class="font-headline-sm text-headline-sm text-on-surface">VERIFY (3DS / OTP)</span>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">
+            Step-up biometric verification. Partial drop-off churn risk alongside network authentication fees.
+          </p>
+        </div>
+        <div class="mt-space-lg pt-space-md flex flex-col gap-space-2xs">
+          <span class="font-label-sm text-label-sm text-outline uppercase">Expected Loss</span>
+          <div class="flex items-baseline justify-between">
+            <span class="font-headline-md text-headline-md text-on-surface font-mono-md" id="loss-verify-val">₹42.50</span>
+            <span class="font-mono-sm text-mono-sm text-outline" id="diff-verify-val">+₹18.65 vs opt</span>
+          </div>
+        </div>
+      </div>
+      <!-- 3. THROTTLE -->
+      <div class="flex flex-col justify-between bg-surface-container-low p-space-lg rounded-xl shadow-sm" id="card-action-throttle">
+        <div class="flex flex-col gap-space-sm">
+          <div class="flex items-center justify-between">
+            <span class="font-mono-sm text-mono-sm text-outline uppercase">Intervention C</span>
+            <span class="material-symbols-outlined text-outline text-[18px]">hourglass_empty</span>
+          </div>
+          <span class="font-headline-sm text-headline-sm text-on-surface">THROTTLE</span>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">
+            Velocity degradation window. Introduces 45s asynchronous ledger inspection queue.
+          </p>
+        </div>
+        <div class="mt-space-lg pt-space-md flex flex-col gap-space-2xs">
+          <span class="font-label-sm text-label-sm text-outline uppercase">Expected Loss</span>
+          <div class="flex items-baseline justify-between">
+            <span class="font-headline-md text-headline-md text-on-surface font-mono-md" id="loss-throttle-val">₹38.00</span>
+            <span class="font-mono-sm text-mono-sm text-outline" id="diff-throttle-val">+₹14.15 vs opt</span>
+          </div>
+        </div>
+      </div>
+      <!-- 4. BLOCK (OPTIMAL) -->
+      <div class="flex flex-col justify-between bg-surface-container-high p-space-lg rounded-xl shadow-md" id="card-action-block">
+        <div class="flex flex-col gap-space-sm">
+          <div class="flex items-center justify-between">
+            <span class="font-mono-sm text-mono-sm text-secondary uppercase font-semibold">Min-Cost Action</span>
+            <span class="material-symbols-outlined text-secondary text-[18px]">block</span>
+          </div>
+          <span class="font-headline-sm text-headline-sm text-secondary">BLOCK</span>
+          <p class="font-body-sm text-body-sm text-on-surface-variant">
+            Hard gateway decline. Direct fraud averted with strictly baseline false-positive friction cost.
+          </p>
+        </div>
+        <div class="mt-space-lg pt-space-md flex flex-col gap-space-2xs">
+          <span class="font-label-sm text-label-sm text-secondary uppercase">Expected Loss</span>
+          <div class="flex items-baseline justify-between">
+            <span class="font-headline-md text-headline-md text-secondary font-mono-md" id="loss-block-val">₹23.85</span>
+            <span class="font-mono-sm text-mono-sm text-secondary font-semibold" id="diff-block-val">OPTIMAL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 4. Held-Out Evaluation Performance Benchmark -->
+  <section class="flex flex-col gap-space-md">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+      <div class="flex items-center gap-space-xs">
+        <span class="font-mono-sm text-mono-sm text-primary uppercase tracking-wider">Phase 04</span>
+        <span class="text-outline">/</span>
+        <h2 class="font-headline-sm text-headline-sm text-on-surface">Held-Out Evaluation Performance Benchmark</h2>
+      </div>
+      <span class="font-label-sm text-label-sm px-space-xs py-space-2xs rounded bg-surface-container-high text-on-surface-variant">
+        Frozen Phase 3 evaluation dataset under balanced cost scenario
+      </span>
+    </div>
+    <!-- Comparative Table Card -->
+    <div class="bg-surface-container-low rounded-xl shadow-md overflow-hidden flex flex-col">
+      <div class="p-space-lg bg-surface-container flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+        <div class="flex items-center gap-space-sm">
+          <span class="material-symbols-outlined text-primary text-[22px]">analytics</span>
+          <div>
+            <span class="font-headline-sm text-headline-sm text-on-surface block">Validation Cohort: 88,580 In-Flight Transactions</span>
+            <span class="font-body-sm text-body-sm text-on-surface-variant">Baseline Model (Tabular XGBoost) vs Final Fused System</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-space-xs font-mono-sm text-mono-sm text-outline">
+          <span class="h-2 w-2 rounded-full bg-secondary"></span>
+          Statistically Significant (p &lt; 0.001)
+        </div>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left font-body-sm">
+          <thead>
+            <tr class="bg-surface-container-lowest text-outline font-label-sm text-label-sm uppercase tracking-wider h-10">
+              <th class="px-space-lg font-medium">Evaluation Metric</th>
+              <th class="px-space-lg font-medium">XGBoost Baseline</th>
+              <th class="px-space-lg font-medium">Final Fused System</th>
+              <th class="px-space-lg font-medium text-right">Delta Lift</th>
+              <th class="px-space-lg font-medium">Validation Outcome Impact</th>
+            </tr>
+          </thead>
+          <tbody class="font-mono-md text-mono-md divide-none">
+            <!-- PR-AUC -->
+            <tr class="bg-surface-container-low hover:bg-surface-container transition-colors h-14">
+              <td class="px-space-lg font-body-sm text-on-surface font-medium">
+                PR-AUC
+                <span class="block font-mono-sm text-mono-sm text-outline">Area Under Precision-Recall</span>
+              </td>
+              <td class="px-space-lg text-on-surface-variant">0.5658</td>
+              <td class="px-space-lg text-primary font-semibold">0.5667</td>
+              <td class="px-space-lg text-right text-secondary font-semibold">+0.0009</td>
+              <td class="px-space-lg font-body-sm text-on-surface-variant">Consistently separates edge fraud without curve distortion</td>
+            </tr>
+            <!-- Recall -->
+            <tr class="bg-surface-container-low hover:bg-surface-container transition-colors h-14">
+              <td class="px-space-lg font-body-sm text-on-surface font-medium">
+                Recall Rate
+                <span class="block font-mono-sm text-mono-sm text-outline">Total Malicious Capture</span>
+              </td>
+              <td class="px-space-lg text-on-surface-variant">47.45%</td>
+              <td class="px-space-lg text-primary font-semibold">47.58%</td>
+              <td class="px-space-lg text-right text-secondary font-semibold">+0.13%</td>
+              <td class="px-space-lg font-body-sm text-on-surface-variant">+115 synthetic syndicate attacks neutralized per 100k TXs</td>
+            </tr>
+            <!-- Precision -->
+            <tr class="bg-surface-container-low hover:bg-surface-container transition-colors h-14">
+              <td class="px-space-lg font-body-sm text-on-surface font-medium">
+                Precision Rate
+                <span class="block font-mono-sm text-mono-sm text-outline">Legitimate Accuracy Index</span>
+              </td>
+              <td class="px-space-lg text-on-surface-variant">73.08%</td>
+              <td class="px-space-lg text-on-surface font-semibold">72.77%</td>
+              <td class="px-space-lg text-right text-outline font-semibold">-0.31%</td>
+              <td class="px-space-lg font-body-sm text-on-surface-variant">Controlled trade-off strictly inside acceptable operational bounds</td>
+            </tr>
+            <!-- Net Business Loss Savings -->
+            <tr class="bg-surface-container-high/60 hover:bg-surface-container-high transition-colors h-16">
+              <td class="px-space-lg font-body-sm text-on-surface font-medium">
+                <div class="flex items-center gap-space-xs">
+                  <span class="material-symbols-outlined text-secondary text-[18px]">savings</span>
+                  <span>Net Loss Mitigation</span>
+                </div>
+                <span class="block font-mono-sm text-mono-sm text-outline">Portfolio-wide cost realization</span>
+              </td>
+              <td class="px-space-lg text-on-surface-variant">₹483,912.00</td>
+              <td class="px-space-lg text-secondary font-semibold">₹492,816.00</td>
+              <td class="px-space-lg text-right text-secondary font-semibold">+₹8,904.00</td>
+              <td class="px-space-lg font-body-sm text-secondary font-medium">+1.84% Total Return On Decision Optimization</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Bottom Benchmark Footer Telemetry -->
+      <div class="p-space-md bg-surface-container-lowest flex flex-col md:flex-row items-center justify-between gap-space-sm text-on-surface-variant">
+        <div class="flex items-center gap-space-md font-mono-sm text-mono-sm">
+          <span>Random Seed: 0xDEADBEEF</span>
+          <span>·</span>
+          <span>CV Split: 5-Fold Stratified Group</span>
+          <span>·</span>
+          <span>Device Hash: NVIDIA-A100-SXM4</span>
+        </div>
+        <div class="flex items-center gap-space-xs">
+          <button id="btn-export-benchmark" class="px-space-sm py-space-2xs rounded bg-surface-container hover:bg-surface-bright text-on-surface text-label-sm font-label-sm transition-colors cursor-pointer" type="button">
+            Export Benchmark CSV
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<script>
+  function toggleTrace() {
+    const traceEl = document.getElementById('technical-trace');
+    const labelEl = document.getElementById('trace-toggle-label');
+    const isHidden = traceEl.classList.contains('hidden');
+
+    if (isHidden) {
+      traceEl.classList.remove('hidden');
+      traceEl.classList.add('flex');
+      labelEl.innerText = 'Hide Technical Trace';
+    } else {
+      traceEl.classList.add('hidden');
+      traceEl.classList.remove('flex');
+      labelEl.innerText = 'View Technical Trace';
+    }
+  }
+</script></main></div>
+<script src="js/api.js"></script>
+<script src="js/state.js"></script>
+<script src="js/demo-mode.js"></script>
+<script src="js/risk-engine.js"></script>
+</body></html>

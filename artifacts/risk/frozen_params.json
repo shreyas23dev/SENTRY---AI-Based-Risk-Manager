@@ -1,0 +1,42 @@
+{
+  "frozen": true,
+  "calibration": {
+    "A_t": {
+      "ece_before": 0.010248,
+      "ece_after": 0.017541,
+      "method": "none",
+      "calibrated": false,
+      "improvement": -0.007293
+    },
+    "G_t": {
+      "ece_before": 0.143484,
+      "ece_after": 0.007752,
+      "method": "platt",
+      "calibrated": true,
+      "improvement": 0.135732
+    }
+  },
+  "fusion": {
+    "fitted": true,
+    "selected_formula": "F2_conditional",
+    "selected_params": {
+      "beta": 0.05
+    },
+    "selected_threshold": 0.124446,
+    "tuning_results_count": 26
+  },
+  "formula": "F2_conditional",
+  "params": {
+    "beta": 0.05
+  },
+  "threshold_val": 0.124446,
+  "cost_scenarios": [
+    "conservative",
+    "balanced",
+    "aggressive"
+  ],
+  "evaluation_partition": "TEST",
+  "n_test": 88580,
+  "fraud_test": 3083,
+  "legit_test": 85497
+}

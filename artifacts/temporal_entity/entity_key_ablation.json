@@ -1,0 +1,82 @@
+{
+  "card_email": {
+    "unique_entities_val": 27156,
+    "unresolved_count_val": 14130,
+    "unresolved_pct_val": 15.95,
+    "best_f1": 0.5790188093853015,
+    "best_params": {
+      "entity_key": "card_email",
+      "beta": 0.3,
+      "gamma": 0.5,
+      "lambda": 0.05,
+      "delta": 0.05,
+      "temporal_threshold": 0.7,
+      "f1": 0.5790188093853015,
+      "recall": 0.4907955292570677,
+      "precision": 0.7059101654846336,
+      "fpr": 0.007271536959749354,
+      "frauds_recovered": 13,
+      "extra_fp": 12
+    }
+  },
+  "card_composite": {
+    "unique_entities_val": 7252,
+    "unresolved_count_val": 1024,
+    "unresolved_pct_val": 1.16,
+    "best_f1": 0.5769380599922088,
+    "best_params": {
+      "entity_key": "card_composite",
+      "beta": 0.5,
+      "gamma": 0.4,
+      "lambda": 0.02,
+      "delta": 0.05,
+      "temporal_threshold": 0.4,
+      "f1": 0.5769380599922088,
+      "recall": 0.48685075608152534,
+      "precision": 0.7079349904397706,
+      "fpr": 0.007142940646956359,
+      "frauds_recovered": 1,
+      "extra_fp": 1
+    }
+  },
+  "card1": {
+    "unique_entities_val": 6310,
+    "unresolved_count_val": 0,
+    "unresolved_pct_val": 0.0,
+    "best_f1": 0.5769380599922088,
+    "best_params": {
+      "entity_key": "card1",
+      "beta": 0.5,
+      "gamma": 0.4,
+      "lambda": 0.02,
+      "delta": 0.05,
+      "temporal_threshold": 0.4,
+      "f1": 0.5769380599922088,
+      "recall": 0.48685075608152534,
+      "precision": 0.7079349904397706,
+      "fpr": 0.007142940646956359,
+      "frauds_recovered": 1,
+      "extra_fp": 1
+    }
+  },
+  "card_addr": {
+    "unique_entities_val": 22361,
+    "unresolved_count_val": 8900,
+    "unresolved_pct_val": 10.05,
+    "best_f1": 0.5785315089612643,
+    "best_params": {
+      "entity_key": "card_addr",
+      "beta": 0.5,
+      "gamma": 0.3,
+      "lambda": 0.05,
+      "delta": 0.02,
+      "temporal_threshold": 0.6,
+      "f1": 0.5785315089612643,
+      "recall": 0.49342537804076264,
+      "precision": 0.6991150442477876,
+      "fpr": 0.007552110733115889,
+      "frauds_recovered": 21,
+      "extra_fp": 36
+    }
+  }
+}

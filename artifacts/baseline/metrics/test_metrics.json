@@ -1,0 +1,20 @@
+{
+  "test_metrics": {
+    "partition": "test",
+    "threshold": 0.594298,
+    "total_transactions": 88580,
+    "fraudulent": 3083,
+    "legitimate": 85497,
+    "fraud_prevalence": 0.034805,
+    "roc_auc": 0.901943,
+    "pr_auc": 0.534008,
+    "precision": 0.634913,
+    "recall": 0.425884,
+    "f1": 0.509804,
+    "fpr": 0.008831,
+    "tp": 1313,
+    "fp": 755,
+    "tn": 84742,
+    "fn": 1770
+  }
+}

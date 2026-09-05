@@ -1,0 +1,86 @@
+{
+  "frozen_parameters": {
+    "rule_name": "F1",
+    "formula": "clip(A_t + 1.0*P_t + 0.05*G_t, 0, 1)",
+    "tau_comb": 0.594298
+  },
+  "split_meta": {
+    "train_dt_boundary": 10438003,
+    "val_dt_boundary": 13151880,
+    "train_rows": 413379,
+    "val_rows": 88581,
+    "test_rows": 88580,
+    "train_dt_min": 86400,
+    "train_dt_max": 10438003,
+    "val_dt_min": 10438017,
+    "val_dt_max": 13151880,
+    "test_dt_min": 13151945,
+    "test_dt_max": 15811131,
+    "train_fraud_rate": 0.035169,
+    "val_fraud_rate": 0.034341,
+    "test_fraud_rate": 0.034805,
+    "train_fraud_count": 14538,
+    "val_fraud_count": 3042,
+    "test_fraud_count": 3083
+  },
+  "test_metrics": {
+    "B0_baseline": {
+      "tp": 1313,
+      "fp": 755,
+      "fn": 1770,
+      "tn": 84742,
+      "precision": 0.634913,
+      "recall": 0.425884,
+      "f1": 0.509804,
+      "fpr": 0.008831
+    },
+    "B1_entity_temporal": {
+      "tp": 1316,
+      "fp": 771,
+      "fn": 1767,
+      "tn": 84726,
+      "precision": 0.63057,
+      "recall": 0.426857,
+      "f1": 0.509091,
+      "fpr": 0.009018
+    },
+    "B2_relational": {
+      "tp": 1521,
+      "fp": 3887,
+      "fn": 1562,
+      "tn": 81610,
+      "precision": 0.28125,
+      "recall": 0.493351,
+      "f1": 0.358262,
+      "fpr": 0.045464
+    },
+    "B3_conditional_fusion": {
+      "tp": 1346,
+      "fp": 813,
+      "fn": 1737,
+      "tn": 84684,
+      "precision": 0.623437,
+      "recall": 0.436588,
+      "f1": 0.513544,
+      "fpr": 0.009509
+    }
+  },
+  "reconciliation_with_policy": {
+    "status": "MATHEMATICALLY RESOLVED \u2014 LEGITIMATE THRESHOLD DIFFERENCE",
+    "description": "B3 evaluates conditional fusion as a single binary classifier at tau = 0.594298. The Progressive Policy evaluates operational action tiers starting with VERIFY at tau_verify = 0.600000.",
+    "boundary_interval": "[0.594298, 0.600000)",
+    "transactions_in_boundary": 18,
+    "frauds_in_boundary": 3,
+    "legitimate_in_boundary": 15,
+    "reconciliation": {
+      "B3_binary_true_positives": 1346,
+      "boundary_frauds_assigned_to_ALLOW": 3,
+      "progressive_policy_intervened_frauds": 1343,
+      "mathematical_identity": "1346 - 3 = 1343 (VERIFY: 69 + THROTTLE: 193 + BLOCK: 1,081)",
+      "B3_binary_false_positives": 813,
+      "boundary_legit_assigned_to_ALLOW": 15,
+      "progressive_policy_intervened_false_positives": 798,
+      "fp_identity": "813 - 15 = 798 (VERIFY: 171 + THROTTLE: 332 + BLOCK: 295)"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "case_id": "case_05_verify",
+  "title": "Case 5: Step-Up Auth / Elevated Risk / Verify",
+  "description": "Real dataset transaction where risk-sensitive cost optimization triggers VERIFY (OTP / Step-Up Authentication)",
+  "source": "IEEE-CIS Fraud Detection held-out TEST dataset (test_risk_scores.parquet)",
+  "dataset_split": "TEST",
+  "transaction_id": 3489068,
+  "dataset_row_identifier": "3489068",
+  "label": 1,
+  "amount": 150.0,
+  "expected_behavior": {
+    "transaction_analyst": "MEDIUM",
+    "slow_burn_analyst": "INSUFFICIENT_HISTORY",
+    "risk_council": "INSUFFICIENT_HISTORY",
+    "risk_engine_decision": "VERIFY"
+  },
+  "actual_pipeline_outputs": {
+    "A_t": 0.2931,
+    "P_t": null,
+    "G_t": 0.775,
+    "R_t": 0.3001,
+    "decision": "VERIFY",
+    "council_status": "INSUFFICIENT_HISTORY",
+    "evidence_ids": [
+      "RISK_ENGINE",
+      "E1"
+    ],
+    "graph_context_exists": true,
+    "sufficient_history_exists": false
+  }
+}

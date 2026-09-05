@@ -1,0 +1,46 @@
+[
+  {
+    "Action": "ALLOW",
+    "Score Range": "[0.00, 0.60)",
+    "Transactions": 86439,
+    "Frauds": 1740,
+    "Legitimate": 84699,
+    "Fraud Rate": 0.02012980251969597,
+    "Enrichment": 0.5783645498523091,
+    "False Alarms": 0,
+    "Operational Intervention": "Frictionless Pass"
+  },
+  {
+    "Action": "VERIFY",
+    "Score Range": "[0.60, 0.65)",
+    "Transactions": 240,
+    "Frauds": 69,
+    "Legitimate": 171,
+    "Fraud Rate": 0.2875,
+    "Enrichment": 8.260379500486538,
+    "False Alarms": 171,
+    "Operational Intervention": "Step-up OTP / 3DS"
+  },
+  {
+    "Action": "THROTTLE",
+    "Score Range": "[0.65, 0.80)",
+    "Transactions": 525,
+    "Frauds": 193,
+    "Legitimate": 332,
+    "Fraud Rate": 0.3676190476190476,
+    "Enrichment": 10.56234033022875,
+    "False Alarms": 332,
+    "Operational Intervention": "Velocity Capping / Delayed Settlement"
+  },
+  {
+    "Action": "BLOCK",
+    "Score Range": "[0.80, 1.00]",
+    "Transactions": 1376,
+    "Frauds": 1081,
+    "Legitimate": 295,
+    "Fraud Rate": 0.7856104651162791,
+    "Enrichment": 22.57196723970159,
+    "False Alarms": 295,
+    "Operational Intervention": "Hard Transaction Rejection"
+  }
+]

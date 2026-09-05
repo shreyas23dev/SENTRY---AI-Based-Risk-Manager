@@ -1,0 +1,32 @@
+{
+  "batch": {
+    "train": {
+      "rows": 413379,
+      "elapsed_sec": 5.8637,
+      "txn_per_sec": 70498.2
+    },
+    "val": {
+      "rows": 88581,
+      "elapsed_sec": 1.8841,
+      "txn_per_sec": 47015.5
+    },
+    "test": {
+      "rows": 88580,
+      "elapsed_sec": 2.7323,
+      "txn_per_sec": 32419.9
+    },
+    "total": {
+      "rows": 590540,
+      "elapsed_sec": 10.48,
+      "txn_per_sec": 56349.0
+    }
+  },
+  "online_latency_ms": {
+    "n_sample": 2000,
+    "mean": 0.0147,
+    "p50": 0.0055,
+    "p95": 0.0153,
+    "p99": 0.2138,
+    "max": 2.5453
+  }
+}

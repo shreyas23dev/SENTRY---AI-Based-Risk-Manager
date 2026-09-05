@@ -1,0 +1,30 @@
+{
+  "phase": 2,
+  "name": "Temporal Risk Memory",
+  "equations": {
+    "EMA": "E_t = beta * A_t + (1 - beta) * E_{t-1}",
+    "Accumulator": "Delta_t = lambda if E_t > gamma else -delta; P_{t+1} = clip(P_t + Delta_t, 0, 1)",
+    "Decision": "y_pred = 1 if (A_t >= tau_base or P_t >= tau_temp) else 0"
+  },
+  "parameters": {
+    "beta": 0.3,
+    "gamma": 0.5,
+    "lambda": 0.05,
+    "delta": 0.1,
+    "temporal_threshold": 0.5
+  },
+  "bounds": {
+    "E_t": [
+      0.0,
+      1.0
+    ],
+    "P_t": [
+      0.0,
+      1.0
+    ]
+  },
+  "complexity": {
+    "time_per_transaction": "O(1)",
+    "memory_state": "O(1)"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "phase": 2.1,
+  "name": "Entity-Scoped Temporal Risk Memory",
+  "selected_entity_key": "card_email",
+  "parameters": {
+    "entity_key": "card_email",
+    "beta": 0.3,
+    "gamma": 0.5,
+    "lambda": 0.05,
+    "delta": 0.05,
+    "temporal_threshold": 0.7,
+    "f1": 0.5790188093853015,
+    "recall": 0.4907955292570677,
+    "precision": 0.7059101654846336,
+    "fpr": 0.007271536959749354,
+    "frauds_recovered": 13,
+    "extra_fp": 12
+  },
+  "baseline_threshold": 0.5942984109122026,
+  "bounds": {
+    "E_t": [
+      0.0,
+      1.0
+    ],
+    "P_t": [
+      0.0,
+      1.0
+    ]
+  },
+  "complexity": {
+    "time_per_transaction": "O(1)",
+    "memory_per_entity": "O(1)"
+  }
+}

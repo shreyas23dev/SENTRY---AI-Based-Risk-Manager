@@ -1,0 +1,136 @@
+{
+  "V0_Base": {
+    "description": "Frozen Baseline Tabular",
+    "feature_groups": [],
+    "n_features": 432,
+    "val_metrics": {
+      "roc_auc": 0.925133,
+      "pr_auc": 0.603216,
+      "precision": 0.708134,
+      "recall": 0.486522,
+      "f1": 0.576773,
+      "fpr": 0.007131,
+      "tp": 1480,
+      "fp": 610,
+      "fn": 1562,
+      "tn": 84929,
+      "threshold": 0.594298
+    }
+  },
+  "V2_A_Frequency": {
+    "description": "Baseline + Frequency & Prior Counts",
+    "feature_groups": [
+      "A_freq"
+    ],
+    "n_features": 440,
+    "val_metrics": {
+      "roc_auc": 0.927215,
+      "pr_auc": 0.635617,
+      "precision": 0.828289,
+      "recall": 0.440828,
+      "f1": 0.575413,
+      "fpr": 0.00325,
+      "tp": 1341,
+      "fp": 278,
+      "fn": 1701,
+      "tn": 85261,
+      "threshold": 0.594298
+    }
+  },
+  "V2_B_Time": {
+    "description": "Baseline + Cyclical & Elapsed Time",
+    "feature_groups": [
+      "B_time"
+    ],
+    "n_features": 437,
+    "val_metrics": {
+      "roc_auc": 0.923901,
+      "pr_auc": 0.627818,
+      "precision": 0.845598,
+      "recall": 0.423077,
+      "f1": 0.563979,
+      "fpr": 0.002747,
+      "tp": 1287,
+      "fp": 235,
+      "fn": 1755,
+      "tn": 85304,
+      "threshold": 0.594298
+    }
+  },
+  "V2_C_Amount": {
+    "description": "Baseline + Amount Decimals & Log",
+    "feature_groups": [
+      "C_amount"
+    ],
+    "n_features": 435,
+    "val_metrics": {
+      "roc_auc": 0.927055,
+      "pr_auc": 0.637253,
+      "precision": 0.826512,
+      "recall": 0.444773,
+      "f1": 0.578329,
+      "fpr": 0.00332,
+      "tp": 1353,
+      "fp": 284,
+      "fn": 1689,
+      "tn": 85255,
+      "threshold": 0.594298
+    }
+  },
+  "V2_D_HistAgg": {
+    "description": "Baseline + Causal Entity Historical Aggregations",
+    "feature_groups": [
+      "D_hist_agg"
+    ],
+    "n_features": 436,
+    "val_metrics": {
+      "roc_auc": 0.925051,
+      "pr_auc": 0.598421,
+      "precision": 0.658952,
+      "recall": 0.496055,
+      "f1": 0.566017,
+      "fpr": 0.00913,
+      "tp": 1509,
+      "fp": 781,
+      "fn": 1533,
+      "tn": 84758,
+      "threshold": 0.594298
+    }
+  },
+  "V2_E_Combined": {
+    "description": "Baseline + All Causal Engineered Features",
+    "feature_groups": [
+      "A_freq",
+      "B_time",
+      "C_amount",
+      "D_hist_agg"
+    ],
+    "n_features": 452,
+    "val_metrics": {
+      "roc_auc": 0.928978,
+      "pr_auc": 0.656797,
+      "precision": 0.864829,
+      "recall": 0.422748,
+      "f1": 0.567896,
+      "fpr": 0.00235,
+      "tp": 1286,
+      "fp": 201,
+      "fn": 1756,
+      "tn": 85338,
+      "threshold": 0.594298
+    },
+    "test_metrics": {
+      "roc_auc": 0.907799,
+      "pr_auc": 0.562998,
+      "precision": 0.786485,
+      "recall": 0.354849,
+      "f1": 0.489048,
+      "fpr": 0.003474,
+      "tp": 1094,
+      "fp": 297,
+      "fn": 1989,
+      "tn": 85200,
+      "threshold": 0.594298
+    }
+  }
+}

@@ -1,0 +1,1484 @@
+{
+  "all_evaluations": [
+    {
+      "tau_verify": 0.6,
+      "tau_throttle": 0.65,
+      "tau_block": 0.8,
+      "composite_score": 0.727823,
+      "intervened_recall": 0.501644,
+      "intervened_precision": 0.693952,
+      "intervened_f1": 0.582332,
+      "intervened_fpr": 0.007868,
+      "block_precision": 0.841638,
+      "block_recall": 0.405325,
+      "block_frauds": 1233,
+      "block_false_positives": 232,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86382,
+          "frauds": 1516,
+          "fraud_rate": 0.01755,
+          "legit": 84866
+        },
+        "VERIFY": {
+          "txns": 226,
+          "frauds": 73,
+          "fraud_rate": 0.323009,
+          "legit": 153
+        },
+        "THROTTLE": {
+          "txns": 508,
+          "frauds": 220,
+          "fraud_rate": 0.433071,
+          "legit": 288
+        },
+        "BLOCK": {
+          "txns": 1465,
+          "frauds": 1233,
+          "fraud_rate": 0.841638,
+          "legit": 232
+        }
+      }
+    },
+    {
+      "tau_verify": 0.6,
+      "tau_throttle": 0.7,
+      "tau_block": 0.8,
+      "composite_score": 0.727823,
+      "intervened_recall": 0.501644,
+      "intervened_precision": 0.693952,
+      "intervened_f1": 0.582332,
+      "intervened_fpr": 0.007868,
+      "block_precision": 0.841638,
+      "block_recall": 0.405325,
+      "block_frauds": 1233,
+      "block_false_positives": 232,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86382,
+          "frauds": 1516,
+          "fraud_rate": 0.01755,
+          "legit": 84866
+        },
+        "VERIFY": {
+          "txns": 399,
+          "frauds": 132,
+          "fraud_rate": 0.330827,
+          "legit": 267
+        },
+        "THROTTLE": {
+          "txns": 335,
+          "frauds": 161,
+          "fraud_rate": 0.480597,
+          "legit": 174
+        },
+        "BLOCK": {
+          "txns": 1465,
+          "frauds": 1233,
+          "fraud_rate": 0.841638,
+          "legit": 232
+        }
+      }
+    },
+    {
+      "tau_verify": 0.6,
+      "tau_throttle": 0.75,
+      "tau_block": 0.8,
+      "composite_score": 0.727823,
+      "intervened_recall": 0.501644,
+      "intervened_precision": 0.693952,
+      "intervened_f1": 0.582332,
+      "intervened_fpr": 0.007868,
+      "block_precision": 0.841638,
+      "block_recall": 0.405325,
+      "block_frauds": 1233,
+      "block_false_positives": 232,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86382,
+          "frauds": 1516,
+          "fraud_rate": 0.01755,
+          "legit": 84866
+        },
+        "VERIFY": {
+          "txns": 595,
+          "frauds": 224,
+          "fraud_rate": 0.376471,
+          "legit": 371
+        },
+        "THROTTLE": {
+          "txns": 139,
+          "frauds": 69,
+          "fraud_rate": 0.496403,
+          "legit": 70
+        },
+        "BLOCK": {
+          "txns": 1465,
+          "frauds": 1233,
+          "fraud_rate": 0.841638,
+          "legit": 232
+        }
+      }
+    },
+    {
+      "tau_verify": 0.55,
+      "tau_throttle": 0.65,
+      "tau_block": 0.8,
+      "composite_score": 0.717251,
+      "intervened_recall": 0.522025,
+      "intervened_precision": 0.651354,
+      "intervened_f1": 0.579562,
+      "intervened_fpr": 0.009937,
+      "block_precision": 0.841638,
+      "block_recall": 0.405325,
+      "block_frauds": 1233,
+      "block_false_positives": 232,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86143,
+          "frauds": 1454,
+          "fraud_rate": 0.016879,
+          "legit": 84689
+        },
+        "VERIFY": {
+          "txns": 465,
+          "frauds": 135,
+          "fraud_rate": 0.290323,
+          "legit": 330
+        },
+        "THROTTLE": {
+          "txns": 508,
+          "frauds": 220,
+          "fraud_rate": 0.433071,
+          "legit": 288
+        },
+        "BLOCK": {
+          "txns": 1465,
+          "frauds": 1233,
+          "fraud_rate": 0.841638,
+          "legit": 232
+        }
+      }
+    },
+    {
+      "tau_verify": 0.55,
+      "tau_throttle": 0.7,
+      "tau_block": 0.8,
+      "composite_score": 0.717251,
+      "intervened_recall": 0.522025,
+      "intervened_precision": 0.651354,
+      "intervened_f1": 0.579562,
+      "intervened_fpr": 0.009937,
+      "block_precision": 0.841638,
+      "block_recall": 0.405325,
+      "block_frauds": 1233,
+      "block_false_positives": 232,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86143,
+          "frauds": 1454,
+          "fraud_rate": 0.016879,
+          "legit": 84689
+        },
+        "VERIFY": {
+          "txns": 638,
+          "frauds": 194,
+          "fraud_rate": 0.304075,
+          "legit": 444
+        },
+        "THROTTLE": {
+          "txns": 335,
+          "frauds": 161,
+          "fraud_rate": 0.480597,
+          "legit": 174
+        },
+        "BLOCK": {
+          "txns": 1465,
+          "frauds": 1233,
+          "fraud_rate": 0.841638,
+          "legit": 232
+        }
+      }
+    },
+    {
+      "tau_verify": 0.55,
+      "tau_throttle": 0.75,
+      "tau_block": 0.8,
+      "composite_score": 0.717251,
+      "intervened_recall": 0.522025,
+      "intervened_precision": 0.651354,
+      "intervened_f1": 0.579562,
+      "intervened_fpr": 0.009937,
+      "block_precision": 0.841638,
+      "block_recall": 0.405325,
+      "block_frauds": 1233,
+      "block_false_positives": 232,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86143,
+          "frauds": 1454,
+          "fraud_rate": 0.016879,
+          "legit": 84689
+        },
+        "VERIFY": {
+          "txns": 834,
+          "frauds": 286,
+          "fraud_rate": 0.342926,
+          "legit": 548
+        },
+        "THROTTLE": {
+          "txns": 139,
+          "frauds": 69,
+          "fraud_rate": 0.496403,
+          "legit": 70
+        },
+        "BLOCK": {
+          "txns": 1465,
+          "frauds": 1233,
+          "fraud_rate": 0.841638,
+          "legit": 232
+        }
+      }
+    },
+    {
+      "tau_verify": 0.6,
+      "tau_throttle": 0.65,
+      "tau_block": 0.85,
+      "composite_score": 0.713316,
+      "intervened_recall": 0.501644,
+      "intervened_precision": 0.693952,
+      "intervened_f1": 0.582332,
+      "intervened_fpr": 0.007868,
+      "block_precision": 0.864055,
+      "block_recall": 0.369822,
+      "block_frauds": 1125,
+      "block_false_positives": 177,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86382,
+          "frauds": 1516,
+          "fraud_rate": 0.01755,
+          "legit": 84866
+        },
+        "VERIFY": {
+          "txns": 226,
+          "frauds": 73,
+          "fraud_rate": 0.323009,
+          "legit": 153
+        },
+        "THROTTLE": {
+          "txns": 671,
+          "frauds": 328,
+          "fraud_rate": 0.488823,
+          "legit": 343
+        },
+        "BLOCK": {
+          "txns": 1302,
+          "frauds": 1125,
+          "fraud_rate": 0.864055,
+          "legit": 177
+        }
+      }
+    },
+    {
+      "tau_verify": 0.6,
+      "tau_throttle": 0.7,
+      "tau_block": 0.85,
+      "composite_score": 0.713316,
+      "intervened_recall": 0.501644,
+      "intervened_precision": 0.693952,
+      "intervened_f1": 0.582332,
+      "intervened_fpr": 0.007868,
+      "block_precision": 0.864055,
+      "block_recall": 0.369822,
+      "block_frauds": 1125,
+      "block_false_positives": 177,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86382,
+          "frauds": 1516,
+          "fraud_rate": 0.01755,
+          "legit": 84866
+        },
+        "VERIFY": {
+          "txns": 399,
+          "frauds": 132,
+          "fraud_rate": 0.330827,
+          "legit": 267
+        },
+        "THROTTLE": {
+          "txns": 498,
+          "frauds": 269,
+          "fraud_rate": 0.540161,
+          "legit": 229
+        },
+        "BLOCK": {
+          "txns": 1302,
+          "frauds": 1125,
+          "fraud_rate": 0.864055,
+          "legit": 177
+        }
+      }
+    },
+    {
+      "tau_verify": 0.6,
+      "tau_throttle": 0.75,
+      "tau_block": 0.85,
+      "composite_score": 0.713316,
+      "intervened_recall": 0.501644,
+      "intervened_precision": 0.693952,
+      "intervened_f1": 0.582332,
+      "intervened_fpr": 0.007868,
+      "block_precision": 0.864055,
+      "block_recall": 0.369822,
+      "block_frauds": 1125,
+      "block_false_positives": 177,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86382,
+          "frauds": 1516,
+          "fraud_rate": 0.01755,
+          "legit": 84866
+        },
+        "VERIFY": {
+          "txns": 595,
+          "frauds": 224,
+          "fraud_rate": 0.376471,
+          "legit": 371
+        },
+        "THROTTLE": {
+          "txns": 302,
+          "frauds": 177,
+          "fraud_rate": 0.586093,
+          "legit": 125
+        },
+        "BLOCK": {
+          "txns": 1302,
+          "frauds": 1125,
+          "fraud_rate": 0.864055,
+          "legit": 177
+        }
+      }
+    },
+    {
+      "tau_verify": 0.5,
+      "tau_throttle": 0.65,
+      "tau_block": 0.8,
+      "composite_score": 0.705257,
+      "intervened_recall": 0.543721,
+      "intervened_precision": 0.605196,
+      "intervened_f1": 0.572814,
+      "intervened_fpr": 0.012614,
+      "block_precision": 0.841638,
+      "block_recall": 0.405325,
+      "block_frauds": 1233,
+      "block_false_positives": 232,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 85848,
+          "frauds": 1388,
+          "fraud_rate": 0.016168,
+          "legit": 84460
+        },
+        "VERIFY": {
+          "txns": 760,
+          "frauds": 201,
+          "fraud_rate": 0.264474,
+          "legit": 559
+        },
+        "THROTTLE": {
+          "txns": 508,
+          "frauds": 220,
+          "fraud_rate": 0.433071,
+          "legit": 288
+        },
+        "BLOCK": {
+          "txns": 1465,
+          "frauds": 1233,
+          "fraud_rate": 0.841638,
+          "legit": 232
+        }
+      }
+    },
+    {
+      "tau_verify": 0.5,
+      "tau_throttle": 0.7,
+      "tau_block": 0.8,
+      "composite_score": 0.705257,
+      "intervened_recall": 0.543721,
+      "intervened_precision": 0.605196,
+      "intervened_f1": 0.572814,
+      "intervened_fpr": 0.012614,
+      "block_precision": 0.841638,
+      "block_recall": 0.405325,
+      "block_frauds": 1233,
+      "block_false_positives": 232,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 85848,
+          "frauds": 1388,
+          "fraud_rate": 0.016168,
+          "legit": 84460
+        },
+        "VERIFY": {
+          "txns": 933,
+          "frauds": 260,
+          "fraud_rate": 0.278671,
+          "legit": 673
+        },
+        "THROTTLE": {
+          "txns": 335,
+          "frauds": 161,
+          "fraud_rate": 0.480597,
+          "legit": 174
+        },
+        "BLOCK": {
+          "txns": 1465,
+          "frauds": 1233,
+          "fraud_rate": 0.841638,
+          "legit": 232
+        }
+      }
+    },
+    {
+      "tau_verify": 0.5,
+      "tau_throttle": 0.75,
+      "tau_block": 0.8,
+      "composite_score": 0.705257,
+      "intervened_recall": 0.543721,
+      "intervened_precision": 0.605196,
+      "intervened_f1": 0.572814,
+      "intervened_fpr": 0.012614,
+      "block_precision": 0.841638,
+      "block_recall": 0.405325,
+      "block_frauds": 1233,
+      "block_false_positives": 232,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 85848,
+          "frauds": 1388,
+          "fraud_rate": 0.016168,
+          "legit": 84460
+        },
+        "VERIFY": {
+          "txns": 1129,
+          "frauds": 352,
+          "fraud_rate": 0.31178,
+          "legit": 777
+        },
+        "THROTTLE": {
+          "txns": 139,
+          "frauds": 69,
+          "fraud_rate": 0.496403,
+          "legit": 70
+        },
+        "BLOCK": {
+          "txns": 1465,
+          "frauds": 1233,
+          "fraud_rate": 0.841638,
+          "legit": 232
+        }
+      }
+    },
+    {
+      "tau_verify": 0.55,
+      "tau_throttle": 0.65,
+      "tau_block": 0.85,
+      "composite_score": 0.703573,
+      "intervened_recall": 0.522025,
+      "intervened_precision": 0.651354,
+      "intervened_f1": 0.579562,
+      "intervened_fpr": 0.009937,
+      "block_precision": 0.864055,
+      "block_recall": 0.369822,
+      "block_frauds": 1125,
+      "block_false_positives": 177,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86143,
+          "frauds": 1454,
+          "fraud_rate": 0.016879,
+          "legit": 84689
+        },
+        "VERIFY": {
+          "txns": 465,
+          "frauds": 135,
+          "fraud_rate": 0.290323,
+          "legit": 330
+        },
+        "THROTTLE": {
+          "txns": 671,
+          "frauds": 328,
+          "fraud_rate": 0.488823,
+          "legit": 343
+        },
+        "BLOCK": {
+          "txns": 1302,
+          "frauds": 1125,
+          "fraud_rate": 0.864055,
+          "legit": 177
+        }
+      }
+    },
+    {
+      "tau_verify": 0.55,
+      "tau_throttle": 0.7,
+      "tau_block": 0.85,
+      "composite_score": 0.703573,
+      "intervened_recall": 0.522025,
+      "intervened_precision": 0.651354,
+      "intervened_f1": 0.579562,
+      "intervened_fpr": 0.009937,
+      "block_precision": 0.864055,
+      "block_recall": 0.369822,
+      "block_frauds": 1125,
+      "block_false_positives": 177,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86143,
+          "frauds": 1454,
+          "fraud_rate": 0.016879,
+          "legit": 84689
+        },
+        "VERIFY": {
+          "txns": 638,
+          "frauds": 194,
+          "fraud_rate": 0.304075,
+          "legit": 444
+        },
+        "THROTTLE": {
+          "txns": 498,
+          "frauds": 269,
+          "fraud_rate": 0.540161,
+          "legit": 229
+        },
+        "BLOCK": {
+          "txns": 1302,
+          "frauds": 1125,
+          "fraud_rate": 0.864055,
+          "legit": 177
+        }
+      }
+    },
+    {
+      "tau_verify": 0.55,
+      "tau_throttle": 0.75,
+      "tau_block": 0.85,
+      "composite_score": 0.703573,
+      "intervened_recall": 0.522025,
+      "intervened_precision": 0.651354,
+      "intervened_f1": 0.579562,
+      "intervened_fpr": 0.009937,
+      "block_precision": 0.864055,
+      "block_recall": 0.369822,
+      "block_frauds": 1125,
+      "block_false_positives": 177,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86143,
+          "frauds": 1454,
+          "fraud_rate": 0.016879,
+          "legit": 84689
+        },
+        "VERIFY": {
+          "txns": 834,
+          "frauds": 286,
+          "fraud_rate": 0.342926,
+          "legit": 548
+        },
+        "THROTTLE": {
+          "txns": 302,
+          "frauds": 177,
+          "fraud_rate": 0.586093,
+          "legit": 125
+        },
+        "BLOCK": {
+          "txns": 1302,
+          "frauds": 1125,
+          "fraud_rate": 0.864055,
+          "legit": 177
+        }
+      }
+    },
+    {
+      "tau_verify": 0.6,
+      "tau_throttle": 0.65,
+      "tau_block": 0.9,
+      "composite_score": 0.698168,
+      "intervened_recall": 0.501644,
+      "intervened_precision": 0.693952,
+      "intervened_f1": 0.582332,
+      "intervened_fpr": 0.007868,
+      "block_precision": 0.883681,
+      "block_recall": 0.334648,
+      "block_frauds": 1018,
+      "block_false_positives": 134,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86382,
+          "frauds": 1516,
+          "fraud_rate": 0.01755,
+          "legit": 84866
+        },
+        "VERIFY": {
+          "txns": 226,
+          "frauds": 73,
+          "fraud_rate": 0.323009,
+          "legit": 153
+        },
+        "THROTTLE": {
+          "txns": 821,
+          "frauds": 435,
+          "fraud_rate": 0.529842,
+          "legit": 386
+        },
+        "BLOCK": {
+          "txns": 1152,
+          "frauds": 1018,
+          "fraud_rate": 0.883681,
+          "legit": 134
+        }
+      }
+    },
+    {
+      "tau_verify": 0.6,
+      "tau_throttle": 0.7,
+      "tau_block": 0.9,
+      "composite_score": 0.698168,
+      "intervened_recall": 0.501644,
+      "intervened_precision": 0.693952,
+      "intervened_f1": 0.582332,
+      "intervened_fpr": 0.007868,
+      "block_precision": 0.883681,
+      "block_recall": 0.334648,
+      "block_frauds": 1018,
+      "block_false_positives": 134,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86382,
+          "frauds": 1516,
+          "fraud_rate": 0.01755,
+          "legit": 84866
+        },
+        "VERIFY": {
+          "txns": 399,
+          "frauds": 132,
+          "fraud_rate": 0.330827,
+          "legit": 267
+        },
+        "THROTTLE": {
+          "txns": 648,
+          "frauds": 376,
+          "fraud_rate": 0.580247,
+          "legit": 272
+        },
+        "BLOCK": {
+          "txns": 1152,
+          "frauds": 1018,
+          "fraud_rate": 0.883681,
+          "legit": 134
+        }
+      }
+    },
+    {
+      "tau_verify": 0.6,
+      "tau_throttle": 0.75,
+      "tau_block": 0.9,
+      "composite_score": 0.698168,
+      "intervened_recall": 0.501644,
+      "intervened_precision": 0.693952,
+      "intervened_f1": 0.582332,
+      "intervened_fpr": 0.007868,
+      "block_precision": 0.883681,
+      "block_recall": 0.334648,
+      "block_frauds": 1018,
+      "block_false_positives": 134,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86382,
+          "frauds": 1516,
+          "fraud_rate": 0.01755,
+          "legit": 84866
+        },
+        "VERIFY": {
+          "txns": 595,
+          "frauds": 224,
+          "fraud_rate": 0.376471,
+          "legit": 371
+        },
+        "THROTTLE": {
+          "txns": 452,
+          "frauds": 284,
+          "fraud_rate": 0.628319,
+          "legit": 168
+        },
+        "BLOCK": {
+          "txns": 1152,
+          "frauds": 1018,
+          "fraud_rate": 0.883681,
+          "legit": 134
+        }
+      }
+    },
+    {
+      "tau_verify": 0.5,
+      "tau_throttle": 0.65,
+      "tau_block": 0.85,
+      "composite_score": 0.692393,
+      "intervened_recall": 0.543721,
+      "intervened_precision": 0.605196,
+      "intervened_f1": 0.572814,
+      "intervened_fpr": 0.012614,
+      "block_precision": 0.864055,
+      "block_recall": 0.369822,
+      "block_frauds": 1125,
+      "block_false_positives": 177,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 85848,
+          "frauds": 1388,
+          "fraud_rate": 0.016168,
+          "legit": 84460
+        },
+        "VERIFY": {
+          "txns": 760,
+          "frauds": 201,
+          "fraud_rate": 0.264474,
+          "legit": 559
+        },
+        "THROTTLE": {
+          "txns": 671,
+          "frauds": 328,
+          "fraud_rate": 0.488823,
+          "legit": 343
+        },
+        "BLOCK": {
+          "txns": 1302,
+          "frauds": 1125,
+          "fraud_rate": 0.864055,
+          "legit": 177
+        }
+      }
+    },
+    {
+      "tau_verify": 0.5,
+      "tau_throttle": 0.7,
+      "tau_block": 0.85,
+      "composite_score": 0.692393,
+      "intervened_recall": 0.543721,
+      "intervened_precision": 0.605196,
+      "intervened_f1": 0.572814,
+      "intervened_fpr": 0.012614,
+      "block_precision": 0.864055,
+      "block_recall": 0.369822,
+      "block_frauds": 1125,
+      "block_false_positives": 177,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 85848,
+          "frauds": 1388,
+          "fraud_rate": 0.016168,
+          "legit": 84460
+        },
+        "VERIFY": {
+          "txns": 933,
+          "frauds": 260,
+          "fraud_rate": 0.278671,
+          "legit": 673
+        },
+        "THROTTLE": {
+          "txns": 498,
+          "frauds": 269,
+          "fraud_rate": 0.540161,
+          "legit": 229
+        },
+        "BLOCK": {
+          "txns": 1302,
+          "frauds": 1125,
+          "fraud_rate": 0.864055,
+          "legit": 177
+        }
+      }
+    },
+    {
+      "tau_verify": 0.5,
+      "tau_throttle": 0.75,
+      "tau_block": 0.85,
+      "composite_score": 0.692393,
+      "intervened_recall": 0.543721,
+      "intervened_precision": 0.605196,
+      "intervened_f1": 0.572814,
+      "intervened_fpr": 0.012614,
+      "block_precision": 0.864055,
+      "block_recall": 0.369822,
+      "block_frauds": 1125,
+      "block_false_positives": 177,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 85848,
+          "frauds": 1388,
+          "fraud_rate": 0.016168,
+          "legit": 84460
+        },
+        "VERIFY": {
+          "txns": 1129,
+          "frauds": 352,
+          "fraud_rate": 0.31178,
+          "legit": 777
+        },
+        "THROTTLE": {
+          "txns": 302,
+          "frauds": 177,
+          "fraud_rate": 0.586093,
+          "legit": 125
+        },
+        "BLOCK": {
+          "txns": 1302,
+          "frauds": 1125,
+          "fraud_rate": 0.864055,
+          "legit": 177
+        }
+      }
+    },
+    {
+      "tau_verify": 0.55,
+      "tau_throttle": 0.65,
+      "tau_block": 0.9,
+      "composite_score": 0.689246,
+      "intervened_recall": 0.522025,
+      "intervened_precision": 0.651354,
+      "intervened_f1": 0.579562,
+      "intervened_fpr": 0.009937,
+      "block_precision": 0.883681,
+      "block_recall": 0.334648,
+      "block_frauds": 1018,
+      "block_false_positives": 134,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86143,
+          "frauds": 1454,
+          "fraud_rate": 0.016879,
+          "legit": 84689
+        },
+        "VERIFY": {
+          "txns": 465,
+          "frauds": 135,
+          "fraud_rate": 0.290323,
+          "legit": 330
+        },
+        "THROTTLE": {
+          "txns": 821,
+          "frauds": 435,
+          "fraud_rate": 0.529842,
+          "legit": 386
+        },
+        "BLOCK": {
+          "txns": 1152,
+          "frauds": 1018,
+          "fraud_rate": 0.883681,
+          "legit": 134
+        }
+      }
+    },
+    {
+      "tau_verify": 0.55,
+      "tau_throttle": 0.7,
+      "tau_block": 0.9,
+      "composite_score": 0.689246,
+      "intervened_recall": 0.522025,
+      "intervened_precision": 0.651354,
+      "intervened_f1": 0.579562,
+      "intervened_fpr": 0.009937,
+      "block_precision": 0.883681,
+      "block_recall": 0.334648,
+      "block_frauds": 1018,
+      "block_false_positives": 134,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86143,
+          "frauds": 1454,
+          "fraud_rate": 0.016879,
+          "legit": 84689
+        },
+        "VERIFY": {
+          "txns": 638,
+          "frauds": 194,
+          "fraud_rate": 0.304075,
+          "legit": 444
+        },
+        "THROTTLE": {
+          "txns": 648,
+          "frauds": 376,
+          "fraud_rate": 0.580247,
+          "legit": 272
+        },
+        "BLOCK": {
+          "txns": 1152,
+          "frauds": 1018,
+          "fraud_rate": 0.883681,
+          "legit": 134
+        }
+      }
+    },
+    {
+      "tau_verify": 0.55,
+      "tau_throttle": 0.75,
+      "tau_block": 0.9,
+      "composite_score": 0.689246,
+      "intervened_recall": 0.522025,
+      "intervened_precision": 0.651354,
+      "intervened_f1": 0.579562,
+      "intervened_fpr": 0.009937,
+      "block_precision": 0.883681,
+      "block_recall": 0.334648,
+      "block_frauds": 1018,
+      "block_false_positives": 134,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86143,
+          "frauds": 1454,
+          "fraud_rate": 0.016879,
+          "legit": 84689
+        },
+        "VERIFY": {
+          "txns": 834,
+          "frauds": 286,
+          "fraud_rate": 0.342926,
+          "legit": 548
+        },
+        "THROTTLE": {
+          "txns": 452,
+          "frauds": 284,
+          "fraud_rate": 0.628319,
+          "legit": 168
+        },
+        "BLOCK": {
+          "txns": 1152,
+          "frauds": 1018,
+          "fraud_rate": 0.883681,
+          "legit": 134
+        }
+      }
+    },
+    {
+      "tau_verify": 0.5,
+      "tau_throttle": 0.65,
+      "tau_block": 0.9,
+      "composite_score": 0.678873,
+      "intervened_recall": 0.543721,
+      "intervened_precision": 0.605196,
+      "intervened_f1": 0.572814,
+      "intervened_fpr": 0.012614,
+      "block_precision": 0.883681,
+      "block_recall": 0.334648,
+      "block_frauds": 1018,
+      "block_false_positives": 134,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 85848,
+          "frauds": 1388,
+          "fraud_rate": 0.016168,
+          "legit": 84460
+        },
+        "VERIFY": {
+          "txns": 760,
+          "frauds": 201,
+          "fraud_rate": 0.264474,
+          "legit": 559
+        },
+        "THROTTLE": {
+          "txns": 821,
+          "frauds": 435,
+          "fraud_rate": 0.529842,
+          "legit": 386
+        },
+        "BLOCK": {
+          "txns": 1152,
+          "frauds": 1018,
+          "fraud_rate": 0.883681,
+          "legit": 134
+        }
+      }
+    },
+    {
+      "tau_verify": 0.5,
+      "tau_throttle": 0.7,
+      "tau_block": 0.9,
+      "composite_score": 0.678873,
+      "intervened_recall": 0.543721,
+      "intervened_precision": 0.605196,
+      "intervened_f1": 0.572814,
+      "intervened_fpr": 0.012614,
+      "block_precision": 0.883681,
+      "block_recall": 0.334648,
+      "block_frauds": 1018,
+      "block_false_positives": 134,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 85848,
+          "frauds": 1388,
+          "fraud_rate": 0.016168,
+          "legit": 84460
+        },
+        "VERIFY": {
+          "txns": 933,
+          "frauds": 260,
+          "fraud_rate": 0.278671,
+          "legit": 673
+        },
+        "THROTTLE": {
+          "txns": 648,
+          "frauds": 376,
+          "fraud_rate": 0.580247,
+          "legit": 272
+        },
+        "BLOCK": {
+          "txns": 1152,
+          "frauds": 1018,
+          "fraud_rate": 0.883681,
+          "legit": 134
+        }
+      }
+    },
+    {
+      "tau_verify": 0.5,
+      "tau_throttle": 0.75,
+      "tau_block": 0.9,
+      "composite_score": 0.678873,
+      "intervened_recall": 0.543721,
+      "intervened_precision": 0.605196,
+      "intervened_f1": 0.572814,
+      "intervened_fpr": 0.012614,
+      "block_precision": 0.883681,
+      "block_recall": 0.334648,
+      "block_frauds": 1018,
+      "block_false_positives": 134,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 85848,
+          "frauds": 1388,
+          "fraud_rate": 0.016168,
+          "legit": 84460
+        },
+        "VERIFY": {
+          "txns": 1129,
+          "frauds": 352,
+          "fraud_rate": 0.31178,
+          "legit": 777
+        },
+        "THROTTLE": {
+          "txns": 452,
+          "frauds": 284,
+          "fraud_rate": 0.628319,
+          "legit": 168
+        },
+        "BLOCK": {
+          "txns": 1152,
+          "frauds": 1018,
+          "fraud_rate": 0.883681,
+          "legit": 134
+        }
+      }
+    },
+    {
+      "tau_verify": 0.6,
+      "tau_throttle": 0.65,
+      "tau_block": 0.95,
+      "composite_score": 0.667131,
+      "intervened_recall": 0.501644,
+      "intervened_precision": 0.693952,
+      "intervened_f1": 0.582332,
+      "intervened_fpr": 0.007868,
+      "block_precision": 0.898178,
+      "block_recall": 0.275477,
+      "block_frauds": 838,
+      "block_false_positives": 95,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86382,
+          "frauds": 1516,
+          "fraud_rate": 0.01755,
+          "legit": 84866
+        },
+        "VERIFY": {
+          "txns": 226,
+          "frauds": 73,
+          "fraud_rate": 0.323009,
+          "legit": 153
+        },
+        "THROTTLE": {
+          "txns": 1040,
+          "frauds": 615,
+          "fraud_rate": 0.591346,
+          "legit": 425
+        },
+        "BLOCK": {
+          "txns": 933,
+          "frauds": 838,
+          "fraud_rate": 0.898178,
+          "legit": 95
+        }
+      }
+    },
+    {
+      "tau_verify": 0.6,
+      "tau_throttle": 0.7,
+      "tau_block": 0.95,
+      "composite_score": 0.667131,
+      "intervened_recall": 0.501644,
+      "intervened_precision": 0.693952,
+      "intervened_f1": 0.582332,
+      "intervened_fpr": 0.007868,
+      "block_precision": 0.898178,
+      "block_recall": 0.275477,
+      "block_frauds": 838,
+      "block_false_positives": 95,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86382,
+          "frauds": 1516,
+          "fraud_rate": 0.01755,
+          "legit": 84866
+        },
+        "VERIFY": {
+          "txns": 399,
+          "frauds": 132,
+          "fraud_rate": 0.330827,
+          "legit": 267
+        },
+        "THROTTLE": {
+          "txns": 867,
+          "frauds": 556,
+          "fraud_rate": 0.641292,
+          "legit": 311
+        },
+        "BLOCK": {
+          "txns": 933,
+          "frauds": 838,
+          "fraud_rate": 0.898178,
+          "legit": 95
+        }
+      }
+    },
+    {
+      "tau_verify": 0.6,
+      "tau_throttle": 0.75,
+      "tau_block": 0.95,
+      "composite_score": 0.667131,
+      "intervened_recall": 0.501644,
+      "intervened_precision": 0.693952,
+      "intervened_f1": 0.582332,
+      "intervened_fpr": 0.007868,
+      "block_precision": 0.898178,
+      "block_recall": 0.275477,
+      "block_frauds": 838,
+      "block_false_positives": 95,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86382,
+          "frauds": 1516,
+          "fraud_rate": 0.01755,
+          "legit": 84866
+        },
+        "VERIFY": {
+          "txns": 595,
+          "frauds": 224,
+          "fraud_rate": 0.376471,
+          "legit": 371
+        },
+        "THROTTLE": {
+          "txns": 671,
+          "frauds": 464,
+          "fraud_rate": 0.691505,
+          "legit": 207
+        },
+        "BLOCK": {
+          "txns": 933,
+          "frauds": 838,
+          "fraud_rate": 0.898178,
+          "legit": 95
+        }
+      }
+    },
+    {
+      "tau_verify": 0.55,
+      "tau_throttle": 0.65,
+      "tau_block": 0.95,
+      "composite_score": 0.659591,
+      "intervened_recall": 0.522025,
+      "intervened_precision": 0.651354,
+      "intervened_f1": 0.579562,
+      "intervened_fpr": 0.009937,
+      "block_precision": 0.898178,
+      "block_recall": 0.275477,
+      "block_frauds": 838,
+      "block_false_positives": 95,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86143,
+          "frauds": 1454,
+          "fraud_rate": 0.016879,
+          "legit": 84689
+        },
+        "VERIFY": {
+          "txns": 465,
+          "frauds": 135,
+          "fraud_rate": 0.290323,
+          "legit": 330
+        },
+        "THROTTLE": {
+          "txns": 1040,
+          "frauds": 615,
+          "fraud_rate": 0.591346,
+          "legit": 425
+        },
+        "BLOCK": {
+          "txns": 933,
+          "frauds": 838,
+          "fraud_rate": 0.898178,
+          "legit": 95
+        }
+      }
+    },
+    {
+      "tau_verify": 0.55,
+      "tau_throttle": 0.7,
+      "tau_block": 0.95,
+      "composite_score": 0.659591,
+      "intervened_recall": 0.522025,
+      "intervened_precision": 0.651354,
+      "intervened_f1": 0.579562,
+      "intervened_fpr": 0.009937,
+      "block_precision": 0.898178,
+      "block_recall": 0.275477,
+      "block_frauds": 838,
+      "block_false_positives": 95,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86143,
+          "frauds": 1454,
+          "fraud_rate": 0.016879,
+          "legit": 84689
+        },
+        "VERIFY": {
+          "txns": 638,
+          "frauds": 194,
+          "fraud_rate": 0.304075,
+          "legit": 444
+        },
+        "THROTTLE": {
+          "txns": 867,
+          "frauds": 556,
+          "fraud_rate": 0.641292,
+          "legit": 311
+        },
+        "BLOCK": {
+          "txns": 933,
+          "frauds": 838,
+          "fraud_rate": 0.898178,
+          "legit": 95
+        }
+      }
+    },
+    {
+      "tau_verify": 0.55,
+      "tau_throttle": 0.75,
+      "tau_block": 0.95,
+      "composite_score": 0.659591,
+      "intervened_recall": 0.522025,
+      "intervened_precision": 0.651354,
+      "intervened_f1": 0.579562,
+      "intervened_fpr": 0.009937,
+      "block_precision": 0.898178,
+      "block_recall": 0.275477,
+      "block_frauds": 838,
+      "block_false_positives": 95,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 86143,
+          "frauds": 1454,
+          "fraud_rate": 0.016879,
+          "legit": 84689
+        },
+        "VERIFY": {
+          "txns": 834,
+          "frauds": 286,
+          "fraud_rate": 0.342926,
+          "legit": 548
+        },
+        "THROTTLE": {
+          "txns": 671,
+          "frauds": 464,
+          "fraud_rate": 0.691505,
+          "legit": 207
+        },
+        "BLOCK": {
+          "txns": 933,
+          "frauds": 838,
+          "fraud_rate": 0.898178,
+          "legit": 95
+        }
+      }
+    },
+    {
+      "tau_verify": 0.5,
+      "tau_throttle": 0.65,
+      "tau_block": 0.95,
+      "composite_score": 0.650574,
+      "intervened_recall": 0.543721,
+      "intervened_precision": 0.605196,
+      "intervened_f1": 0.572814,
+      "intervened_fpr": 0.012614,
+      "block_precision": 0.898178,
+      "block_recall": 0.275477,
+      "block_frauds": 838,
+      "block_false_positives": 95,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 85848,
+          "frauds": 1388,
+          "fraud_rate": 0.016168,
+          "legit": 84460
+        },
+        "VERIFY": {
+          "txns": 760,
+          "frauds": 201,
+          "fraud_rate": 0.264474,
+          "legit": 559
+        },
+        "THROTTLE": {
+          "txns": 1040,
+          "frauds": 615,
+          "fraud_rate": 0.591346,
+          "legit": 425
+        },
+        "BLOCK": {
+          "txns": 933,
+          "frauds": 838,
+          "fraud_rate": 0.898178,
+          "legit": 95
+        }
+      }
+    },
+    {
+      "tau_verify": 0.5,
+      "tau_throttle": 0.7,
+      "tau_block": 0.95,
+      "composite_score": 0.650574,
+      "intervened_recall": 0.543721,
+      "intervened_precision": 0.605196,
+      "intervened_f1": 0.572814,
+      "intervened_fpr": 0.012614,
+      "block_precision": 0.898178,
+      "block_recall": 0.275477,
+      "block_frauds": 838,
+      "block_false_positives": 95,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 85848,
+          "frauds": 1388,
+          "fraud_rate": 0.016168,
+          "legit": 84460
+        },
+        "VERIFY": {
+          "txns": 933,
+          "frauds": 260,
+          "fraud_rate": 0.278671,
+          "legit": 673
+        },
+        "THROTTLE": {
+          "txns": 867,
+          "frauds": 556,
+          "fraud_rate": 0.641292,
+          "legit": 311
+        },
+        "BLOCK": {
+          "txns": 933,
+          "frauds": 838,
+          "fraud_rate": 0.898178,
+          "legit": 95
+        }
+      }
+    },
+    {
+      "tau_verify": 0.5,
+      "tau_throttle": 0.75,
+      "tau_block": 0.95,
+      "composite_score": 0.650574,
+      "intervened_recall": 0.543721,
+      "intervened_precision": 0.605196,
+      "intervened_f1": 0.572814,
+      "intervened_fpr": 0.012614,
+      "block_precision": 0.898178,
+      "block_recall": 0.275477,
+      "block_frauds": 838,
+      "block_false_positives": 95,
+      "actions_distribution": {
+        "ALLOW": {
+          "txns": 85848,
+          "frauds": 1388,
+          "fraud_rate": 0.016168,
+          "legit": 84460
+        },
+        "VERIFY": {
+          "txns": 1129,
+          "frauds": 352,
+          "fraud_rate": 0.31178,
+          "legit": 777
+        },
+        "THROTTLE": {
+          "txns": 671,
+          "frauds": 464,
+          "fraud_rate": 0.691505,
+          "legit": 207
+        },
+        "BLOCK": {
+          "txns": 933,
+          "frauds": 838,
+          "fraud_rate": 0.898178,
+          "legit": 95
+        }
+      }
+    }
+  ],
+  "selected_policy": {
+    "tau_verify": 0.6,
+    "tau_throttle": 0.65,
+    "tau_block": 0.8,
+    "composite_score": 0.727823,
+    "intervened_recall": 0.501644,
+    "intervened_precision": 0.693952,
+    "intervened_f1": 0.582332,
+    "intervened_fpr": 0.007868,
+    "block_precision": 0.841638,
+    "block_recall": 0.405325,
+    "block_frauds": 1233,
+    "block_false_positives": 232,
+    "actions_distribution": {
+      "ALLOW": {
+        "txns": 86382,
+        "frauds": 1516,
+        "fraud_rate": 0.01755,
+        "legit": 84866
+      },
+      "VERIFY": {
+        "txns": 226,
+        "frauds": 73,
+        "fraud_rate": 0.323009,
+        "legit": 153
+      },
+      "THROTTLE": {
+        "txns": 508,
+        "frauds": 220,
+        "fraud_rate": 0.433071,
+        "legit": 288
+      },
+      "BLOCK": {
+        "txns": 1465,
+        "frauds": 1233,
+        "fraud_rate": 0.841638,
+        "legit": 232
+      }
+    }
+  }
+}

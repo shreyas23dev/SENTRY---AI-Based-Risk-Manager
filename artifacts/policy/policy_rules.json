@@ -1,0 +1,41 @@
+{
+  "policy_name": "TRUSTGRAPH Progressive Risk Decision Policy",
+  "version": "1.0",
+  "input_signals": [
+    "A_t (Point-wise)",
+    "P_t (Temporal)",
+    "G_t (Relational)",
+    "R_t (Fused Risk)"
+  ],
+  "fused_risk_formula": "R_t = clip(A_t + 1.0 * P_t + 0.05 * G_t, 0.0, 1.0)",
+  "decision_tiers": [
+    {
+      "action": "ALLOW",
+      "risk_band": "LOW",
+      "condition": "R_t < 0.60",
+      "operational_directive": "Transaction proceeds normally without friction.",
+      "intervention_severity": 0
+    },
+    {
+      "action": "VERIFY",
+      "risk_band": "MODERATE",
+      "condition": "0.60 <= R_t < 0.65",
+      "operational_directive": "Step-up authentication required (e.g. 3D-Secure / OTP / biometric challenge).",
+      "intervention_severity": 1
+    },
+    {
+      "action": "THROTTLE",
+      "risk_band": "HIGH",
+      "condition": "0.65 <= R_t < 0.80",
+      "operational_directive": "Operational restriction applied (delayed settlement, reduced velocity ceiling, manual queue).",
+      "intervention_severity": 2
+    },
+    {
+      "action": "BLOCK",
+      "risk_band": "VERY_HIGH",
+      "condition": "R_t >= 0.80",
+      "operational_directive": "Hard transaction decline / immediate rejection.",
+      "intervention_severity": 3
+    }
+  ]
+}

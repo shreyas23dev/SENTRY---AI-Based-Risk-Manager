@@ -1,0 +1,80 @@
+{
+  "selected_parameters": {
+    "entity_key": "card_email",
+    "beta": 0.5,
+    "gamma": 0.5,
+    "lambda": 0.05,
+    "delta": 0.05,
+    "temporal_threshold": 0.6,
+    "f1": 0.5791820120178329,
+    "recall": 0.4911242603550296,
+    "precision": 0.7057156353330184,
+    "fpr": 0.007283227533639626,
+    "frauds_recovered": 14,
+    "extra_fp": 13
+  },
+  "key_ablation_validation": {
+    "card_composite": {
+      "best_f1": 0.5764820213799806,
+      "best_params": {
+        "entity_key": "card_composite",
+        "beta": 0.5,
+        "gamma": 0.5,
+        "lambda": 0.05,
+        "delta": 0.1,
+        "temporal_threshold": 0.7,
+        "f1": 0.5764820213799806,
+        "recall": 0.48750821827744906,
+        "precision": 0.7051830718021873,
+        "fpr": 0.00724815581196881,
+        "frauds_recovered": 3,
+        "extra_fp": 10
+      }
+    },
+    "card1": {
+      "best_f1": 0.5763767269896867,
+      "best_params": {
+        "entity_key": "card1",
+        "beta": 0.5,
+        "gamma": 0.5,
+        "lambda": 0.05,
+        "delta": 0.1,
+        "temporal_threshold": 0.7,
+        "f1": 0.5763767269896867,
+        "recall": 0.48685075608152534,
+        "precision": 0.7062470195517406,
+        "fpr": 0.007201393516407721,
+        "frauds_recovered": 1,
+        "extra_fp": 6
+      }
+    },
+    "card_email": {
+      "best_f1": 0.5791820120178329,
+      "best_params": {
+        "entity_key": "card_email",
+        "beta": 0.5,
+        "gamma": 0.5,
+        "lambda": 0.05,
+        "delta": 0.05,
+        "temporal_threshold": 0.6,
+        "f1": 0.5791820120178329,
+        "recall": 0.4911242603550296,
+        "precision": 0.7057156353330184,
+        "fpr": 0.007283227533639626,
+        "frauds_recovered": 14,
+        "extra_fp": 13
+      }
+    }
+  },
+  "baseline_validation": {
+    "f1": 0.5767731878409976,
+    "recall": 0.48652202498356345,
+    "precision": 0.7081339712918661,
+    "fpr": 0.007131250073066087,
+    "tp": 1480,
+    "fp": 610,
+    "fn": 1562
+  },
+  "selection_criterion": "maximise Validation F1 on B1_entity = Baseline + Entity Temporal",
+  "tuning_duration_seconds": 1017.92
+}

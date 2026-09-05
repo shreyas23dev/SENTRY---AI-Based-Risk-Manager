@@ -1,0 +1,155 @@
+{
+  "evaluation_partition": "Held-out TEST (N = 88,580)",
+  "coverage_percentage": 99.92,
+  "cold_start_percentage": 0.08,
+  "validation_selected_threshold_g": 0.72,
+  "validation_metrics_g": {
+    "threshold": 0.72,
+    "precision": 0.142611,
+    "recall": 0.245233,
+    "f1": 0.180346,
+    "roc_auc": 0.79527,
+    "pr_auc": 0.100961,
+    "fpr": 0.052432,
+    "tp": 746,
+    "fp": 4485,
+    "fn": 2296,
+    "tn": 81054,
+    "total": 88581,
+    "fraud_count": 3042,
+    "fraud_capture_pct": 24.52,
+    "fraud_rate": 0.142611,
+    "enrichment": 4.1527
+  },
+  "test_metrics_g_only": {
+    "threshold": 0.72,
+    "precision": 0.15259,
+    "recall": 0.284788,
+    "f1": 0.19871,
+    "roc_auc": 0.737902,
+    "pr_auc": 0.092077,
+    "fpr": 0.057031,
+    "tp": 878,
+    "fp": 4876,
+    "fn": 2205,
+    "tn": 80621,
+    "total": 88580,
+    "fraud_count": 3083,
+    "fraud_capture_pct": 28.48,
+    "fraud_rate": 0.15259,
+    "enrichment": 4.3842
+  },
+  "test_metrics_a_only": {
+    "threshold": 0.12,
+    "precision": 0.730175,
+    "recall": 0.474862,
+    "f1": 0.575472,
+    "roc_auc": 0.889249,
+    "pr_auc": 0.565837,
+    "fpr": 0.006328,
+    "tp": 1464,
+    "fp": 541,
+    "fn": 1619,
+    "tn": 84956,
+    "total": 88580,
+    "fraud_count": 3083,
+    "fraud_capture_pct": 47.49,
+    "fraud_rate": 0.730175,
+    "enrichment": 20.9792
+  },
+  "test_metrics_combined_analytical": {
+    "threshold": 0.12,
+    "precision": 0.074991,
+    "recall": 0.789166,
+    "f1": 0.136966,
+    "roc_auc": 0.849424,
+    "pr_auc": 0.498633,
+    "fpr": 0.351018,
+    "tp": 2433,
+    "fp": 30011,
+    "fn": 650,
+    "tn": 55486,
+    "total": 88580,
+    "fraud_count": 3083,
+    "fraud_capture_pct": 78.92,
+    "fraud_rate": 0.074991,
+    "enrichment": 2.1546
+  },
+  "sample_evidence": {
+    "transaction_id": 3489068,
+    "timestamp": 13160129.0,
+    "graph_risk": 0.925,
+    "entity_id": "12695_325.0_gmail.com",
+    "connected_entities": {
+      "entity": [
+        "12695_325.0_gmail.com"
+      ],
+      "devices": [
+        "iOS Device"
+      ],
+      "cards": [
+        "12695"
+      ],
+      "addresses": [
+        "325.0"
+      ],
+      "other_entities_sharing_device": [
+        "2803_337.0_anonymous.com",
+        "3682_325.0_anonymous.com",
+        "1214_126.0_gmail.com",
+        "8260_433.0_anonymous.com",
+        "14858_325.0_yahoo.com",
+        "4436_184.0_gmail.com",
+        "2884_325.0_gmail.com",
+        "7826_325.0_aol.com",
+        "6019_299.0_yahoo.com",
+        "10023_325.0_yahoo.com"
+      ]
+    },
+    "historical_summary": {
+      "prior_entity_transactions": 1762,
+      "prior_entity_frauds": 90,
+      "entity_fraud_rate": 0.0511,
+      "entity_1h_velocity": 0,
+      "entity_24h_velocity": 8,
+      "device_prior_transactions": 17652,
+      "device_prior_frauds": 1079,
+      "device_connected_entities": 9698,
+      "hop2_linked_fraud_count": 5025
+    },
+    "suspicious_relationships": [
+      "Customer entity has 90 confirmed historical fraud transactions (fraud rate: 5.1%)",
+      "Device 'iOS Device' was previously associated with 9698 distinct entities",
+      "1079 previous transactions from device 'iOS Device' were confirmed fraud",
+      "5025 confirmed frauds detected across 2-hop connected entity neighborhood"
+    ],
+    "evidence_paths": [
+      {
+        "path": "Txn 3489068 \u2192 Entity 12695_325.0_gmail.com \u2192 Prior Txn 3480348 \u2192 Confirmed Fraud",
+        "risk_contribution": 0.4,
+        "description": "Direct entity recidivism: entity had confirmed fraud on transaction 3480348."
+      },
+      {
+        "path": "Txn 3489068 \u2192 Device iOS Device \u2192 Prior Txn 3488672 (Entity 5051_441.0_aol.com) \u2192 Confirmed Fraud",
+        "risk_contribution": 0.3,
+        "description": "Device contamination: device iOS Device was used in fraudulent transaction 3488672."
+      }
+    ],
+    "risk_factors": [
+      "Known fraudulent entity history (90 prior frauds)",
+      "Device multiplexing across 9698 customer entities",
+      "Device linked to prior fraud events (1079 frauds)",
+      "2-hop network contamination (1551 linked entities with fraud)"
+    ]
+  },
+  "graph_state_summary": {
+    "total_nodes": 693820,
+    "total_transactions": 590540,
+    "total_customer_entities": 87479,
+    "total_devices": 1786,
+    "total_cards": 13553,
+    "total_addresses": 332,
+    "total_registered_frauds": 17580
+  },
+  "timestamp": "2026-09-03 16:00:09 UTC"
+}

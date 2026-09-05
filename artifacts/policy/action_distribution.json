@@ -1,0 +1,46 @@
+{
+  "ALLOW": {
+    "action": "ALLOW",
+    "transaction_count": 86439,
+    "pct_of_total_traffic": 97.58,
+    "fraud_count": 1740,
+    "legitimate_count": 84699,
+    "fraud_rate": 0.02013,
+    "fraud_capture_pct_of_total": 56.44,
+    "legitimate_share_pct": 99.07,
+    "enrichment_over_base_rate": 0.58
+  },
+  "VERIFY": {
+    "action": "VERIFY",
+    "transaction_count": 240,
+    "pct_of_total_traffic": 0.27,
+    "fraud_count": 69,
+    "legitimate_count": 171,
+    "fraud_rate": 0.2875,
+    "fraud_capture_pct_of_total": 2.24,
+    "legitimate_share_pct": 0.2,
+    "enrichment_over_base_rate": 8.26
+  },
+  "THROTTLE": {
+    "action": "THROTTLE",
+    "transaction_count": 525,
+    "pct_of_total_traffic": 0.59,
+    "fraud_count": 193,
+    "legitimate_count": 332,
+    "fraud_rate": 0.367619,
+    "fraud_capture_pct_of_total": 6.26,
+    "legitimate_share_pct": 0.39,
+    "enrichment_over_base_rate": 10.56
+  },
+  "BLOCK": {
+    "action": "BLOCK",
+    "transaction_count": 1376,
+    "pct_of_total_traffic": 1.55,
+    "fraud_count": 1081,
+    "legitimate_count": 295,
+    "fraud_rate": 0.78561,
+    "fraud_capture_pct_of_total": 35.06,
+    "legitimate_share_pct": 0.35,
+    "enrichment_over_base_rate": 22.57
+  }
+}

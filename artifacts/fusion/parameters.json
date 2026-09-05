@@ -1,0 +1,29 @@
+{
+  "rule_name": "F1",
+  "formula": "clip(A_t + alpha*P_t + beta*G_t, 0, 1)",
+  "params": {
+    "alpha": 1.0,
+    "beta": 0.05,
+    "tau_comb": 0.594298
+  },
+  "upstream_frozen": {
+    "tau_base": 0.594298,
+    "tau_temp": 0.7,
+    "tau_rel": 0.6,
+    "entity_key": "card_addr_email",
+    "temporal_params": {
+      "beta": 0.3,
+      "gamma": 0.5,
+      "lambda": 0.05,
+      "delta": 0.05
+    },
+    "relational_params": {
+      "k_attr_max": 25,
+      "window_sec": 86400.0,
+      "d_ref": 3.0,
+      "v_ref": 10.0,
+      "w_D": 0.6,
+      "w_V": 0.4
+    }
+  }
+}

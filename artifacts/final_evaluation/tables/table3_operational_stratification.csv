@@ -1,0 +1,5 @@
+Action,Score Range,Transactions,Frauds,Legitimate,Fraud Rate,Enrichment,False Alarms,Operational Intervention
+ALLOW,"[0.00, 0.60)",86439,1740,84699,0.02012980251969597,0.5783645498523091,0,Frictionless Pass
+VERIFY,"[0.60, 0.65)",240,69,171,0.2875,8.260379500486538,171,Step-up OTP / 3DS
+THROTTLE,"[0.65, 0.80)",525,193,332,0.3676190476190476,10.56234033022875,332,Velocity Capping / Delayed Settlement
+BLOCK,"[0.80, 1.00]",1376,1081,295,0.7856104651162791,22.57196723970159,295,Hard Transaction Rejection

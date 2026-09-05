@@ -1,0 +1,16 @@
+{
+  "dataset": "IEEE-CIS Fraud Detection (DOI: 10.21227/y5e7-wp63)",
+  "input_file": "C:\\Users\\Shreyas A\\Trustgraph\\results\\test_predictions.csv",
+  "output_file": "C:\\Users\\Shreyas A\\Trustgraph\\results\\temporal_predictions.csv",
+  "parameters": {
+    "beta": 0.3,
+    "gamma": 0.5,
+    "lambda": 0.05,
+    "delta": 0.1,
+    "temporal_threshold": 0.5
+  },
+  "baseline_threshold": 0.5942984109122026,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python_version": "3.12.10",
+  "evaluation_timestamp": "2026-09-01T13:10:10Z"
+}

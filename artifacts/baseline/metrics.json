@@ -1,0 +1,57 @@
+{
+  "test_metrics": {
+    "partition": "test",
+    "threshold": 0.5942984109122026,
+    "total_transactions": 88580,
+    "fraudulent": 3083,
+    "legitimate": 85497,
+    "fraud_prevalence": 0.034805,
+    "roc_auc": 0.901943,
+    "pr_auc": 0.534008,
+    "precision": 0.634913,
+    "recall": 0.425884,
+    "f1": 0.509804,
+    "fpr": 0.008831,
+    "fnr": 0.574116,
+    "tp": 1313,
+    "fp": 755,
+    "tn": 84742,
+    "fn": 1770
+  },
+  "latency": {
+    "n_transactions": 88580,
+    "n_repeats": 3,
+    "mean_total_s": 1.1602,
+    "std_total_s": 0.0095,
+    "min_total_s": 1.1506,
+    "max_total_s": 1.1731,
+    "mean_per_transaction_ms": 0.013098,
+    "throughput_txn_per_s": 76345.7,
+    "note": "Model-only inference (LightGBM predict_proba). Excludes preprocessing."
+  },
+  "threshold": {
+    "threshold": 0.5942984109122026,
+    "selected_on": "validation",
+    "selection_criterion": "maximise F1",
+    "validation_f1": 0.5767731878409977
+  },
+  "split": {
+    "train_dt_boundary": 10438003,
+    "val_dt_boundary": 13151880,
+    "train_rows": 413379,
+    "val_rows": 88581,
+    "test_rows": 88580,
+    "train_dt_min": 86400,
+    "train_dt_max": 10438003,
+    "val_dt_min": 10438017,
+    "val_dt_max": 13151880,
+    "test_dt_min": 13151945,
+    "test_dt_max": 15811131,
+    "train_fraud_rate": 0.035169,
+    "val_fraud_rate": 0.034341,
+    "test_fraud_rate": 0.034805,
+    "train_fraud_count": 14538,
+    "val_fraud_count": 3042,
+    "test_fraud_count": 3083
+  }
+}

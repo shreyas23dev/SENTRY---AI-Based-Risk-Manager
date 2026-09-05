@@ -1,0 +1,205 @@
+{
+  "audit_timestamp_utc": "2026-09-02T17:51:59.868075+00:00",
+  "b3_vs_tier1_boundary": {
+    "interval": "[0.594298, 0.600000)",
+    "total_transactions": 18,
+    "frauds": 3,
+    "legitimate": 15,
+    "policy_action_assigned": "ALLOW",
+    "mathematical_reconciliation": "B3 TP (1,346) - Boundary Frauds (3) = Tier 1 TP (1,343)",
+    "transaction_records": [
+      {
+        "TransactionID": 3496792,
+        "TransactionDT": 13358508,
+        "isFraud": 1,
+        "A_t": 0.5989304545584199,
+        "P_t": 0.0,
+        "G_t": 0.0,
+        "R_t": 0.5989304545584199,
+        "action": "ALLOW"
+      },
+      {
+        "TransactionID": 3498640,
+        "TransactionDT": 13386313,
+        "isFraud": 1,
+        "A_t": 0.5978749085930264,
+        "P_t": 0.0,
+        "G_t": 0.0,
+        "R_t": 0.5978749085930264,
+        "action": "ALLOW"
+      },
+      {
+        "TransactionID": 3504260,
+        "TransactionDT": 13551102,
+        "isFraud": 0,
+        "A_t": 0.5977334057652112,
+        "P_t": 0.0,
+        "G_t": 0.0,
+        "R_t": 0.5977334057652112,
+        "action": "ALLOW"
+      },
+      {
+        "TransactionID": 3504972,
+        "TransactionDT": 13566348,
+        "isFraud": 0,
+        "A_t": 0.5969107894465919,
+        "P_t": 0.0,
+        "G_t": 0.0,
+        "R_t": 0.5969107894465919,
+        "action": "ALLOW"
+      },
+      {
+        "TransactionID": 3513374,
+        "TransactionDT": 13830168,
+        "isFraud": 0,
+        "A_t": 0.596044076365392,
+        "P_t": 0.0,
+        "G_t": 0.0,
+        "R_t": 0.596044076365392,
+        "action": "ALLOW"
+      },
+      {
+        "TransactionID": 3514668,
+        "TransactionDT": 13885702,
+        "isFraud": 0,
+        "A_t": 0.5965403482116172,
+        "P_t": 0.0,
+        "G_t": 0.0,
+        "R_t": 0.5965403482116172,
+        "action": "ALLOW"
+      },
+      {
+        "TransactionID": 3519463,
+        "TransactionDT": 14035480,
+        "isFraud": 0,
+        "A_t": 0.5960215003033155,
+        "P_t": 0.0,
+        "G_t": 0.0,
+        "R_t": 0.5960215003033155,
+        "action": "ALLOW"
+      },
+      {
+        "TransactionID": 3521434,
+        "TransactionDT": 14073889,
+        "isFraud": 0,
+        "A_t": 0.5658557700193746,
+        "P_t": 0.0,
+        "G_t": 0.6,
+        "R_t": 0.5958557700193746,
+        "action": "ALLOW"
+      },
+      {
+        "TransactionID": 3525768,
+        "TransactionDT": 14217582,
+        "isFraud": 1,
+        "A_t": 0.5999906066230527,
+        "P_t": 0.0,
+        "G_t": 0.0,
+        "R_t": 0.5999906066230527,
+        "action": "ALLOW"
+      },
+      {
+        "TransactionID": 3530402,
+        "TransactionDT": 14331894,
+        "isFraud": 0,
+        "A_t": 0.5988862185204207,
+        "P_t": 0.0,
+        "G_t": 0.0,
+        "R_t": 0.5988862185204207,
+        "action": "ALLOW"
+      },
+      {
+        "TransactionID": 3530424,
+        "TransactionDT": 14332589,
+        "isFraud": 0,
+        "A_t": 0.5957173377746442,
+        "P_t": 0.0,
+        "G_t": 0.0,
+        "R_t": 0.5957173377746442,
+        "action": "ALLOW"
+      },
+      {
+        "TransactionID": 3532510,
+        "TransactionDT": 14402961,
+        "isFraud": 0,
+        "A_t": 0.5994643319157358,
+        "P_t": 0.0,
+        "G_t": 0.0,
+        "R_t": 0.5994643319157358,
+        "action": "ALLOW"
+      },
+      {
+        "TransactionID": 3544387,
+        "TransactionDT": 14751320,
+        "isFraud": 0,
+        "A_t": 0.597112253426621,
+        "P_t": 0.0,
+        "G_t": 0.0,
+        "R_t": 0.597112253426621,
+        "action": "ALLOW"
+      },
+      {
+        "TransactionID": 3561950,
+        "TransactionDT": 15279069,
+        "isFraud": 0,
+        "A_t": 0.5946098341716802,
+        "P_t": 0.0,
+        "G_t": 0.0,
+        "R_t": 0.5946098341716802,
+        "action": "ALLOW"
+      },
+      {
+        "TransactionID": 3563816,
+        "TransactionDT": 15348694,
+        "isFraud": 0,
+        "A_t": 0.5971306463482884,
+        "P_t": 0.0,
+        "G_t": 0.0,
+        "R_t": 0.5971306463482884,
+        "action": "ALLOW"
+      },
+      {
+        "TransactionID": 3572041,
+        "TransactionDT": 15638314,
+        "isFraud": 0,
+        "A_t": 0.5945138187646886,
+        "P_t": 0.0,
+        "G_t": 0.0,
+        "R_t": 0.5945138187646886,
+        "action": "ALLOW"
+      },
+      {
+        "TransactionID": 3572251,
+        "TransactionDT": 15642383,
+        "isFraud": 0,
+        "A_t": 0.5959847809823946,
+        "P_t": 0.0,
+        "G_t": 0.0,
+        "R_t": 0.5959847809823946,
+        "action": "ALLOW"
+      },
+      {
+        "TransactionID": 3573182,
+        "TransactionDT": 15693540,
+        "isFraud": 0,
+        "A_t": 0.5965023233614567,
+        "P_t": 0.0,
+        "G_t": 0.0,
+        "R_t": 0.5965023233614567,
+        "action": "ALLOW"
+      }
+    ]
+  },
+  "baseline_fp_reallocation": {
+    "baseline_total_fps": 755,
+    "reallocation_counts": {
+      "THROTTLE": 317,
+      "BLOCK": 277,
+      "VERIFY": 147,
+      "ALLOW": 14
+    },
+    "net_hard_blocks_avoided": 460,
+    "progressive_block_fps": 295,
+    "mathematical_reconciliation": "755 Baseline FPs - (14 ALLOW + 147 VERIFY + 317 THROTTLE) + 18 New Context FPs = 295 Progressive BLOCK FPs (755 - 295 = 460 net reduction)"
+  }
+}

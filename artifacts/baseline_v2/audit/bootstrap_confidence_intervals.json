@@ -1,0 +1,33 @@
+{
+  "n_replicates": 5000,
+  "delta_precision": {
+    "mean": 0.151473,
+    "ci_95_lower": 0.134328,
+    "ci_95_upper": 0.169081
+  },
+  "delta_recall": {
+    "mean": -0.071029,
+    "ci_95_lower": -0.08156,
+    "ci_95_upper": -0.060956
+  },
+  "delta_f1": {
+    "mean": -0.020792,
+    "ci_95_lower": -0.031933,
+    "ci_95_upper": -0.009673
+  },
+  "delta_fpr": {
+    "mean": -0.005352,
+    "ci_95_lower": -0.005865,
+    "ci_95_upper": -0.004844
+  },
+  "delta_tp": {
+    "mean": -218.85,
+    "ci_95_lower": -252.0,
+    "ci_95_upper": -187.0
+  },
+  "delta_fp": {
+    "mean": -457.6,
+    "ci_95_lower": -501.0,
+    "ci_95_upper": -414.0
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "case_id": "case_06_throttle",
+  "title": "Case 6: Rate Limiting / Behavioral Velocity / Throttle",
+  "description": "Real dataset transaction where persistent slow-burn indicators and low amount trigger cost-optimal THROTTLE",
+  "source": "IEEE-CIS Fraud Detection held-out TEST dataset (test_risk_scores.parquet)",
+  "dataset_split": "TEST",
+  "transaction_id": 3512832,
+  "dataset_row_identifier": "3512832",
+  "label": 1,
+  "amount": 34.0,
+  "expected_behavior": {
+    "transaction_analyst": "MEDIUM",
+    "slow_burn_analyst": "CRITICAL",
+    "risk_council": "SLOW_BURN_ONLY",
+    "risk_engine_decision": "THROTTLE"
+  },
+  "actual_pipeline_outputs": {
+    "A_t": 0.1683,
+    "P_t": 0.95,
+    "G_t": 0.9625,
+    "R_t": 0.1825,
+    "decision": "THROTTLE",
+    "council_status": "SLOW_BURN_ONLY",
+    "evidence_ids": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "RISK_ENGINE",
+      "E7"
+    ],
+    "graph_context_exists": true,
+    "sufficient_history_exists": true
+  }
+}

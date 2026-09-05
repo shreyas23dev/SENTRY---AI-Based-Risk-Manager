@@ -1,0 +1,110 @@
+{
+  "total_additional_false_positives": 24,
+  "representative_cases": [
+    {
+      "TransactionID": 3526625,
+      "entity_id": "10568_gmail.com",
+      "A_t": 0.028811,
+      "E_t": 0.694842,
+      "P_t": 1.0,
+      "cause_category": "Hysteresis Decay Tail",
+      "root_cause_explanation": "Legitimate transaction occurred on an account where prior transactions had elevated P_t. Because accumulator decay is gradual (-delta=0.05 per transaction), P_t remained temporarily above tau_temp=0.70 during post-burst benign activity.",
+      "prior_entity_txns_count": 59
+    },
+    {
+      "TransactionID": 3527942,
+      "entity_id": "10568_gmail.com",
+      "A_t": 0.053736,
+      "E_t": 0.50251,
+      "P_t": 1.0,
+      "cause_category": "Hysteresis Decay Tail",
+      "root_cause_explanation": "Legitimate transaction occurred on an account where prior transactions had elevated P_t. Because accumulator decay is gradual (-delta=0.05 per transaction), P_t remained temporarily above tau_temp=0.70 during post-burst benign activity.",
+      "prior_entity_txns_count": 60
+    },
+    {
+      "TransactionID": 3529527,
+      "entity_id": "10568_gmail.com",
+      "A_t": 0.128731,
+      "E_t": 0.478228,
+      "P_t": 1.0,
+      "cause_category": "Hysteresis Decay Tail",
+      "root_cause_explanation": "Legitimate transaction occurred on an account where prior transactions had elevated P_t. Because accumulator decay is gradual (-delta=0.05 per transaction), P_t remained temporarily above tau_temp=0.70 during post-burst benign activity.",
+      "prior_entity_txns_count": 62
+    },
+    {
+      "TransactionID": 3529835,
+      "entity_id": "10568_gmail.com",
+      "A_t": 0.096971,
+      "E_t": 0.363851,
+      "P_t": 0.95,
+      "cause_category": "Hysteresis Decay Tail",
+      "root_cause_explanation": "Legitimate transaction occurred on an account where prior transactions had elevated P_t. Because accumulator decay is gradual (-delta=0.05 per transaction), P_t remained temporarily above tau_temp=0.70 during post-burst benign activity.",
+      "prior_entity_txns_count": 63
+    },
+    {
+      "TransactionID": 3540197,
+      "entity_id": "10568_gmail.com",
+      "A_t": 0.020783,
+      "E_t": 0.322653,
+      "P_t": 0.8,
+      "cause_category": "Hysteresis Decay Tail",
+      "root_cause_explanation": "Legitimate transaction occurred on an account where prior transactions had elevated P_t. Because accumulator decay is gradual (-delta=0.05 per transaction), P_t remained temporarily above tau_temp=0.70 during post-burst benign activity.",
+      "prior_entity_txns_count": 66
+    },
+    {
+      "TransactionID": 3555554,
+      "entity_id": "16136_gmail.com",
+      "A_t": 0.042459,
+      "E_t": 0.57606,
+      "P_t": 0.85,
+      "cause_category": "Hysteresis Decay Tail",
+      "root_cause_explanation": "Legitimate transaction occurred on an account where prior transactions had elevated P_t. Because accumulator decay is gradual (-delta=0.05 per transaction), P_t remained temporarily above tau_temp=0.70 during post-burst benign activity.",
+      "prior_entity_txns_count": 165
+    },
+    {
+      "TransactionID": 3558021,
+      "entity_id": "16136_gmail.com",
+      "A_t": 0.511829,
+      "E_t": 0.556791,
+      "P_t": 0.9,
+      "cause_category": "Hysteresis Decay Tail",
+      "root_cause_explanation": "Legitimate transaction occurred on an account where prior transactions had elevated P_t. Because accumulator decay is gradual (-delta=0.05 per transaction), P_t remained temporarily above tau_temp=0.70 during post-burst benign activity.",
+      "prior_entity_txns_count": 166
+    },
+    {
+      "TransactionID": 3558026,
+      "entity_id": "16136_gmail.com",
+      "A_t": 0.445274,
+      "E_t": 0.523336,
+      "P_t": 0.95,
+      "cause_category": "Hysteresis Decay Tail",
+      "root_cause_explanation": "Legitimate transaction occurred on an account where prior transactions had elevated P_t. Because accumulator decay is gradual (-delta=0.05 per transaction), P_t remained temporarily above tau_temp=0.70 during post-burst benign activity.",
+      "prior_entity_txns_count": 167
+    },
+    {
+      "TransactionID": 3558029,
+      "entity_id": "16136_gmail.com",
+      "A_t": 0.450555,
+      "E_t": 0.501501,
+      "P_t": 1.0,
+      "cause_category": "Hysteresis Decay Tail",
+      "root_cause_explanation": "Legitimate transaction occurred on an account where prior transactions had elevated P_t. Because accumulator decay is gradual (-delta=0.05 per transaction), P_t remained temporarily above tau_temp=0.70 during post-burst benign activity.",
+      "prior_entity_txns_count": 168
+    },
+    {
+      "TransactionID": 3558299,
+      "entity_id": "5812_gmail.com",
+      "A_t": 0.001849,
+      "E_t": 0.404819,
+      "P_t": 0.7,
+      "cause_category": "Hysteresis Decay Tail",
+      "root_cause_explanation": "Legitimate transaction occurred on an account where prior transactions had elevated P_t. Because accumulator decay is gradual (-delta=0.05 per transaction), P_t remained temporarily above tau_temp=0.70 during post-burst benign activity.",
+      "prior_entity_txns_count": 154
+    }
+  ],
+  "primary_causes": {
+    "Hysteresis_Decay_Tail": "58% \u2014 Legitimate transactions occurring on the same account shortly after an elevated-risk period before P_t decays below threshold.",
+    "High_Volume_Entity_Jitter": "29% \u2014 Large aggregator keys experiencing intermittent moderate A_t fluctuations causing repeated step-up without sufficient inter-transaction decay time.",
+    "Sub_Threshold_Bursts": "13% \u2014 Clustered benign transactions with slightly elevated point-wise risk (0.35 - 0.50) causing false accumulation."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "claims_we_can_safely_make": [
+    "B3 fused system outperforms frozen baseline B0 on held-out test (F1: 0.509804 -> 0.513544, Recall: 42.59% -> 43.66%, +33 frauds recovered).",
+    "Conditional fusion strictly satisfies non-suppression (R_t >= A_t) and zero-context invariance (R_t == A_t for 91.92% uncontextualized txns) with 0 violations.",
+    "Relational risk G_t provides 9 verified incremental fraud recoveries beyond temporal memory with only 11 associated false positives in the relational regime.",
+    "Batch throughput exceeds 34,000 txns/sec and online per-transaction decision latency has p50 of 14.9 ms on standard commodity CPU hardware.",
+    "P_t and G_t exhibit low statistical overlap (Pearson r = -0.0063, Jaccard overlap = 0.41%) and capture distinct transaction subsets in IEEE-CIS."
+  ],
+  "claims_we_must_not_make": [
+    "Do NOT claim P_t and G_t are 'proven independent attack surfaces' (correlation near zero does not prove causal independence).",
+    "Do NOT claim synthetic slow-burn scenario proves detection of all real-world coordinated fraud campaigns.",
+    "Do NOT claim unlimited scalability without explicit memory bound on total maintained graph entities.",
+    "Do NOT claim generalizability to arbitrary fraud datasets without empirical validation."
+  ]
+}

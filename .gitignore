@@ -1,0 +1,101 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+.installed.cfg
+*.egg-link
+.eggs/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE / editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+*.cover
+
+# mypy / type checkers
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Raw/training data (too large for version control)
+data/raw/
+data/train/
+data/val/
+data/processed/
+
+# IEEE-CIS Fraud Detection raw dataset (train_transaction.csv = 651MB, test_transaction.csv = 584MB)
+# These exceed GitHub's 100MB file limit — download from Kaggle if needed:
+# https://www.kaggle.com/c/ieee-fraud-detection/data
+ieee-fraud-detection/
+
+# Intermediate prediction result CSVs (large ML output files, not needed in repo)
+# policy_predictions_v2.csv = 111MB, policy_predictions.csv = 18MB, etc.
+results/
+
+# Log files
+*.log
+logs/
+
+# OS artifacts
+*.DS_Store
+desktop.ini
+
+# Secrets / environment config
+.env.local
+.env.*.local
+secrets.yaml
+secrets.json
+
+# Temporary files
+*.tmp
+*.bak
+tmp/
+temp/
+
+# Node (if any frontend build tools are ever added)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Keep all artifacts (they are under 100MB each and needed for the demo)
+# If you add large raw dataset files (>50MB), add them here:
+# artifacts/baseline_v2/model/lgbm_model.pkl  # 23 MB — kept
+# artifacts/model_bakeoff/models/xgboost_v2.ubj  # 12 MB — kept

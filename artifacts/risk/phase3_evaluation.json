@@ -1,0 +1,300 @@
+{
+  "metadata": {
+    "evaluation_partition": "TEST",
+    "n_test": 88580,
+    "fraud_test": 3083,
+    "legit_test": 85497,
+    "base_fraud_rate": 3.4805
+  },
+  "calibration": {
+    "A_t": {
+      "ece_before": 0.010248,
+      "ece_after": 0.017541,
+      "method": "none",
+      "calibrated": false,
+      "improvement": -0.007293
+    },
+    "G_t": {
+      "ece_before": 0.143484,
+      "ece_after": 0.007752,
+      "method": "platt",
+      "calibrated": true,
+      "improvement": 0.135732
+    }
+  },
+  "fusion": {
+    "selected_formula": "F2_conditional",
+    "selected_params": {
+      "beta": 0.05
+    },
+    "selected_threshold_val": 0.124446,
+    "best_per_formula": {
+      "F1_additive": {
+        "params": {
+          "alpha": 0.05
+        },
+        "val_pr_auc": 0.668824,
+        "val_roc_auc": 0.931392,
+        "val_f1": 0.670117,
+        "val_threshold": 0.123069
+      },
+      "F2_conditional": {
+        "params": {
+          "beta": 0.05
+        },
+        "val_pr_auc": 0.668868,
+        "val_roc_auc": 0.931367,
+        "val_f1": 0.669871,
+        "val_threshold": 0.124446
+      },
+      "F4_conservative_max": {
+        "params": {
+          "c": 0.5
+        },
+        "val_pr_auc": 0.626869,
+        "val_roc_auc": 0.916858,
+        "val_f1": 0.650632,
+        "val_threshold": 0.17376
+      }
+    }
+  },
+  "test_metrics": {
+    "A_t_baseline": {
+      "roc_auc": 0.889249,
+      "pr_auc": 0.565837,
+      "precision": 0.730769,
+      "recall": 0.474538,
+      "f1": 0.575418,
+      "fpr": 0.006304,
+      "tp": 1463,
+      "fp": 539,
+      "fn": 1620,
+      "tn": 84958,
+      "n": 88580,
+      "fraud_total": 3083,
+      "legit_total": 85497,
+      "fraud_captured_pct": 47.4538,
+      "legit_affected_pct": 0.6304,
+      "intervention_rate": 2.2601,
+      "threshold": 0.12106
+    },
+    "G_t_baseline": {
+      "roc_auc": 0.748038,
+      "pr_auc": 0.110057,
+      "precision": 0.127813,
+      "recall": 0.390529,
+      "f1": 0.192594,
+      "fpr": 0.096097,
+      "tp": 1204,
+      "fp": 8216,
+      "fn": 1879,
+      "tn": 77281,
+      "n": 88580,
+      "fraud_total": 3083,
+      "legit_total": 85497,
+      "fraud_captured_pct": 39.0529,
+      "legit_affected_pct": 9.6097,
+      "intervention_rate": 10.6345,
+      "threshold": 0.074103
+    },
+    "F1_additive": {
+      "roc_auc": 0.890868,
+      "pr_auc": 0.566664,
+      "precision": 0.723425,
+      "recall": 0.476808,
+      "f1": 0.57478,
+      "fpr": 0.006573,
+      "tp": 1470,
+      "fp": 562,
+      "fn": 1613,
+      "tn": 84935,
+      "n": 88580,
+      "fraud_total": 3083,
+      "legit_total": 85497,
+      "fraud_captured_pct": 47.6808,
+      "legit_affected_pct": 0.6573,
+      "intervention_rate": 2.294,
+      "threshold": 0.123069
+    },
+    "F2_conditional": {
+      "roc_auc": 0.89087,
+      "pr_auc": 0.566725,
+      "precision": 0.727679,
+      "recall": 0.475835,
+      "f1": 0.575407,
+      "fpr": 0.006421,
+      "tp": 1467,
+      "fp": 549,
+      "fn": 1616,
+      "tn": 84948,
+      "n": 88580,
+      "fraud_total": 3083,
+      "legit_total": 85497,
+      "fraud_captured_pct": 47.5835,
+      "legit_affected_pct": 0.6421,
+      "intervention_rate": 2.2759,
+      "threshold": 0.124446
+    },
+    "F4_conservative": {
+      "roc_auc": 0.868839,
+      "pr_auc": 0.526236,
+      "precision": 0.796481,
+      "recall": 0.44048,
+      "f1": 0.567251,
+      "fpr": 0.004059,
+      "tp": 1358,
+      "fp": 347,
+      "fn": 1725,
+      "tn": 85150,
+      "n": 88580,
+      "fraud_total": 3083,
+      "legit_total": 85497,
+      "fraud_captured_pct": 44.048,
+      "legit_affected_pct": 0.4059,
+      "intervention_rate": 1.9248,
+      "threshold": 0.17376
+    },
+    "final_system": {
+      "roc_auc": 0.89087,
+      "pr_auc": 0.566725,
+      "precision": 0.727679,
+      "recall": 0.475835,
+      "f1": 0.575407,
+      "fpr": 0.006421,
+      "tp": 1467,
+      "fp": 549,
+      "fn": 1616,
+      "tn": 84948,
+      "n": 88580,
+      "fraud_total": 3083,
+      "legit_total": 85497,
+      "fraud_captured_pct": 47.5835,
+      "legit_affected_pct": 0.6421,
+      "intervention_rate": 2.2759,
+      "threshold": 0.124446
+    }
+  },
+  "business_losses": {
+    "conservative": {
+      "scenario": "conservative",
+      "fraud_loss_total": 2606753.78,
+      "fraud_loss_allowed": 2319843.5,
+      "fraud_loss_verify": 229191.5,
+      "fraud_loss_throttle": 57718.78,
+      "fp_loss_total": 65250.0,
+      "fp_loss_block": 22000.0,
+      "fp_loss_verify": 39200.0,
+      "fp_loss_throttle": 4050.0,
+      "operational_cost": 1582.0,
+      "total_expected_loss": 2673585.78,
+      "action_distribution": {
+        "ALLOW": 87326,
+        "VERIFY": 791,
+        "THROTTLE": 102,
+        "BLOCK": 361
+      },
+      "n_transactions": 88580,
+      "frauds_blocked": 350,
+      "frauds_allowed": 1965,
+      "legit_allowed": 85361,
+      "legit_blocked": 11
+    },
+    "balanced": {
+      "scenario": "balanced",
+      "fraud_loss_total": 2210834.56,
+      "fraud_loss_allowed": 1953205.09,
+      "fraud_loss_verify": 168278.2,
+      "fraud_loss_throttle": 89351.27,
+      "fp_loss_total": 83250.0,
+      "fp_loss_block": 32500.0,
+      "fp_loss_verify": 38400.0,
+      "fp_loss_throttle": 12350.0,
+      "operational_cost": 1536.0,
+      "total_expected_loss": 2295620.56,
+      "action_distribution": {
+        "ALLOW": 86563,
+        "VERIFY": 768,
+        "THROTTLE": 360,
+        "BLOCK": 889
+      },
+      "n_transactions": 88580,
+      "frauds_blocked": 824,
+      "frauds_allowed": 1634,
+      "legit_allowed": 84929,
+      "legit_blocked": 65
+    },
+    "aggressive": {
+      "scenario": "aggressive",
+      "fraud_loss_total": 2670554.66,
+      "fraud_loss_allowed": 1825721.27,
+      "fraud_loss_verify": 229488.9,
+      "fraud_loss_throttle": 615344.49,
+      "fp_loss_total": 429325.0,
+      "fp_loss_block": 44000.0,
+      "fp_loss_verify": 168675.0,
+      "fp_loss_throttle": 216650.0,
+      "operational_cost": 5566.0,
+      "total_expected_loss": 3105445.66,
+      "action_distribution": {
+        "ALLOW": 75201,
+        "VERIFY": 2783,
+        "THROTTLE": 9120,
+        "BLOCK": 1476
+      },
+      "n_transactions": 88580,
+      "frauds_blocked": 1256,
+      "frauds_allowed": 839,
+      "legit_allowed": 74362,
+      "legit_blocked": 220
+    }
+  },
+  "a_t_only_losses_balanced": {
+    "scenario": "balanced",
+    "fraud_loss_total": 2223497.3,
+    "fraud_loss_allowed": 1968147.56,
+    "fraud_loss_verify": 163795.95,
+    "fraud_loss_throttle": 91553.78,
+    "fp_loss_total": 79550.0,
+    "fp_loss_block": 32000.0,
+    "fp_loss_verify": 36150.0,
+    "fp_loss_throttle": 11400.0,
+    "operational_cost": 1478.0,
+    "total_expected_loss": 2304525.3,
+    "action_distribution": {
+      "ALLOW": 86612,
+      "VERIFY": 739,
+      "THROTTLE": 344,
+      "BLOCK": 885
+    },
+    "n_transactions": 88580,
+    "frauds_blocked": 821,
+    "frauds_allowed": 1648,
+    "legit_allowed": 84964,
+    "legit_blocked": 64
+  },
+  "example_decision": {
+    "transaction_id": 3570805,
+    "base_risk": 0.992146,
+    "graph_risk": 0.173378,
+    "final_risk": 0.992214,
+    "action": "BLOCK",
+    "expected_cost": 3.893,
+    "action_costs": {
+      "allow": 1074.1996,
+      "verify": 325.4278,
+      "throttle": 752.3291,
+      "block": 3.893,
+      "risk": 0.992214,
+      "txn_amount": 82.63
+    },
+    "risk_contributors": [
+      "High ML fraud probability (A_t = 0.9921 > 0.50)",
+      "Low graph risk (G_t = 0.1734)",
+      "Final risk R_t = 0.9922 [HIGH RISK]"
+    ],
+    "explanation": "Transaction: 3570805\n\n  Base ML risk (A_t):    0.9921\n  Graph risk (G_t):      0.1734 (calibrated from 0.7375)\n  Graph contribution:    +0.0001  [F2_conditional]\n  Final risk (R_t):      0.9922\n\n  Merchant cost model (balanced):\n    ALLOW expected cost:    \u20b91074\n    VERIFY expected cost:   \u20b9325\n    THROTTLE expected cost: \u20b9752\n    BLOCK expected cost:    \u20b94\n\n  Decision: BLOCK  (min expected cost: \u20b94)\n",
+    "formula": "F2_conditional",
+    "graph_contribution": 6.8e-05,
+    "scenario_name": "balanced"
+  }
+}

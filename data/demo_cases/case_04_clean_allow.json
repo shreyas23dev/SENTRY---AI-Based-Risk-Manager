@@ -1,0 +1,31 @@
+{
+  "case_id": "case_04_clean_allow",
+  "title": "Case 4: Clean Legitimate Transaction",
+  "description": "Real dataset clean transaction clearing through fast-path with low risk scores and ALLOW decision",
+  "source": "IEEE-CIS Fraud Detection held-out TEST dataset (test_risk_scores.parquet)",
+  "dataset_split": "TEST",
+  "transaction_id": 3488964,
+  "dataset_row_identifier": "3488964",
+  "label": 0,
+  "amount": 224.0,
+  "expected_behavior": {
+    "transaction_analyst": "LOW",
+    "slow_burn_analyst": "CRITICAL",
+    "risk_council": "SLOW_BURN_ONLY",
+    "risk_engine_decision": "ALLOW"
+  },
+  "actual_pipeline_outputs": {
+    "A_t": 0.0014,
+    "P_t": 0.95,
+    "G_t": 0.4,
+    "R_t": 0.0039,
+    "decision": "ALLOW",
+    "council_status": "SLOW_BURN_ONLY",
+    "evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "graph_context_exists": true,
+    "sufficient_history_exists": true
+  }
+}

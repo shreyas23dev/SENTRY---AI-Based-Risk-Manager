@@ -1,0 +1,33 @@
+{
+  "correlations": {
+    "LGBM_vs_CatBoost": {
+      "pearson": 0.6602,
+      "spearman": 0.7053
+    },
+    "LGBM_vs_XGBoost": {
+      "pearson": 0.9048,
+      "spearman": 0.7573
+    },
+    "CatBoost_vs_XGBoost": {
+      "pearson": 0.7483,
+      "spearman": 0.8575
+    }
+  },
+  "fraud_detection_breakdown": {
+    "total_test_frauds": 3083,
+    "caught_by_LightGBM": 1094,
+    "caught_by_CatBoost": 1633,
+    "caught_by_XGBoost": 1122,
+    "caught_by_ALL_three": 966,
+    "missed_by_LGBM_but_caught_by_CatBoost": 562,
+    "missed_by_LGBM_but_caught_by_XGBoost": 149,
+    "missed_by_CatBoost_but_caught_by_LGBM": 23,
+    "missed_by_all_three": 1413
+  },
+  "false_positive_overlap": {
+    "fp_LightGBM": 297,
+    "fp_CatBoost": 2081,
+    "fp_XGBoost": 252,
+    "fp_shared_by_ALL_three": 171
+  }
+}

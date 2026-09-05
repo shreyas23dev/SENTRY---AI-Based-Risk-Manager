@@ -1,0 +1,30 @@
+{
+  "case_id": "case_03_insufficient_history",
+  "title": "Case 3: Insufficient History / Cold Start",
+  "description": "Real dataset cold-start transaction with zero prior history where lack of history is not treated as fraud",
+  "source": "IEEE-CIS Fraud Detection held-out TEST dataset (test_risk_scores.parquet)",
+  "dataset_split": "TEST",
+  "transaction_id": 3488970,
+  "dataset_row_identifier": "3488970",
+  "label": 0,
+  "amount": 29.0,
+  "expected_behavior": {
+    "transaction_analyst": "LOW",
+    "slow_burn_analyst": "INSUFFICIENT_HISTORY",
+    "risk_council": "INSUFFICIENT_HISTORY",
+    "risk_engine_decision": "ALLOW"
+  },
+  "actual_pipeline_outputs": {
+    "A_t": 0.0164,
+    "P_t": null,
+    "G_t": 0.0,
+    "R_t": 0.0169,
+    "decision": "ALLOW",
+    "council_status": "INSUFFICIENT_HISTORY",
+    "evidence_ids": [
+      "RISK_ENGINE"
+    ],
+    "graph_context_exists": true,
+    "sufficient_history_exists": false
+  }
+}

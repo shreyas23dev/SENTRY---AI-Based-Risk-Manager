@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=geist:wght@100..900&family=inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"tertiary-container":"#ff6c66","surface-bright":"#2c3a4c","tertiary":"#ffb3ad","surface-container-lowest":"#010f1f","surface-container-low":"#0d1c2d","on-tertiary-container":"#6e000c","tertiary-fixed-dim":"#ffb3ad","on-surface":"#d4e4fa","primary":"#89ceff","primary-container":"#0ea5e9","secondary-fixed-dim":"#4edea3","on-secondary":"#003824","error-container":"#93000a","on-secondary-fixed-variant":"#005236","on-background":"#d4e4fa","primary-fixed":"#c9e6ff","on-tertiary":"#68000a","secondary-container":"#00a572","inverse-primary":"#006591","outline":"#88929b","surface-tint":"#89ceff","on-secondary-fixed":"#002113","surface-container":"#122131","surface":"#051424","on-primary-fixed-variant":"#004c6e","secondary":"#4edea3","outline-variant":"#3e4850","surface-variant":"#273647","on-primary-container":"#003751","surface-container-highest":"#273647","on-error-container":"#ffdad6","surface-dim":"#051424","on-tertiary-fixed":"#410004","secondary-fixed":"#6ffbbe","on-primary":"#00344d","on-primary-fixed":"#001e2f","primary-fixed-dim":"#89ceff","surface-container-high":"#1c2b3c","error":"#ffb4ab","on-surface-variant":"#bec8d2","tertiary-fixed":"#ffdad7","inverse-on-surface":"#233143","on-tertiary-fixed-variant":"#930013","inverse-surface":"#d4e4fa","background":"#051424","on-error":"#690005","on-secondary-container":"#00311f"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-4xl":"3rem","gutter-tablet":"1rem","gutter-desktop":"1.5rem","space-sm":"0.75rem","space-2xl":"2rem","space-3xl":"2.5rem","space-md":"1rem","gutter-mobile":"0.75rem","space-xl":"1.5rem","space-2xs":"0.25rem","space-lg":"1.25rem","space-xs":"0.5rem"},"fontFamily":{"display-lg":["geist"],"body-lg":["inter"],"mono-sm":["jetbrainsMono"],"display-lg-mobile":["geist"],"headline-lg":["geist"],"headline-sm":["geist"],"mono-md":["jetbrainsMono"],"label-sm":["inter"],"body-sm":["inter"],"headline-md":["geist"],"label-md":["inter"],"body-md":["inter"]},"fontSize":{"display-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"mono-sm":["11px",{"lineHeight":"16px","letterSpacing":"0em","fontWeight":"500"}],"display-lg-mobile":["26px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"mono-md":["13px",{"lineHeight":"18px","letterSpacing":"-0.01em","fontWeight":"500"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-low border-r border-outline-variant/30 z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-14 px-space-md border-b border-outline-variant/30 flex items-center gap-space-sm"><img alt="Brand logo. - Primary color: #00f2fe
+- Font: inter
+- Mode: dark
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain" src="public/sentinel-shield.svg"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight tracking-tight">Sentinel</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-none uppercase tracking-wider">AI Payment Risk</span></div></div><div class="px-space-md pt-space-md pb-space-xs"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Navigation Rail</span></div><nav class="flex flex-col px-space-xs gap-space-2xs" data-active-classes="bg-surface-container text-primary font-medium border-l-2 border-primary-container"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="overview" href="index.html"><span class="material-symbols-outlined text-[18px]">grid_view</span><span>Overview</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg transition-colors bg-surface-container text-primary font-medium border-l-2 border-primary-container" data-path="transactions" href="transactions.html"><span class="material-symbols-outlined text-[18px]">receipt_long</span><span>Transactions</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="investigations" href="investigations.html"><span class="material-symbols-outlined text-[18px]">policy</span><span>Investigations</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="risk-engine" href="risk-engine.html"><span class="material-symbols-outlined text-[18px]">shield_with_heart</span><span>Risk Engine</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="graph" href="investigations.html"><span class="material-symbols-outlined text-[18px]">hub</span><span>Graph</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="analytics" href="risk-engine.html"><span class="material-symbols-outlined text-[18px]">insights</span><span>Analytics</span></a></nav></div><div class="p-space-md border-t border-outline-variant/30 flex flex-col gap-space-xs"><div class="flex items-center gap-space-xs px-space-xs py-space-2xs rounded-lg bg-surface-container-lowest/80 border border-secondary/20"><span class="h-2 w-2 rounded-full bg-secondary shrink-0"></span><span class="font-label-sm text-label-sm text-secondary truncate">All systems operational</span></div><span class="font-mono-sm text-mono-sm text-outline px-space-2xs text-center">Sentinel v4.18.2-prod</span></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-14 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30 z-40 px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md"><span class="text-outline hover:text-on-surface transition-colors cursor-pointer">Platform</span><span class="text-outline">/</span><span class="text-on-surface font-semibold">Console</span></div><div class="flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-space-sm top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-9 bg-surface-container-lowest border border-outline-variant/50 rounded-lg pl-9 pr-space-md font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:border-primary focus:outline-none transition-colors" placeholder="Search transaction ID (e.g. #3504259)..." type="text"/></div></div><div class="flex items-center gap-space-md shrink-0"><!-- Global Compact DEMO MODE Popover -->
+    <div class="relative inline-block" id="sentinel-demo-wrapper">
+      <button id="btn-sentinel-demo" class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary hover:bg-primary/20 hover:border-primary text-xs font-semibold tracking-wide transition-all shadow-sm cursor-pointer select-none" type="button" title="Select a real held-out test case">
+        <span class="material-symbols-outlined text-[15px] text-amber-400">bolt</span>
+        <span id="sentinel-demo-label">DEMO MODE</span>
+        <span class="material-symbols-outlined text-[14px]">arrow_drop_down</span>
+      </button>
+
+      <!-- Popover Dropdown -->
+      <div id="sentinel-demo-popover" class="hidden absolute right-0 top-full mt-2 w-80 bg-surface-container-low border border-outline-variant/40 rounded-xl shadow-2xl z-50 overflow-hidden flex-col p-2 gap-1.5">
+        <div class="px-3 py-2 border-b border-outline-variant/30 flex flex-col">
+          <div class="flex items-center justify-between">
+            <span class="font-mono-sm text-mono-sm text-primary font-bold tracking-wider uppercase flex items-center gap-1">
+              <span class="material-symbols-outlined text-[16px] text-amber-400">bolt</span> DEMO MODE
+            </span>
+            <span class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-secondary/10 text-secondary border border-secondary/30">TEST SPLIT</span>
+          </div>
+          <span class="text-[11px] text-on-surface-variant mt-0.5">Demo Mode — Real held-out test transaction</span>
+        </div>
+
+        <div class="flex flex-col gap-1 max-h-80 overflow-y-auto" id="demo-cases-list">
+          <!-- Case 1 -->
+          <div class="demo-case-card p-2 rounded-lg bg-surface-container/60 hover:bg-surface-container border border-outline-variant/20 hover:border-primary/50 cursor-pointer transition-all flex flex-col gap-0.5" data-case="1">
+            <div class="flex items-center justify-between">
+              <span class="font-mono-sm text-[10px] font-bold text-primary">CASE 1</span>
+              <span class="font-mono-sm text-[10px] text-on-surface-variant font-mono">Txn #3570805</span>
+            </div>
+            <div class="font-label-md text-xs font-semibold text-on-surface">Agreement → BLOCK</div>
+            <div class="font-body-sm text-[11px] text-on-surface-variant leading-tight">High ML risk & documented prior fraud history. Base ML & Slow-Burn analysts agree.</div>
+          </div>
+
+          <!-- Case 2 -->
+          <div class="demo-case-card p-2 rounded-lg bg-surface-container/60 hover:bg-surface-container border border-outline-variant/20 hover:border-primary/50 cursor-pointer transition-all flex flex-col gap-0.5" data-case="2">
+            <div class="flex items-center justify-between">
+              <span class="font-mono-sm text-[10px] font-bold text-primary">CASE 2</span>
+              <span class="font-mono-sm text-[10px] text-on-surface-variant font-mono">Txn #3531382</span>
+            </div>
+            <div class="font-label-md text-xs font-semibold text-on-surface">Slow-Burn Disagreement</div>
+            <div class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Base ML sees normal transaction; Slow-Burn detects temporal velocity surge.</div>
+          </div>
+
+          <!-- Case 3 -->
+          <div class="demo-case-card p-2 rounded-lg bg-surface-container/60 hover:bg-surface-container border border-outline-variant/20 hover:border-primary/50 cursor-pointer transition-all flex flex-col gap-0.5" data-case="3">
+            <div class="flex items-center justify-between">
+              <span class="font-mono-sm text-[10px] font-bold text-primary">CASE 3</span>
+              <span class="font-mono-sm text-[10px] text-on-surface-variant font-mono">Txn #3488970</span>
+            </div>
+            <div class="font-label-md text-xs font-semibold text-on-surface">Cold Start / Insufficient History</div>
+            <div class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Single isolated txn with no prior behavioral history (Pₜ: No Prior History).</div>
+          </div>
+
+          <!-- Case 4 -->
+          <div class="demo-case-card p-2 rounded-lg bg-surface-container/60 hover:bg-surface-container border border-outline-variant/20 hover:border-primary/50 cursor-pointer transition-all flex flex-col gap-0.5" data-case="4">
+            <div class="flex items-center justify-between">
+              <span class="font-mono-sm text-[10px] font-bold text-primary">CASE 4</span>
+              <span class="font-mono-sm text-[10px] text-on-surface-variant font-mono">Txn #3488964</span>
+            </div>
+            <div class="font-label-md text-xs font-semibold text-on-surface">Clean + Historical Risk Context → ALLOW</div>
+            <div class="font-body-sm text-[11px] text-on-surface-variant leading-tight">Low transaction risk; allowed despite historical risk context in relational association.</div>
+          </div>
+        </div>
+
+        <div class="pt-1.5 border-t border-outline-variant/30 flex items-center justify-between px-2">
+          <span class="text-[10px] text-outline font-mono">IEEE-CIS Fraud Held-out</span>
+          <button id="btn-sentinel-exit-demo" class="text-[11px] text-on-surface-variant hover:text-tertiary-container hover:bg-tertiary-container/10 px-2 py-1 rounded transition-colors font-medium cursor-pointer" type="button">
+            ✕ Exit Demo Mode
+          </button>
+        </div>
+      </div>
+    </div><button class="relative h-8 w-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 h-1.5 w-1.5 rounded-full bg-tertiary-container"></span></button><div class="h-4 w-px bg-outline-variant/40"></div><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden md:flex flex-col"><span class="font-label-md text-label-md text-on-surface font-medium leading-none">Alex Vance</span><span class="font-mono-sm text-mono-sm text-outline leading-none mt-1">Risk Operations Lead</span></div></div></div></header><main class="w-full pt-14 px-gutter-desktop pb-space-2xl bg-surface"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Glow Element Behind Header -->
+<div class="relative w-full">
+<div class="absolute -top-12 -left-20 w-96 h-48 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-0 right-10 w-80 h-36 bg-secondary/5 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Section: Header Strip -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pt-space-xs pb-space-lg">
+<div class="flex flex-col gap-space-2xs max-w-2xl">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Transaction Monitor</h1>
+<!-- Ingestion Status Badge -->
+<div class="inline-flex items-center gap-space-xs px-space-xs py-space-2xs rounded bg-surface-container-low">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="font-mono-sm text-mono-sm text-secondary font-medium tracking-wide">14 tx/sec live ingestion</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Review payment activity and identify transactions requiring operational attention
+        </p>
+</div>
+<!-- Quick Metrics Spark Bar / Telemetry Ribbon -->
+<div class="flex items-center gap-space-lg bg-surface-container-low px-space-md py-space-xs rounded-lg shadow-sm shrink-0">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Scanned 1h</span>
+<span class="font-mono-md text-mono-md text-on-surface font-semibold">88,580</span>
+</div>
+<div class="h-6 w-px bg-surface-container-highest"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Critical Blocked</span>
+<span class="font-mono-md text-mono-md text-tertiary font-semibold">1,204 (1.36%)</span>
+</div>
+<div class="h-6 w-px bg-surface-container-highest"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Avg Latency</span>
+<span class="font-mono-md text-mono-md text-primary font-semibold">24.8ms</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Filter & Triage Bar -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md shadow-sm mb-space-lg flex flex-col gap-space-md">
+<!-- Top Filter Row: Search & Actions -->
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<!-- Search Input -->
+<div class="flex-1 min-w-[320px] max-w-xl">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span>
+<input id="txns-search-input" class="w-full h-9 bg-surface-container-lowest rounded-lg pl-10 pr-space-md font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none transition-colors" placeholder="Filter by Transaction ID, Entity, or Card BIN..." type="text"/>
+</div>
+</div>
+<!-- Right Controls: Time Window & Export -->
+<div class="flex items-center gap-space-sm">
+<!-- Time Window Dropdown Trigger -->
+<button id="btn-time-window" class="h-9 px-space-sm bg-surface-container-lowest hover:bg-surface-container rounded-lg font-body-sm text-body-sm text-on-surface flex items-center gap-space-xs transition-colors">
+<span class="material-symbols-outlined text-outline text-[18px]">schedule</span>
+<span>Last 1 hour</span>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</button>
+<!-- Refresh Manual Button -->
+<button id="btn-refresh-txns" class="h-9 w-9 bg-surface-container-lowest hover:bg-surface-container text-on-surface-variant hover:text-on-surface rounded-lg flex items-center justify-center transition-colors" title="Force ledger sync">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+<!-- Export Action Button -->
+<button id="btn-export-csv" class="h-9 px-space-md bg-surface-container-lowest hover:bg-surface-container rounded-lg font-label-md text-label-md text-on-surface flex items-center gap-space-xs transition-colors">
+<span class="material-symbols-outlined text-primary text-[18px]">file_download</span>
+<span>Export CSV</span>
+</button>
+</div>
+</div>
+<!-- Bottom Filter Row: Pills Triage Controls -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-xs">
+<!-- Risk Severity Filters -->
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider mr-space-2xs">Risk:</span>
+<div class="inline-flex bg-surface-container-lowest p-0.5 rounded-lg">
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm bg-surface-container-high text-on-surface font-semibold" data-risk-filter="All">All</button>
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-risk-filter="Medium">Medium</button>
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-risk-filter="High">High</button>
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1" data-risk-filter="Critical"><span>Critical</span>
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary-container"></span>
+</button>
+</div>
+</div>
+<!-- Decision Gate Filters -->
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider mr-space-2xs">Decision Gate:</span>
+<div class="inline-flex bg-surface-container-lowest p-0.5 rounded-lg">
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm bg-surface-container-high text-on-surface font-semibold" data-gate-filter="All Gates">All Gates</button>
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-secondary hover:text-on-surface transition-colors" data-gate-filter="ALLOW">Allow</button>
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-primary hover:text-on-surface transition-colors" data-gate-filter="VERIFY">Verify</button>
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors" data-gate-filter="THROTTLE">Throttle</button>
+<button class="px-space-sm py-1 rounded font-label-sm text-label-sm text-tertiary hover:text-on-surface transition-colors" data-gate-filter="BLOCK">Block</button>
+</div>
+</div>
+<!-- Ledger Visual Indicator -->
+<div class="hidden xl:flex items-center gap-space-xs font-mono-sm text-mono-sm text-outline">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>Filter applied: [window: 3600s]</span>
+</div>
+</div>
+</div>
+<!-- Section: Clean High-Efficiency Transaction Ledger Table -->
+<div class="w-full bg-surface-container-low rounded-xl shadow-md overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<!-- Table Header -->
+<thead>
+<tr class="bg-surface-container-lowest h-10">
+<th class="py-space-xs px-space-md font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">Risk Level</th>
+<th class="py-space-xs px-space-md font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">Transaction ID</th>
+<th class="py-space-xs px-space-md font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">Timestamp (UTC)</th>
+<th class="py-space-xs px-space-md font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold text-right">Amount</th>
+<th class="py-space-xs px-space-md font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold text-right">Base ML (At)</th>
+<th class="py-space-xs px-space-md font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold text-right">Graph Risk (Gt)</th>
+<th class="py-space-xs px-space-md font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold text-right">Final Risk (Rt)</th>
+<th class="py-space-xs px-space-md font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold text-center">Decision</th>
+<th class="py-space-xs px-space-md font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold">Primary Evidence / Trigger</th>
+<th class="py-space-xs px-space-md font-label-sm text-label-sm text-outline uppercase tracking-wider font-semibold text-right">Action</th>
+</tr>
+</thead>
+<!-- Table Body -->
+<tbody id="transactions-tbody">
+<!-- Row 1: CRITICAL -->
+<tr class="h-14 bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="px-space-md py-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded font-label-sm text-label-sm uppercase tracking-wider bg-tertiary-container/15 text-tertiary font-bold">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary-container animate-pulse"></span>
+                CRITICAL
+              </span>
+</td>
+<td class="px-space-md py-space-xs font-mono-md text-mono-md text-primary font-medium tracking-tight">
+              #3504259
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-on-surface-variant">
+              12:42:18
+            </td>
+<td class="px-space-md py-space-xs font-mono-md text-mono-md text-on-surface font-semibold text-right" style="font-variant-numeric: tabular-nums;">
+              ₹238.53
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-on-surface-variant text-right" style="font-variant-numeric: tabular-nums;">
+              51.98%
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-tertiary text-right" style="font-variant-numeric: tabular-nums;">
+              65.28%
+            </td>
+<td class="px-space-md py-space-xs text-right">
+<div class="inline-flex flex-col items-end">
+<span class="font-mono-md text-mono-md text-tertiary font-bold" style="font-variant-numeric: tabular-nums;">52.29%</span>
+<div class="w-12 h-1 bg-surface-container-highest rounded-full overflow-hidden mt-0.5">
+<div class="bg-tertiary-container h-full w-[52%]"></div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-xs text-center">
+<span class="inline-block px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-error-container text-on-error-container uppercase tracking-wider">
+                BLOCK
+              </span>
+</td>
+<td class="px-space-md py-space-xs">
+<div class="flex items-center gap-space-xs max-w-xs">
+<span class="material-symbols-outlined text-tertiary text-[16px] shrink-0">dangerous</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Recidivist Entity #10568</span>
+</div>
+</td>
+<td class="px-space-md py-space-xs text-right">
+<button class="h-8 px-space-sm bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary rounded font-label-md text-label-md font-semibold inline-flex items-center gap-1 transition-colors shadow-sm">
+<span>Investigate</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: HIGH -->
+<tr class="h-14 bg-surface-container/40 hover:bg-surface-container transition-colors group">
+<td class="px-space-md py-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded font-label-sm text-label-sm uppercase tracking-wider bg-surface-variant text-primary font-semibold">
+<span class="h-1.5 w-1.5 rounded-full bg-primary"></span>
+                HIGH
+              </span>
+</td>
+<td class="px-space-md py-space-xs font-mono-md text-mono-md text-primary font-medium tracking-tight">
+              #3504910
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-on-surface-variant">
+              12:38:05
+            </td>
+<td class="px-space-md py-space-xs font-mono-md text-mono-md text-on-surface font-semibold text-right" style="font-variant-numeric: tabular-nums;">
+              ₹1,249.00
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-on-surface-variant text-right" style="font-variant-numeric: tabular-nums;">
+              38.40%
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-on-surface-variant text-right" style="font-variant-numeric: tabular-nums;">
+              48.10%
+            </td>
+<td class="px-space-md py-space-xs text-right">
+<div class="inline-flex flex-col items-end">
+<span class="font-mono-md text-mono-md text-primary font-bold" style="font-variant-numeric: tabular-nums;">41.10%</span>
+<div class="w-12 h-1 bg-surface-container-highest rounded-full overflow-hidden mt-0.5">
+<div class="bg-primary h-full w-[41%]"></div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-xs text-center">
+<span class="inline-block px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-surface-variant text-primary uppercase tracking-wider">
+                VERIFY
+              </span>
+</td>
+<td class="px-space-md py-space-xs">
+<div class="flex items-center gap-space-xs max-w-xs">
+<span class="material-symbols-outlined text-primary text-[16px] shrink-0">speed</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Multi-IP Velocity spike</span>
+</div>
+</td>
+<td class="px-space-md py-space-xs text-right">
+<button class="h-8 px-space-sm bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary rounded font-label-md text-label-md font-semibold inline-flex items-center gap-1 transition-colors shadow-sm">
+<span>Investigate</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: MEDIUM -->
+<tr class="h-14 bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="px-space-md py-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded font-label-sm text-label-sm uppercase tracking-wider bg-surface-variant text-on-surface-variant font-semibold">
+<span class="h-1.5 w-1.5 rounded-full bg-outline"></span>
+                MEDIUM
+              </span>
+</td>
+<td class="px-space-md py-space-xs font-mono-md text-mono-md text-primary font-medium tracking-tight">
+              #3505188
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-on-surface-variant">
+              12:21:40
+            </td>
+<td class="px-space-md py-space-xs font-mono-md text-mono-md text-on-surface font-semibold text-right" style="font-variant-numeric: tabular-nums;">
+              ₹4,300.00
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-on-surface-variant text-right" style="font-variant-numeric: tabular-nums;">
+              32.10%
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-on-surface-variant text-right" style="font-variant-numeric: tabular-nums;">
+              45.60%
+            </td>
+<td class="px-space-md py-space-xs text-right">
+<div class="inline-flex flex-col items-end">
+<span class="font-mono-md text-mono-md text-on-surface font-bold" style="font-variant-numeric: tabular-nums;">37.45%</span>
+<div class="w-12 h-1 bg-surface-container-highest rounded-full overflow-hidden mt-0.5">
+<div class="bg-outline h-full w-[37%]"></div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-xs text-center">
+<span class="inline-block px-2 py-0.5 rounded font-label-sm text-label-sm font-semibold bg-surface-variant text-on-surface-variant uppercase tracking-wider">
+                THROTTLE
+              </span>
+</td>
+<td class="px-space-md py-space-xs">
+<div class="flex items-center gap-space-xs max-w-xs">
+<span class="material-symbols-outlined text-outline text-[16px] shrink-0">devices</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">High amount new device</span>
+</div>
+</td>
+<td class="px-space-md py-space-xs text-right">
+<button class="h-8 px-space-sm bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary rounded font-label-md text-label-md font-semibold inline-flex items-center gap-1 transition-colors shadow-sm">
+<span>Investigate</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Row 4: CRITICAL -->
+<tr class="h-14 bg-surface-container/40 hover:bg-surface-container transition-colors group">
+<td class="px-space-md py-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded font-label-sm text-label-sm uppercase tracking-wider bg-tertiary-container/15 text-tertiary font-bold">
+<span class="h-1.5 w-1.5 rounded-full bg-tertiary-container animate-pulse"></span>
+                CRITICAL
+              </span>
+</td>
+<td class="px-space-md py-space-xs font-mono-md text-mono-md text-primary font-medium tracking-tight">
+              #3505291
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-on-surface-variant">
+              12:11:15
+            </td>
+<td class="px-space-md py-space-xs font-mono-md text-mono-md text-on-surface font-semibold text-right" style="font-variant-numeric: tabular-nums;">
+              ₹14,850.00
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-tertiary text-right" style="font-variant-numeric: tabular-nums;">
+              62.40%
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-tertiary text-right" style="font-variant-numeric: tabular-nums;">
+              74.30%
+            </td>
+<td class="px-space-md py-space-xs text-right">
+<div class="inline-flex flex-col items-end">
+<span class="font-mono-md text-mono-md text-tertiary font-bold" style="font-variant-numeric: tabular-nums;">68.90%</span>
+<div class="w-12 h-1 bg-surface-container-highest rounded-full overflow-hidden mt-0.5">
+<div class="bg-tertiary-container h-full w-[69%]"></div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-xs text-center">
+<span class="inline-block px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-error-container text-on-error-container uppercase tracking-wider">
+                BLOCK
+              </span>
+</td>
+<td class="px-space-md py-space-xs">
+<div class="flex items-center gap-space-xs max-w-xs">
+<span class="material-symbols-outlined text-tertiary text-[16px] shrink-0">credit_card_off</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Blacklisted card BIN</span>
+</div>
+</td>
+<td class="px-space-md py-space-xs text-right">
+<button class="h-8 px-space-sm bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary rounded font-label-md text-label-md font-semibold inline-flex items-center gap-1 transition-colors shadow-sm">
+<span>Investigate</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</td>
+</tr>
+<!-- Row 5: LOW -->
+<tr class="h-14 bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="px-space-md py-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded font-label-sm text-label-sm uppercase tracking-wider bg-secondary-container/20 text-secondary font-semibold">
+<span class="h-1.5 w-1.5 rounded-full bg-secondary"></span>
+                LOW
+              </span>
+</td>
+<td class="px-space-md py-space-xs font-mono-md text-mono-md text-primary font-medium tracking-tight">
+              #3505022
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-on-surface-variant">
+              12:05:30
+            </td>
+<td class="px-space-md py-space-xs font-mono-md text-mono-md text-on-surface font-semibold text-right" style="font-variant-numeric: tabular-nums;">
+              ₹89.00
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-secondary text-right" style="font-variant-numeric: tabular-nums;">
+              7.90%
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-secondary text-right" style="font-variant-numeric: tabular-nums;">
+              8.50%
+            </td>
+<td class="px-space-md py-space-xs text-right">
+<div class="inline-flex flex-col items-end">
+<span class="font-mono-md text-mono-md text-secondary font-bold" style="font-variant-numeric: tabular-nums;">8.12%</span>
+<div class="w-12 h-1 bg-surface-container-highest rounded-full overflow-hidden mt-0.5">
+<div class="bg-secondary h-full w-[8%]"></div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-xs text-center">
+<span class="inline-block px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-secondary-container text-on-secondary uppercase tracking-wider">
+                ALLOW
+              </span>
+</td>
+<td class="px-space-md py-space-xs">
+<div class="flex items-center gap-space-xs max-w-xs">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0">verified_user</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Recurring subscriber</span>
+</div>
+</td>
+<td class="px-space-md py-space-xs text-right">
+<button class="h-8 px-space-sm bg-surface-container-highest hover:bg-surface-bright text-on-surface rounded font-label-md text-label-md font-medium inline-flex items-center gap-1 transition-colors">
+<span>View</span>
+<span class="material-symbols-outlined text-[14px] text-outline">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 6: LOW -->
+<tr class="h-14 bg-surface-container/40 hover:bg-surface-container transition-colors group">
+<td class="px-space-md py-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded font-label-sm text-label-sm uppercase tracking-wider bg-secondary-container/20 text-secondary font-semibold">
+<span class="h-1.5 w-1.5 rounded-full bg-secondary"></span>
+                LOW
+              </span>
+</td>
+<td class="px-space-md py-space-xs font-mono-md text-mono-md text-primary font-medium tracking-tight">
+              #3505340
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-on-surface-variant">
+              12:01:02
+            </td>
+<td class="px-space-md py-space-xs font-mono-md text-mono-md text-on-surface font-semibold text-right" style="font-variant-numeric: tabular-nums;">
+              ₹450.00
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-secondary text-right" style="font-variant-numeric: tabular-nums;">
+              12.20%
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-secondary text-right" style="font-variant-numeric: tabular-nums;">
+              14.10%
+            </td>
+<td class="px-space-md py-space-xs text-right">
+<div class="inline-flex flex-col items-end">
+<span class="font-mono-md text-mono-md text-secondary font-bold" style="font-variant-numeric: tabular-nums;">13.05%</span>
+<div class="w-12 h-1 bg-surface-container-highest rounded-full overflow-hidden mt-0.5">
+<div class="bg-secondary h-full w-[13%]"></div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-xs text-center">
+<span class="inline-block px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-secondary-container text-on-secondary uppercase tracking-wider">
+                ALLOW
+              </span>
+</td>
+<td class="px-space-md py-space-xs">
+<div class="flex items-center gap-space-xs max-w-xs">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0">fingerprint</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Verified biometric 3DS</span>
+</div>
+</td>
+<td class="px-space-md py-space-xs text-right">
+<button class="h-8 px-space-sm bg-surface-container-highest hover:bg-surface-bright text-on-surface rounded font-label-md text-label-md font-medium inline-flex items-center gap-1 transition-colors">
+<span>View</span>
+<span class="material-symbols-outlined text-[14px] text-outline">visibility</span>
+</button>
+</td>
+</tr>
+<!-- Row 7: MEDIUM -->
+<tr class="h-14 bg-surface-container-low hover:bg-surface-container transition-colors group">
+<td class="px-space-md py-space-xs">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded font-label-sm text-label-sm uppercase tracking-wider bg-surface-variant text-on-surface-variant font-semibold">
+<span class="h-1.5 w-1.5 rounded-full bg-outline"></span>
+                MEDIUM
+              </span>
+</td>
+<td class="px-space-md py-space-xs font-mono-md text-mono-md text-primary font-medium tracking-tight">
+              #3505412
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-on-surface-variant">
+              11:58:22
+            </td>
+<td class="px-space-md py-space-xs font-mono-md text-mono-md text-on-surface font-semibold text-right" style="font-variant-numeric: tabular-nums;">
+              ₹3,120.00
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-on-surface-variant text-right" style="font-variant-numeric: tabular-nums;">
+              28.50%
+            </td>
+<td class="px-space-md py-space-xs font-mono-sm text-mono-sm text-on-surface-variant text-right" style="font-variant-numeric: tabular-nums;">
+              34.20%
+            </td>
+<td class="px-space-md py-space-xs text-right">
+<div class="inline-flex flex-col items-end">
+<span class="font-mono-md text-mono-md text-on-surface font-bold" style="font-variant-numeric: tabular-nums;">30.15%</span>
+<div class="w-12 h-1 bg-surface-container-highest rounded-full overflow-hidden mt-0.5">
+<div class="bg-outline h-full w-[30%]"></div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-space-xs text-center">
+<span class="inline-block px-2 py-0.5 rounded font-label-sm text-label-sm font-bold bg-surface-variant text-primary uppercase tracking-wider">
+                VERIFY
+              </span>
+</td>
+<td class="px-space-md py-space-xs">
+<div class="flex items-center gap-space-xs max-w-xs">
+<span class="material-symbols-outlined text-outline text-[16px] shrink-0">location_off</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Geo-velocity mismatch</span>
+</div>
+</td>
+<td class="px-space-md py-space-xs text-right">
+<button class="h-8 px-space-sm bg-primary-container hover:bg-primary text-on-primary-container hover:text-on-primary rounded font-label-md text-label-md font-semibold inline-flex items-center gap-1 transition-colors shadow-sm">
+<span>Investigate</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+    <!-- Section: Pagination & Summary Footer -->
+    <div class="h-14 px-space-md bg-surface-container-lowest flex flex-wrap items-center justify-between gap-space-md">
+      <!-- Summary Counts -->
+      <div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+        <span>Showing</span>
+        <span id="pagination-start" class="font-mono-sm text-mono-sm text-on-surface font-semibold">1</span>
+        <span>to</span>
+        <span id="pagination-end" class="font-mono-sm text-mono-sm text-on-surface font-semibold">7</span>
+        <span>of</span>
+        <span id="pagination-total" class="font-mono-sm text-mono-sm text-on-surface font-semibold">7</span>
+        <span>transactions</span>
+      </div>
+      <!-- Quick Pagination Controls -->
+      <div class="flex items-center gap-space-xs">
+        <button id="btn-pagination-prev" class="h-8 px-space-sm rounded bg-surface-container-low hover:bg-surface-container font-label-md text-label-md text-on-surface-variant hover:text-on-surface disabled:opacity-40 disabled:pointer-events-none transition-colors" disabled="">
+          Previous
+        </button>
+        <button class="h-8 w-8 rounded bg-primary text-on-primary font-mono-sm text-mono-sm font-semibold flex items-center justify-center">
+          1
+        </button>
+        <button id="btn-pagination-next" class="h-8 px-space-sm rounded bg-surface-container-low hover:bg-surface-container font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" disabled="">
+          Next
+        </button>
+      </div>
+    </div>
+</div>
+<!-- Bottom Insight Strip: Triage Context -->
+<div class="mt-space-lg grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex items-start gap-space-sm">
+<div class="p-2 rounded bg-surface-container-highest text-primary">
+<span class="material-symbols-outlined text-[20px]">shield_lock</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Autonomous ML Interceptor</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Real-time GNN (Graph Neural Network) cluster active. Graph topology updated 4s ago.</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex items-start gap-space-sm">
+<div class="p-2 rounded bg-surface-container-highest text-secondary">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Decision Gate Pipeline</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Zero-latency synchronous verdicts enforcing high-precision velocity thresholds.</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex items-start gap-space-sm">
+<div class="p-2 rounded bg-surface-container-highest text-tertiary">
+<span class="material-symbols-outlined text-[20px]">emergency_home</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Cold Storage Audit Trail</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">PCI-DSS 4.0 compliant immutable forensic snapshots attached to every flagged payload.</span>
+</div>
+</div>
+</div>
+</div></main></div>
+<script src="js/api.js"></script>
+<script src="js/state.js"></script>
+<script src="js/demo-mode.js"></script>
+<script src="js/transactions.js"></script>
+</body></html>

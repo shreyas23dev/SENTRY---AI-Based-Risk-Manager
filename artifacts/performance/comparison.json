@@ -1,0 +1,233 @@
+{
+  "components": {
+    "preprocessing": {
+      "mean_ms": {
+        "before": 14.5954,
+        "after": 0.1778,
+        "improvement_pct": 98.8,
+        "direction": "improved"
+      },
+      "p50_ms": {
+        "before": 14.4956,
+        "after": 0.1716,
+        "improvement_pct": 98.8,
+        "direction": "improved"
+      },
+      "p95_ms": {
+        "before": 15.5919,
+        "after": 0.2033,
+        "improvement_pct": 98.7,
+        "direction": "improved"
+      },
+      "p99_ms": {
+        "before": 16.385,
+        "after": 0.2291,
+        "improvement_pct": 98.6,
+        "direction": "improved"
+      },
+      "max_ms": {
+        "before": 24.431,
+        "after": 0.9869,
+        "improvement_pct": 96.0,
+        "direction": "improved"
+      }
+    },
+    "model_inference": {
+      "mean_ms": {
+        "before": 4.4186,
+        "after": 2.1152,
+        "improvement_pct": 52.1,
+        "direction": "improved"
+      },
+      "p50_ms": {
+        "before": 3.7464,
+        "after": 1.7243,
+        "improvement_pct": 54.0,
+        "direction": "improved"
+      },
+      "p95_ms": {
+        "before": 6.9017,
+        "after": 4.2498,
+        "improvement_pct": 38.4,
+        "direction": "improved"
+      },
+      "p99_ms": {
+        "before": 15.9138,
+        "after": 7.7423,
+        "improvement_pct": 51.3,
+        "direction": "improved"
+      },
+      "max_ms": {
+        "before": 71.9562,
+        "after": 23.8402,
+        "improvement_pct": 66.9,
+        "direction": "improved"
+      }
+    },
+    "temporal": {
+      "mean_ms": {
+        "before": 0.0468,
+        "after": 0.0351,
+        "improvement_pct": 25.0,
+        "direction": "improved"
+      },
+      "p50_ms": {
+        "before": 0.0483,
+        "after": 0.0305,
+        "improvement_pct": 36.9,
+        "direction": "improved"
+      },
+      "p95_ms": {
+        "before": 0.0563,
+        "after": 0.0485,
+        "improvement_pct": 13.9,
+        "direction": "improved"
+      },
+      "p99_ms": {
+        "before": 0.0704,
+        "after": 0.0635,
+        "improvement_pct": 9.8,
+        "direction": "improved"
+      },
+      "max_ms": {
+        "before": 0.1467,
+        "after": 2.9512,
+        "improvement_pct": -1911.7,
+        "direction": "regressed"
+      }
+    },
+    "relational_graph": {
+      "mean_ms": {
+        "before": 0.021,
+        "after": 0.0166,
+        "improvement_pct": 21.0,
+        "direction": "improved"
+      },
+      "p50_ms": {
+        "before": 0.0205,
+        "after": 0.0146,
+        "improvement_pct": 28.8,
+        "direction": "improved"
+      },
+      "p95_ms": {
+        "before": 0.0291,
+        "after": 0.025,
+        "improvement_pct": 14.1,
+        "direction": "improved"
+      },
+      "p99_ms": {
+        "before": 0.0441,
+        "after": 0.0384,
+        "improvement_pct": 12.9,
+        "direction": "improved"
+      },
+      "max_ms": {
+        "before": 0.2356,
+        "after": 0.2123,
+        "improvement_pct": 9.9,
+        "direction": "improved"
+      }
+    },
+    "fusion": {
+      "mean_ms": {
+        "before": 0.0198,
+        "after": 0.0186,
+        "improvement_pct": 6.1,
+        "direction": "improved"
+      },
+      "p50_ms": {
+        "before": 0.0136,
+        "after": 0.0106,
+        "improvement_pct": 22.1,
+        "direction": "improved"
+      },
+      "p95_ms": {
+        "before": 0.028,
+        "after": 0.0267,
+        "improvement_pct": 4.6,
+        "direction": "improved"
+      },
+      "p99_ms": {
+        "before": 0.2153,
+        "after": 0.2158,
+        "improvement_pct": -0.2,
+        "direction": "regressed"
+      },
+      "max_ms": {
+        "before": 0.8678,
+        "after": 0.9007,
+        "improvement_pct": -3.8,
+        "direction": "regressed"
+      }
+    },
+    "policy": {
+      "mean_ms": {
+        "before": 0.0045,
+        "after": 0.0027,
+        "improvement_pct": 40.0,
+        "direction": "improved"
+      },
+      "p50_ms": {
+        "before": 0.0044,
+        "after": 0.0025,
+        "improvement_pct": 43.2,
+        "direction": "improved"
+      },
+      "p95_ms": {
+        "before": 0.0055,
+        "after": 0.0041,
+        "improvement_pct": 25.5,
+        "direction": "improved"
+      },
+      "p99_ms": {
+        "before": 0.0067,
+        "after": 0.0051,
+        "improvement_pct": 23.9,
+        "direction": "improved"
+      },
+      "max_ms": {
+        "before": 0.0293,
+        "after": 0.03,
+        "improvement_pct": -2.4,
+        "direction": "regressed"
+      }
+    },
+    "end_to_end": {
+      "mean_ms": {
+        "before": 19.1061,
+        "after": 2.3661,
+        "improvement_pct": 87.6,
+        "direction": "improved"
+      },
+      "p50_ms": {
+        "before": 18.4744,
+        "after": 1.9667,
+        "improvement_pct": 89.4,
+        "direction": "improved"
+      },
+      "p95_ms": {
+        "before": 21.8881,
+        "after": 4.5437,
+        "improvement_pct": 79.2,
+        "direction": "improved"
+      },
+      "p99_ms": {
+        "before": 30.3193,
+        "after": 8.0973,
+        "improvement_pct": 73.3,
+        "direction": "improved"
+      },
+      "max_ms": {
+        "before": 87.0686,
+        "after": 24.1066,
+        "improvement_pct": 72.3,
+        "direction": "improved"
+      }
+    }
+  },
+  "batch_throughput": {
+    "before": 19095,
+    "after": 20667,
+    "improvement_pct": 8.2
+  }
+}

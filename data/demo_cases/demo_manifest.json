@@ -1,0 +1,131 @@
+{
+  "manifest_version": "1.0.0",
+  "created_at": "2026-09-04T19:02:00Z",
+  "source": "Real dataset-backed held-out TEST split",
+  "cases": [
+    {
+      "case_id": "case_01_agreement_block",
+      "transaction_id": 3570805,
+      "source_dataset": "IEEE-CIS Fraud Detection",
+      "dataset_split": "TEST",
+      "dataset_label": 1,
+      "amount": 82.63,
+      "A_t": 0.9921,
+      "P_t": 0.95,
+      "G_t": 0.7375,
+      "R_t": 0.9922,
+      "final_risk_engine_decision": "BLOCK",
+      "risk_council_classification": "AGREEMENT",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "graph_context_exists": true,
+      "sufficient_history_exists": true
+    },
+    {
+      "case_id": "case_02_slow_burn_disagreement",
+      "transaction_id": 3531382,
+      "source_dataset": "IEEE-CIS Fraud Detection",
+      "dataset_split": "TEST",
+      "dataset_label": 1,
+      "amount": 61.48,
+      "A_t": 0.0392,
+      "P_t": 0.9,
+      "G_t": 0.5563,
+      "R_t": 0.0436,
+      "final_risk_engine_decision": "ALLOW",
+      "risk_council_classification": "SLOW_BURN_ONLY",
+      "evidence_ids": [
+        "RISK_ENGINE"
+      ],
+      "graph_context_exists": true,
+      "sufficient_history_exists": true
+    },
+    {
+      "case_id": "case_03_insufficient_history",
+      "transaction_id": 3488970,
+      "source_dataset": "IEEE-CIS Fraud Detection",
+      "dataset_split": "TEST",
+      "dataset_label": 0,
+      "amount": 29.0,
+      "A_t": 0.0164,
+      "P_t": null,
+      "G_t": 0.0,
+      "R_t": 0.0169,
+      "final_risk_engine_decision": "ALLOW",
+      "risk_council_classification": "INSUFFICIENT_HISTORY",
+      "evidence_ids": [
+        "RISK_ENGINE"
+      ],
+      "graph_context_exists": true,
+      "sufficient_history_exists": false
+    },
+    {
+      "case_id": "case_04_clean_allow",
+      "transaction_id": 3488964,
+      "source_dataset": "IEEE-CIS Fraud Detection",
+      "dataset_split": "TEST",
+      "dataset_label": 0,
+      "amount": 224.0,
+      "A_t": 0.0014,
+      "P_t": 0.95,
+      "G_t": 0.4,
+      "R_t": 0.0039,
+      "final_risk_engine_decision": "ALLOW",
+      "risk_council_classification": "SLOW_BURN_ONLY",
+      "evidence_ids": [
+        "E1",
+        "E2"
+      ],
+      "graph_context_exists": true,
+      "sufficient_history_exists": true
+    },
+    {
+      "case_id": "case_05_verify",
+      "transaction_id": 3489068,
+      "source_dataset": "IEEE-CIS Fraud Detection",
+      "dataset_split": "TEST",
+      "dataset_label": 1,
+      "amount": 150.0,
+      "A_t": 0.2931,
+      "P_t": null,
+      "G_t": 0.775,
+      "R_t": 0.3001,
+      "final_risk_engine_decision": "VERIFY",
+      "risk_council_classification": "INSUFFICIENT_HISTORY",
+      "evidence_ids": [
+        "RISK_ENGINE",
+        "E1"
+      ],
+      "graph_context_exists": true,
+      "sufficient_history_exists": false
+    },
+    {
+      "case_id": "case_06_throttle",
+      "transaction_id": 3512832,
+      "source_dataset": "IEEE-CIS Fraud Detection",
+      "dataset_split": "TEST",
+      "dataset_label": 1,
+      "amount": 34.0,
+      "A_t": 0.1683,
+      "P_t": 0.95,
+      "G_t": 0.9625,
+      "R_t": 0.1825,
+      "final_risk_engine_decision": "THROTTLE",
+      "risk_council_classification": "SLOW_BURN_ONLY",
+      "evidence_ids": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5",
+        "E6",
+        "RISK_ENGINE",
+        "E7"
+      ],
+      "graph_context_exists": true,
+      "sufficient_history_exists": true
+    }
+  ]
+}

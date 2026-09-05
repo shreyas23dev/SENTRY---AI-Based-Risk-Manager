@@ -1,0 +1,48 @@
+{
+  "dataset": {
+    "name": "IEEE-CIS Fraud Detection",
+    "source": "IEEE DataPort",
+    "doi": "10.21227/y5e7-wp63",
+    "files": [
+      "train_transaction.csv",
+      "train_identity.csv",
+      "test_transaction.csv",
+      "test_identity.csv",
+      "sample_submission.csv"
+    ]
+  },
+  "random_seed": 42,
+  "train_dt_boundary": 10438003,
+  "val_dt_boundary": 13151880,
+  "python_version": "3.12.10",
+  "lightgbm_version": "4.7.0",
+  "sklearn_version": "1.8.0",
+  "numpy_version": "1.26.4",
+  "pandas_version": "2.3.3",
+  "split_meta": {
+    "train_dt_boundary": 10438003,
+    "val_dt_boundary": 13151880,
+    "train_rows": 413379,
+    "val_rows": 88581,
+    "test_rows": 88580,
+    "train_dt_min": 86400,
+    "train_dt_max": 10438003,
+    "val_dt_min": 10438017,
+    "val_dt_max": 13151880,
+    "test_dt_min": 13151945,
+    "test_dt_max": 15811131,
+    "train_fraud_rate": 0.035169,
+    "val_fraud_rate": 0.034341,
+    "test_fraud_rate": 0.034805,
+    "train_fraud_count": 14538,
+    "val_fraud_count": 3042,
+    "test_fraud_count": 3083
+  },
+  "join_stats": {
+    "transaction_rows": 590540,
+    "identity_rows": 144233,
+    "matched_identity_rows": 144233,
+    "unmatched_rows": 446307,
+    "identity_coverage_pct": 24.42
+  }
+}

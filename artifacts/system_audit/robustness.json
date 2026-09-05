@@ -1,0 +1,6 @@
+{
+  "missing_identity_data": "75.6% transactions lack identity records; preprocessor maps missing values to NaN; graph engine safely isolates unresolved entities as unshared singleton nodes.",
+  "missing_device_info": "Transactions with missing DeviceInfo have G_t = 0.0; non-suppression guarantees R_t = A_t with zero risk dilution.",
+  "high_frequency_devices": "k_attr_max = 25 ceiling blocks 30 generic OS/browser strings (e.g. Windows, MacOS, iOS Device) preventing spurious hub connections.",
+  "bursty_legitimate_entities": "Inter-event exponential decay (gamma=0.5, delta=0.05) dissipates temporal accumulator between normal shopping sessions."
+}

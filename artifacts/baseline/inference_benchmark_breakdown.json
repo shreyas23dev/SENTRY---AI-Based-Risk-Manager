@@ -1,0 +1,45 @@
+{
+  "hardware": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "python_version": "3.12.10",
+    "threads": "n_jobs=-1 (all cores)"
+  },
+  "benchmark_1_model_only_batch": {
+    "n_transactions": 88580,
+    "mean_total_s": 1.1389,
+    "latency_ms_per_txn": 0.012858,
+    "throughput_txn_per_s": 77775.3,
+    "scope": "LightGBM predict_proba on in-memory preprocessed DataFrame"
+  },
+  "benchmark_2_preprocessing_only_batch": {
+    "n_transactions": 88580,
+    "mean_total_s": 1.4591,
+    "latency_ms_per_txn": 0.016472,
+    "throughput_txn_per_s": 60709.8,
+    "scope": "Categorical mapping, column reindexing, dtype casting"
+  },
+  "benchmark_3_preprocessing_plus_model_batch": {
+    "n_transactions": 88580,
+    "mean_total_s": 2.598,
+    "latency_ms_per_txn": 0.029329,
+    "throughput_txn_per_s": 34095.5,
+    "scope": "Batch Preprocessing + Model Inference (in-memory DataFrame)"
+  },
+  "benchmark_4_single_transaction_online": {
+    "samples_evaluated": 1000,
+    "model_only_latency_ms": {
+      "mean": 3.1826,
+      "p50": 3.0932,
+      "p95": 3.7066,
+      "p99": 5.0429
+    },
+    "end_to_end_latency_ms": {
+      "mean": 15.337,
+      "p50": 14.8725,
+      "p95": 17.6489,
+      "p99": 22.1965
+    },
+    "scope": "Per-transaction online evaluation (1 row at a time)"
+  }
+}

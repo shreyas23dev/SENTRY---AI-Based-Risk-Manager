@@ -1,0 +1,28 @@
+{
+  "discovered_and_resolved_failure_modes": [
+    {
+      "failure_mode": "Global Stream Contamination",
+      "phase_discovered": "Phase 2",
+      "impact": "0 extra frauds, +13 FP",
+      "resolution": "Entity-scoped temporal memory (Phase 2.1)"
+    },
+    {
+      "failure_mode": "Generic Attribute Hub Explosion",
+      "phase_discovered": "Phase 3 Pre-impl",
+      "impact": "Spurious graph edges across thousands of unrelated cards",
+      "resolution": "Attribute frequency ceiling k_attr_max = 25 (Phase 3)"
+    },
+    {
+      "failure_mode": "Linear Weighted Average Baseline Suppression",
+      "phase_discovered": "Phase 3",
+      "impact": "Recall collapse from 42.59% to 18.13% due to sparse zero-context dilution",
+      "resolution": "Conditional Non-Suppressive Risk Fusion F1 (Phase 3.1)"
+    },
+    {
+      "failure_mode": "High False-Alarm Rate on Disjunctive Relational Rule",
+      "phase_discovered": "Phase 3",
+      "impact": "+3,132 false positives under B2 OR rule",
+      "resolution": "Calibrated additive scaling beta=0.05 in conditional fusion (Phase 3.1)"
+    }
+  ]
+}

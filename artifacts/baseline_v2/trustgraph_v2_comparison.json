@@ -1,0 +1,132 @@
+{
+  "System_1_Baseline": {
+    "B0_Original": {
+      "precision": 0.634913,
+      "recall": 0.425884,
+      "f1": 0.509804,
+      "fpr": 0.008831,
+      "tp": 1313,
+      "fp": 755,
+      "tn": 84742,
+      "fn": 1770
+    },
+    "V2_Enhanced": {
+      "roc_auc": 0.907799,
+      "pr_auc": 0.562998,
+      "precision": 0.786485,
+      "recall": 0.354849,
+      "f1": 0.489048,
+      "fpr": 0.003474,
+      "tp": 1094,
+      "fp": 297,
+      "fn": 1989,
+      "tn": 85200,
+      "threshold": 0.594298
+    },
+    "delta_precision": 0.151572,
+    "delta_recall": -0.071035,
+    "delta_f1": -0.020756,
+    "delta_fpr": -0.005357,
+    "delta_pr_auc": 0.02899,
+    "delta_roc_auc": 0.005856
+  },
+  "System_2_Temporal": {
+    "B0_Original": {
+      "precision": 0.63057,
+      "recall": 0.426857,
+      "f1": 0.509091,
+      "fpr": 0.009018,
+      "tp": 1316,
+      "fp": 771,
+      "tn": 84726,
+      "fn": 1767
+    },
+    "V2_Enhanced": {
+      "roc_auc": 0.907803,
+      "pr_auc": 0.560345,
+      "precision": 0.781466,
+      "recall": 0.366526,
+      "f1": 0.499006,
+      "fpr": 0.003696,
+      "tp": 1130,
+      "fp": 316,
+      "fn": 1953,
+      "tn": 85181,
+      "threshold": 0.594298
+    },
+    "delta_precision": 0.150896,
+    "delta_recall": -0.060331,
+    "delta_f1": -0.010085,
+    "delta_fpr": -0.005322
+  },
+  "System_3_Fused_TRUSTGRAPH": {
+    "B0_Original": {
+      "precision": 0.623437,
+      "recall": 0.436588,
+      "f1": 0.513544,
+      "fpr": 0.009509,
+      "tp": 1346,
+      "fp": 813,
+      "tn": 84684,
+      "fn": 1737
+    },
+    "V2_Enhanced": {
+      "roc_auc": 0.90668,
+      "pr_auc": 0.548547,
+      "precision": 0.778846,
+      "recall": 0.367824,
+      "f1": 0.49967,
+      "fpr": 0.003766,
+      "tp": 1134,
+      "fp": 322,
+      "fn": 1949,
+      "tn": 85175,
+      "threshold": 0.594298
+    },
+    "delta_precision": 0.155409,
+    "delta_recall": -0.068764,
+    "delta_f1": -0.013874,
+    "delta_fpr": -0.005743
+  },
+  "System_4_Progressive_Policy": {
+    "Tier_1_Any_Intervention": {
+      "roc_auc": 0.90668,
+      "pr_auc": 0.548547,
+      "precision": 0.779778,
+      "recall": 0.365229,
+      "f1": 0.49746,
+      "fpr": 0.003719,
+      "tp": 1126,
+      "fp": 318,
+      "fn": 1957,
+      "tn": 85179,
+      "threshold": 0.6
+    },
+    "Tier_2_Strong_Intervention": {
+      "roc_auc": 0.90668,
+      "pr_auc": 0.548547,
+      "precision": 0.790731,
+      "recall": 0.3542,
+      "f1": 0.489247,
+      "fpr": 0.00338,
+      "tp": 1092,
+      "fp": 289,
+      "fn": 1991,
+      "tn": 85208,
+      "threshold": 0.65
+    },
+    "Tier_3_Direct_Block": {
+      "roc_auc": 0.90668,
+      "pr_auc": 0.548547,
+      "precision": 0.83101,
+      "recall": 0.309439,
+      "f1": 0.450957,
+      "fpr": 0.002269,
+      "tp": 954,
+      "fp": 194,
+      "fn": 2129,
+      "tn": 85303,
+      "threshold": 0.8
+    }
+  }
+}

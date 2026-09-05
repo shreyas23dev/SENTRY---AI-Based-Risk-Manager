@@ -1,0 +1,56 @@
+{
+  "selected_parameters": {
+    "beta": 0.3,
+    "gamma": 0.5,
+    "lambda": 0.05,
+    "delta": 0.1,
+    "temporal_threshold": 0.5
+  },
+  "validation_metrics": {
+    "partition": "validation",
+    "total_transactions": 88581,
+    "fraud_count": 3042,
+    "legit_count": 85539,
+    "fraud_prevalence": 0.034341,
+    "baseline_threshold": 0.5942984109122026,
+    "temporal_threshold": 0.5,
+    "B0_baseline": {
+      "roc_auc": 0.925133,
+      "pr_auc": 0.603216,
+      "precision": 0.708134,
+      "recall": 0.486522,
+      "f1": 0.576773,
+      "fpr": 0.007131,
+      "fnr": 0.513478,
+      "tp": 1480,
+      "fp": 610,
+      "tn": 84929,
+      "fn": 1562
+    },
+    "B1_temporal": {
+      "roc_auc": 0.924885,
+      "pr_auc": 0.60288,
+      "precision": 0.707935,
+      "recall": 0.486851,
+      "f1": 0.576938,
+      "fpr": 0.007143,
+      "fnr": 0.513149,
+      "tp": 1481,
+      "fp": 611,
+      "tn": 84928,
+      "fn": 1561
+    },
+    "comparative_delta": {
+      "additional_frauds_recovered": 1,
+      "baseline_false_negatives": 1562,
+      "pct_baseline_fn_recovered": 0.06,
+      "additional_false_positives": 1,
+      "recall_gain": 0.000329,
+      "f1_gain": 0.000165,
+      "fpr_change": 1.2e-05,
+      "precision_change": -0.000199
+    }
+  },
+  "selection_criterion": "maximise Validation F1 on B1 = Baseline + Temporal",
+  "tuning_duration_seconds": 1135.5
+}

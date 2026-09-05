@@ -1,0 +1,35 @@
+{
+  "entity_proxy": "18370_251.0_yahoo.com",
+  "n_transactions": 2,
+  "has_pure_temporal_final_crossing": true,
+  "transactions": [
+    {
+      "TransactionID": 3489452,
+      "TransactionDT": 13179429.0,
+      "TransactionAmt": 59.0,
+      "isFraud": 1,
+      "A_t": 0.862313,
+      "E_t": 0.866024,
+      "P_t_before": 0.25,
+      "P_t_after": 0.3,
+      "G_t": 0.0,
+      "R_t": 1.0,
+      "baseline_decision": "BLOCK",
+      "trustgraph_decision": "BLOCK"
+    },
+    {
+      "TransactionID": 3494184,
+      "TransactionDT": 13287414.0,
+      "TransactionAmt": 49.0,
+      "isFraud": 1,
+      "A_t": 0.35558,
+      "E_t": 0.712891,
+      "P_t_before": 0.3,
+      "P_t_after": 0.35,
+      "G_t": 0.0,
+      "R_t": 0.65558,
+      "baseline_decision": "ALLOW",
+      "trustgraph_decision": "THROTTLE"
+    }
+  ]
+}

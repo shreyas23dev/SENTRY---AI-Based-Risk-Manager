@@ -1,0 +1,189 @@
+{
+  "evaluation_partition": "Held-out TEST (N = 88,580)",
+  "chronological_boundaries": {
+    "train_dt_boundary": 10438003,
+    "val_dt_boundary": 13151880,
+    "train_rows": 413379,
+    "val_rows": 88581,
+    "test_rows": 88580,
+    "train_dt_min": 86400,
+    "train_dt_max": 10438003,
+    "val_dt_min": 10438017,
+    "val_dt_max": 13151880,
+    "test_dt_min": 13151945,
+    "test_dt_max": 15811131,
+    "train_fraud_rate": 0.035169,
+    "val_fraud_rate": 0.034341,
+    "test_fraud_rate": 0.034805,
+    "train_fraud_count": 14538,
+    "val_fraud_count": 3042,
+    "test_fraud_count": 3083
+  },
+  "test_population": {
+    "total_transactions": 88580,
+    "fraud_count": 3083,
+    "legitimate_count": 85497,
+    "base_fraud_rate": 0.034805
+  },
+  "binary_model_evaluations": {
+    "B0_baseline": {
+      "tp": 1313,
+      "fp": 755,
+      "fn": 1770,
+      "tn": 84742,
+      "precision": 0.634913,
+      "recall": 0.425884,
+      "f1": 0.509804,
+      "fpr": 0.008831
+    },
+    "B1_entity_temporal": {
+      "tp": 1316,
+      "fp": 771,
+      "fn": 1767,
+      "tn": 84726,
+      "precision": 0.63057,
+      "recall": 0.426857,
+      "f1": 0.509091,
+      "fpr": 0.009018
+    },
+    "B2_relational": {
+      "tp": 1521,
+      "fp": 3887,
+      "fn": 1562,
+      "tn": 81610,
+      "precision": 0.28125,
+      "recall": 0.493351,
+      "f1": 0.358262,
+      "fpr": 0.045464
+    },
+    "B3_conditional_fusion": {
+      "tp": 1346,
+      "fp": 813,
+      "fn": 1737,
+      "tn": 84684,
+      "precision": 0.623437,
+      "recall": 0.436588,
+      "f1": 0.513544,
+      "fpr": 0.009509
+    }
+  },
+  "progressive_policy_tiers": {
+    "tier_1_verify_plus": {
+      "threshold": 0.6,
+      "tp": 1343,
+      "fp": 798,
+      "fn": 1740,
+      "tn": 84699,
+      "precision": 0.627277,
+      "recall": 0.435615,
+      "f1": 0.514165,
+      "fpr": 0.009334,
+      "legitimate_friction": 0.009334
+    },
+    "tier_2_throttle_plus": {
+      "threshold": 0.65,
+      "tp": 1274,
+      "fp": 627,
+      "fn": 1809,
+      "tn": 84870,
+      "precision": 0.670174,
+      "recall": 0.413234,
+      "f1": 0.511236,
+      "fpr": 0.007334,
+      "legitimate_friction": 0.007334
+    },
+    "tier_3_block_only": {
+      "threshold": 0.8,
+      "tp": 1081,
+      "fp": 295,
+      "fn": 2002,
+      "tn": 85202,
+      "precision": 0.78561,
+      "recall": 0.350633,
+      "f1": 0.484862,
+      "fpr": 0.00345,
+      "legitimate_friction": 0.00345
+    }
+  },
+  "action_level_stratification": {
+    "ALLOW": {
+      "action": "ALLOW",
+      "score_range": "[0.00, 0.60)",
+      "transaction_count": 86439,
+      "pct_of_total_traffic": 97.58,
+      "fraud_count": 1740,
+      "legitimate_count": 84699,
+      "fraud_rate": 0.02013,
+      "enrichment_over_base_rate": 0.58,
+      "legit_false_positives": 0
+    },
+    "VERIFY": {
+      "action": "VERIFY",
+      "score_range": "[0.60, 0.65)",
+      "transaction_count": 240,
+      "pct_of_total_traffic": 0.27,
+      "fraud_count": 69,
+      "legitimate_count": 171,
+      "fraud_rate": 0.2875,
+      "enrichment_over_base_rate": 8.26,
+      "legit_false_positives": 171
+    },
+    "THROTTLE": {
+      "action": "THROTTLE",
+      "score_range": "[0.65, 0.80)",
+      "transaction_count": 525,
+      "pct_of_total_traffic": 0.59,
+      "fraud_count": 193,
+      "legitimate_count": 332,
+      "fraud_rate": 0.367619,
+      "enrichment_over_base_rate": 10.56,
+      "legit_false_positives": 332
+    },
+    "BLOCK": {
+      "action": "BLOCK",
+      "score_range": "[0.80, 1.00]",
+      "transaction_count": 1376,
+      "pct_of_total_traffic": 1.55,
+      "fraud_count": 1081,
+      "legitimate_count": 295,
+      "fraud_rate": 0.78561,
+      "enrichment_over_base_rate": 22.57,
+      "legit_false_positives": 295
+    }
+  },
+  "false_positive_reallocation_audit": {
+    "baseline_hard_block_fps": 755,
+    "progressive_block_fps": 295,
+    "net_hard_blocks_avoided": 460,
+    "pct_hard_blocks_avoided": 60.93,
+    "reallocation_of_755_baseline_fps": {
+      "ALLOW_downgraded": 14,
+      "VERIFY_diverted_to_stepup": 147,
+      "THROTTLE_diverted_to_velocity_cap": 317,
+      "BLOCK_retained_as_hard_block": 277
+    },
+    "block_composition": {
+      "retained_from_baseline_fp": 277,
+      "new_block_fps_from_context": 18,
+      "total_progressive_block_fps": 295
+    }
+  },
+  "threshold_distinction_audit": {
+    "status": "MATHEMATICALLY RESOLVED \u2014 LEGITIMATE THRESHOLD DIFFERENCE",
+    "description": "B3 evaluates conditional fusion as a single binary classifier at tau = 0.594298. The Progressive Policy evaluates operational action tiers starting with VERIFY at tau_verify = 0.600000.",
+    "boundary_interval": "[0.594298, 0.600000)",
+    "transactions_in_boundary": 18,
+    "frauds_in_boundary": 3,
+    "legitimate_in_boundary": 15,
+    "reconciliation": {
+      "B3_binary_true_positives": 1346,
+      "boundary_frauds_assigned_to_ALLOW": 3,
+      "progressive_policy_intervened_frauds": 1343,
+      "mathematical_identity": "1346 - 3 = 1343 (VERIFY: 69 + THROTTLE: 193 + BLOCK: 1,081)",
+      "B3_binary_false_positives": 813,
+      "boundary_legit_assigned_to_ALLOW": 15,
+      "progressive_policy_intervened_false_positives": 798,
+      "fp_identity": "813 - 15 = 798 (VERIFY: 171 + THROTTLE: 332 + BLOCK: 295)"
+    }
+  }
+}

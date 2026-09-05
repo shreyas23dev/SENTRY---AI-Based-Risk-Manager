@@ -1,0 +1,71 @@
+{
+  "winning_model": "LightGBM_V2",
+  "selection_criteria": "Max Validation PR-AUC, then Validation ROC-AUC",
+  "validation_pr_auc": 0.656797,
+  "validation_roc_auc": 0.928978,
+  "validation_metrics_at_frozen_threshold": {
+    "roc_auc": 0.928978,
+    "pr_auc": 0.656797,
+    "precision": 0.864829,
+    "recall": 0.422748,
+    "f1": 0.567896,
+    "fpr": 0.00235,
+    "tp": 1286,
+    "fp": 201,
+    "fn": 1756,
+    "tn": 85338,
+    "threshold": 0.594298
+  },
+  "validation_optimal_operating_point_FPR_le_1pct": {
+    "target_fpr": 0.01,
+    "threshold": 0.146356,
+    "precision": 0.673305,
+    "recall": 0.577909,
+    "f1": 0.621971,
+    "fpr": 0.009972,
+    "tp": 1758,
+    "fp": 853,
+    "fn": 1284,
+    "tn": 84686
+  },
+  "test_metrics_at_frozen_threshold": {
+    "roc_auc": 0.907799,
+    "pr_auc": 0.562998,
+    "precision": 0.786485,
+    "recall": 0.354849,
+    "f1": 0.489048,
+    "fpr": 0.003474,
+    "tp": 1094,
+    "fp": 297,
+    "fn": 1989,
+    "tn": 85200,
+    "threshold": 0.594298
+  },
+  "test_metrics_at_optimal_threshold": {
+    "roc_auc": 0.907799,
+    "pr_auc": 0.562998,
+    "precision": 0.579257,
+    "recall": 0.510866,
+    "f1": 0.542916,
+    "fpr": 0.013381,
+    "tp": 1575,
+    "fp": 1144,
+    "fn": 1508,
+    "tn": 84353,
+    "threshold": 0.146356
+  },
+  "all_validation_pr_aucs": {
+    "LightGBM_V2": 0.656797,
+    "CatBoost_V2": 0.578443,
+    "XGBoost_V2": 0.615021,
+    "Blend_LGB_CB_50_50": 0.632888,
+    "Blend_Tri_50_30_20": 0.644679
+  },
+  "all_validation_roc_aucs": {
+    "LightGBM_V2": 0.928978,
+    "CatBoost_V2": 0.920649,
+    "XGBoost_V2": 0.919223,
+    "Blend_LGB_CB_50_50": 0.928679,
+    "Blend_Tri_50_30_20": 0.931526
+  }
+}

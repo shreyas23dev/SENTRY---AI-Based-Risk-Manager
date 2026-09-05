@@ -1,0 +1,8 @@
+{
+  "tau_verify": 0.6,
+  "tau_throttle": 0.65,
+  "tau_block": 0.8,
+  "selected_on": "VALIDATION ONLY (88,581 chronological transactions)",
+  "selection_objective": "Balanced progressive fraud concentration & precision tiering",
+  "composite_validation_score": 0.727823
+}

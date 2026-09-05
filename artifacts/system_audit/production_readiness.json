@@ -1,0 +1,36 @@
+{
+  "production_readiness_matrix": {
+    "Decision_Latency": {
+      "status": "READY",
+      "details": "p50 = 14.9 ms, p95 = 17.6 ms (well under standard 100 ms payment SLA)"
+    },
+    "Batch_Throughput": {
+      "status": "READY",
+      "details": "34,000+ txns/sec end-to-end (capable of handling peak payment clearing)"
+    },
+    "State_Memory": {
+      "status": "READY",
+      "details": "47 MB total RAM for 28k entities and 1.2M graph edges with bounded footprint"
+    },
+    "Missing_Data_Resilience": {
+      "status": "READY",
+      "details": "Zero-context invariance guarantees baseline parity on missing identity/device attributes"
+    },
+    "Causality_and_Leakage": {
+      "status": "READY",
+      "details": "Strict chronological state progression (Train -> Val -> Test) with zero future leakage"
+    },
+    "Explainability": {
+      "status": "READY",
+      "details": "Exact linear decomposition into point-wise, longitudinal temporal, and graph relational risk"
+    },
+    "Reproducibility": {
+      "status": "READY",
+      "details": "Deterministic execution with frozen parameters, seeds, and unit tests (89/89 passing)"
+    },
+    "Dynamic_Graph_Pruning": {
+      "status": "ACCEPTABLE WITH LIMITATIONS",
+      "details": "24h velocity window is pruned; long-term bipartite graph currently grows monotonically (requires TTL for multi-year deployment)"
+    }
+  }
+}

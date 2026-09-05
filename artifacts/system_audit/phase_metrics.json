@@ -1,0 +1,137 @@
+{
+  "Phase_1_Baseline": {
+    "model_type": "LightGBM Binary Classifier (432 features)",
+    "test_roc_auc": 0.901943,
+    "test_pr_auc": 0.534008,
+    "test_f1": 0.509804,
+    "test_precision": 0.634913,
+    "test_recall": 0.425884,
+    "test_fpr": 0.008831,
+    "tp": 1313,
+    "fp": 755,
+    "threshold": 0.594298
+  },
+  "Phase_2_1_Entity_Temporal": {
+    "architecture": "Entity-scoped temporal state tracker on card_addr_email",
+    "test_f1": 0.509091,
+    "test_recall": 0.426857,
+    "frauds_recovered": 3,
+    "extra_fps": 16
+  },
+  "Phase_3_Relational_Risk": {
+    "architecture": "Causal bipartite graph on DeviceInfo (k_max=25 ceiling)",
+    "disjunctive_B2_f1": 0.358262,
+    "disjunctive_B2_frauds_recovered": 208,
+    "disjunctive_B2_extra_fps": 3132
+  },
+  "Phase_3_1_Conditional_Fusion": {
+    "rule": "R_t = clip(A_t + 1.0 * P_t + 0.05 * G_t, 0, 1) >= 0.594298",
+    "test_f1": 0.513544,
+    "test_recall": 0.436588,
+    "frauds_recovered": 33,
+    "extra_fps": 58,
+    "defensible_claim": "Conditional relational fusion captures 33 additional fraud cases while maintaining FPR below 1% (0.9509%)."
+  },
+  "Phase_4_Progressive_Policy": {
+    "tier_1_verify_plus": {
+      "threshold": 0.6,
+      "tp": 1343,
+      "fp": 798,
+      "fn": 1740,
+      "tn": 84699,
+      "precision": 0.627277,
+      "recall": 0.435615,
+      "f1": 0.514165,
+      "fpr": 0.009334,
+      "legitimate_friction": 0.009334
+    },
+    "tier_2_throttle_plus": {
+      "threshold": 0.65,
+      "tp": 1274,
+      "fp": 627,
+      "fn": 1809,
+      "tn": 84870,
+      "precision": 0.670174,
+      "recall": 0.413234,
+      "f1": 0.511236,
+      "fpr": 0.007334,
+      "legitimate_friction": 0.007334
+    },
+    "tier_3_block_only": {
+      "threshold": 0.8,
+      "tp": 1081,
+      "fp": 295,
+      "fn": 2002,
+      "tn": 85202,
+      "precision": 0.78561,
+      "recall": 0.350633,
+      "f1": 0.484862,
+      "fpr": 0.00345,
+      "legitimate_friction": 0.00345
+    },
+    "actions": {
+      "ALLOW": {
+        "action": "ALLOW",
+        "score_range": "[0.00, 0.60)",
+        "transaction_count": 86439,
+        "pct_of_total_traffic": 97.58,
+        "fraud_count": 1740,
+        "legitimate_count": 84699,
+        "fraud_rate": 0.02013,
+        "enrichment_over_base_rate": 0.58,
+        "legit_false_positives": 0
+      },
+      "VERIFY": {
+        "action": "VERIFY",
+        "score_range": "[0.60, 0.65)",
+        "transaction_count": 240,
+        "pct_of_total_traffic": 0.27,
+        "fraud_count": 69,
+        "legitimate_count": 171,
+        "fraud_rate": 0.2875,
+        "enrichment_over_base_rate": 8.26,
+        "legit_false_positives": 171
+      },
+      "THROTTLE": {
+        "action": "THROTTLE",
+        "score_range": "[0.65, 0.80)",
+        "transaction_count": 525,
+        "pct_of_total_traffic": 0.59,
+        "fraud_count": 193,
+        "legitimate_count": 332,
+        "fraud_rate": 0.367619,
+        "enrichment_over_base_rate": 10.56,
+        "legit_false_positives": 332
+      },
+      "BLOCK": {
+        "action": "BLOCK",
+        "score_range": "[0.80, 1.00]",
+        "transaction_count": 1376,
+        "pct_of_total_traffic": 1.55,
+        "fraud_count": 1081,
+        "legitimate_count": 295,
+        "fraud_rate": 0.78561,
+        "enrichment_over_base_rate": 22.57,
+        "legit_false_positives": 295
+      }
+    },
+    "false_positive_reallocation": {
+      "baseline_hard_block_fps": 755,
+      "progressive_block_fps": 295,
+      "net_hard_blocks_avoided": 460,
+      "pct_hard_blocks_avoided": 60.93,
+      "reallocation_of_755_baseline_fps": {
+        "ALLOW_downgraded": 14,
+        "VERIFY_diverted_to_stepup": 147,
+        "THROTTLE_diverted_to_velocity_cap": 317,
+        "BLOCK_retained_as_hard_block": 277
+      },
+      "block_composition": {
+        "retained_from_baseline_fp": 277,
+        "new_block_fps_from_context": 18,
+        "total_progressive_block_fps": 295
+      }
+    },
+    "defensible_claim": "Progressive policy converts binary decision into differentiated intervention tiers; BLOCK tier isolates concentrated risk with 78.56% precision and reduces customer friction by 460 fewer hard blocks."
+  }
+}

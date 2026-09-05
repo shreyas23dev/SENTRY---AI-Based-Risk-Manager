@@ -1,0 +1,23 @@
+{
+  "artifacts_on_disk_bytes": {
+    "lightgbm_model_pkl": 10582000,
+    "preprocessor_encoders_pkl": 420000,
+    "predictions_csv": 6870775
+  },
+  "in_memory_state_complexity": {
+    "temporal_memory": {
+      "active_entities_tracked": 28778,
+      "state_per_entity_bytes": 64,
+      "total_estimated_ram_mb": 1.84,
+      "complexity": "O(1) per entity, O(E) total"
+    },
+    "relational_graph": {
+      "maintained_entities": 23978,
+      "maintained_attribute_values": 1756,
+      "known_bipartite_edges": 1220462,
+      "velocity_tracked_entities": 23556,
+      "total_estimated_ram_mb": 45.2,
+      "complexity": "O(V + E) bounded by k_attr_max=25 ceiling"
+    }
+  }
+}

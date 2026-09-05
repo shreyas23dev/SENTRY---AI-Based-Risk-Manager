@@ -1,0 +1,141 @@
+{
+  "baseline_validation_metrics": {
+    "f1": 0.5767731878409976,
+    "precision": 0.7081339712918661,
+    "recall": 0.48652202498356345,
+    "fpr": 0.007131250073066087,
+    "tp": 1480,
+    "fp": 610,
+    "fn": 1562,
+    "decision_threshold": 0.5942984109122026
+  },
+  "candidate_key_evaluations": {
+    "card1": {
+      "key_label": "card1 (Single Attribute Key)",
+      "resolved_coverage_pct": 100.0,
+      "resolved_txns": 88581,
+      "unresolved_txns": 0,
+      "unique_entities_total": 6310,
+      "unique_entities_resolved": 6310,
+      "density_mean": 14.04,
+      "density_median": 2.0,
+      "density_p95": 43.0,
+      "density_max": 2362,
+      "validation_f1": 0.5769380599922088,
+      "validation_precision": 0.7079349904397706,
+      "validation_recall": 0.48685075608152534,
+      "validation_fpr": 0.007142940646956359,
+      "frauds_recovered": 1,
+      "extra_false_positives": 1,
+      "best_parameters": {
+        "beta": 0.5,
+        "gamma": 0.4,
+        "lambda": 0.02,
+        "delta": 0.05,
+        "temporal_threshold": 0.4
+      }
+    },
+    "card_email": {
+      "key_label": "card1 + P_emaildomain (Composite Key)",
+      "resolved_coverage_pct": 84.05,
+      "resolved_txns": 74451,
+      "unresolved_txns": 14130,
+      "unique_entities_total": 27156,
+      "unique_entities_resolved": 13026,
+      "density_mean": 5.72,
+      "density_median": 2.0,
+      "density_p95": 17.0,
+      "density_max": 1124,
+      "validation_f1": 0.5790188093853015,
+      "validation_precision": 0.7059101654846336,
+      "validation_recall": 0.4907955292570677,
+      "validation_fpr": 0.007271536959749354,
+      "frauds_recovered": 13,
+      "extra_false_positives": 12,
+      "best_parameters": {
+        "beta": 0.3,
+        "gamma": 0.5,
+        "lambda": 0.05,
+        "delta": 0.05,
+        "temporal_threshold": 0.7
+      }
+    },
+    "card_addr": {
+      "key_label": "card1 + addr1 (Composite Key)",
+      "resolved_coverage_pct": 89.95,
+      "resolved_txns": 79681,
+      "unresolved_txns": 8900,
+      "unique_entities_total": 22361,
+      "unique_entities_resolved": 13461,
+      "density_mean": 5.92,
+      "density_median": 2.0,
+      "density_p95": 19.0,
+      "density_max": 988,
+      "validation_f1": 0.5785315089612643,
+      "validation_precision": 0.6991150442477876,
+      "validation_recall": 0.49342537804076264,
+      "validation_fpr": 0.007552110733115889,
+      "frauds_recovered": 21,
+      "extra_false_positives": 36,
+      "best_parameters": {
+        "beta": 0.5,
+        "gamma": 0.3,
+        "lambda": 0.05,
+        "delta": 0.02,
+        "temporal_threshold": 0.6
+      }
+    },
+    "card_composite": {
+      "key_label": "card1..card6 (Multi-attribute Tuple Key)",
+      "resolved_coverage_pct": 98.84,
+      "resolved_txns": 87557,
+      "unresolved_txns": 1024,
+      "unique_entities_total": 7252,
+      "unique_entities_resolved": 6228,
+      "density_mean": 14.06,
+      "density_median": 2.0,
+      "density_p95": 43.0,
+      "density_max": 2362,
+      "validation_f1": 0.5769380599922088,
+      "validation_precision": 0.7079349904397706,
+      "validation_recall": 0.48685075608152534,
+      "validation_fpr": 0.007142940646956359,
+      "frauds_recovered": 1,
+      "extra_false_positives": 1,
+      "best_parameters": {
+        "beta": 0.5,
+        "gamma": 0.4,
+        "lambda": 0.02,
+        "delta": 0.05,
+        "temporal_threshold": 0.4
+      }
+    },
+    "card_addr_email": {
+      "key_label": "card1 + addr1 + P_emaildomain (3-Field Composite Key)",
+      "resolved_coverage_pct": 74.09,
+      "resolved_txns": 65633,
+      "unresolved_txns": 22948,
+      "unique_entities_total": 43978,
+      "unique_entities_resolved": 21030,
+      "density_mean": 3.12,
+      "density_median": 1.0,
+      "density_p95": 9.0,
+      "density_max": 389,
+      "validation_f1": 0.5827045850261172,
+      "validation_precision": 0.7080394922425952,
+      "validation_recall": 0.49506903353057197,
+      "validation_fpr": 0.007259846385859082,
+      "frauds_recovered": 26,
+      "extra_false_positives": 11,
+      "best_parameters": {
+        "beta": 0.3,
+        "gamma": 0.3,
+        "lambda": 0.05,
+        "delta": 0.02,
+        "temporal_threshold": 0.5
+      }
+    }
+  },
+  "evaluation_scope": "VALIDATION ONLY (88,581 chronological transactions)",
+  "timestamp": "2026-09-01T14:29:39Z"
+}

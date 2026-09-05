@@ -1,0 +1,333 @@
+{
+  "reproduction_verified": true,
+  "recomputed_metrics": {
+    "roc_auc": 0.907799,
+    "pr_auc": 0.562998,
+    "precision": 0.786485,
+    "recall": 0.354849,
+    "f1": 0.489048,
+    "fpr": 0.003474,
+    "tp": 1094,
+    "fp": 297,
+    "fn": 1989,
+    "tn": 85200,
+    "threshold": 0.594298
+  },
+  "score_distribution": {
+    "B0_Baseline": {
+      "fraud_distribution": {
+        "min": 0.00064,
+        "max": 0.999426,
+        "mean": 0.505539,
+        "median": 0.446293,
+        "p90": 0.993445,
+        "p95": 0.996745,
+        "p99": 0.99882
+      },
+      "legitimate_distribution": {
+        "min": 3.9e-05,
+        "max": 0.996335,
+        "mean": 0.052962,
+        "median": 0.015569,
+        "p90": 0.132596,
+        "p95": 0.243619,
+        "p99": 0.568598
+      },
+      "overall_above_threshold": 2068,
+      "frauds_above_threshold": 1313,
+      "legit_above_threshold": 755
+    },
+    "V2_Baseline": {
+      "fraud_distribution": {
+        "min": 1e-06,
+        "max": 0.999999,
+        "mean": 0.39513,
+        "median": 0.170123,
+        "p90": 0.998967,
+        "p95": 0.999797,
+        "p99": 0.999978
+      },
+      "legitimate_distribution": {
+        "min": 0.0,
+        "max": 0.999496,
+        "mean": 0.009565,
+        "median": 0.000473,
+        "p90": 0.008774,
+        "p95": 0.02382,
+        "p99": 0.218248
+      },
+      "overall_above_threshold": 1391,
+      "frauds_above_threshold": 1094,
+      "legit_above_threshold": 297
+    }
+  },
+  "causal_inspection_samples": [
+    {
+      "sample_index": 86742,
+      "TransactionID": 3575702,
+      "entity_proxy": "9112_476.0_gmail.com",
+      "current_TransactionDT": 15773916.0,
+      "latest_prior_TransactionDT": 13292967.0,
+      "is_strictly_prior": true,
+      "feature_entity_prior_count": 3.0,
+      "feature_hist_mean_amt": 68.98333740234375,
+      "feature_dt_elapsed": 2480949.0
+    },
+    {
+      "sample_index": 28265,
+      "TransactionID": 3517225,
+      "entity_proxy": "unresolved_3517225",
+      "current_TransactionDT": 13965915.0,
+      "latest_prior_TransactionDT": -1.0,
+      "is_strictly_prior": true,
+      "feature_entity_prior_count": 0.0,
+      "feature_hist_mean_amt": 39.95000076293945,
+      "feature_dt_elapsed": -1.0
+    },
+    {
+      "sample_index": 87504,
+      "TransactionID": 3576464,
+      "entity_proxy": "8661_485.0_aol.com",
+      "current_TransactionDT": 15789129.0,
+      "latest_prior_TransactionDT": -1.0,
+      "is_strictly_prior": true,
+      "feature_entity_prior_count": 0.0,
+      "feature_hist_mean_amt": 103.97000122070312,
+      "feature_dt_elapsed": -1.0
+    },
+    {
+      "sample_index": 33675,
+      "TransactionID": 3522635,
+      "entity_proxy": "16070_264.0_gmail.com",
+      "current_TransactionDT": 14096327.0,
+      "latest_prior_TransactionDT": 13410902.0,
+      "is_strictly_prior": true,
+      "feature_entity_prior_count": 16.0,
+      "feature_hist_mean_amt": 71.63562774658203,
+      "feature_dt_elapsed": 685425.0
+    },
+    {
+      "sample_index": 23180,
+      "TransactionID": 3512140,
+      "entity_proxy": "12839_264.0_gmail.com",
+      "current_TransactionDT": 13806561.0,
+      "latest_prior_TransactionDT": 13805239.0,
+      "is_strictly_prior": true,
+      "feature_entity_prior_count": 1269.0,
+      "feature_hist_mean_amt": 106.51852416992188,
+      "feature_dt_elapsed": 1322.0
+    },
+    {
+      "sample_index": 15178,
+      "TransactionID": 3504138,
+      "entity_proxy": "2884_420.0_gmail.com",
+      "current_TransactionDT": 13549054.0,
+      "latest_prior_TransactionDT": 13407639.0,
+      "is_strictly_prior": true,
+      "feature_entity_prior_count": 49.0,
+      "feature_hist_mean_amt": 145.03672790527344,
+      "feature_dt_elapsed": 141415.0
+    },
+    {
+      "sample_index": 12293,
+      "TransactionID": 3501253,
+      "entity_proxy": "2744_299.0_aol.com",
+      "current_TransactionDT": 13461167.0,
+      "latest_prior_TransactionDT": 12361692.0,
+      "is_strictly_prior": true,
+      "feature_entity_prior_count": 9.0,
+      "feature_hist_mean_amt": 179.9822235107422,
+      "feature_dt_elapsed": 1099475.0
+    },
+    {
+      "sample_index": 9291,
+      "TransactionID": 3498251,
+      "entity_proxy": "9500_272.0_gmail.com",
+      "current_TransactionDT": 13380623.0,
+      "latest_prior_TransactionDT": 13378731.0,
+      "is_strictly_prior": true,
+      "feature_entity_prior_count": 1010.0,
+      "feature_hist_mean_amt": 100.14286041259766,
+      "feature_dt_elapsed": 1892.0
+    },
+    {
+      "sample_index": 86508,
+      "TransactionID": 3575468,
+      "entity_proxy": "7900_143.0_anonymous.com",
+      "current_TransactionDT": 15765226.0,
+      "latest_prior_TransactionDT": 15763960.0,
+      "is_strictly_prior": true,
+      "feature_entity_prior_count": 18.0,
+      "feature_hist_mean_amt": 63.00833511352539,
+      "feature_dt_elapsed": 1266.0
+    },
+    {
+      "sample_index": 81777,
+      "TransactionID": 3570737,
+      "entity_proxy": "unresolved_3570737",
+      "current_TransactionDT": 15612217.0,
+      "latest_prior_TransactionDT": -1.0,
+      "is_strictly_prior": true,
+      "feature_entity_prior_count": 0.0,
+      "feature_hist_mean_amt": 40.0,
+      "feature_dt_elapsed": -1.0
+    }
+  ],
+  "frequency_key_isolation": {
+    "card1": {
+      "train_unique_keys": 12242,
+      "val_unique_keys": 6310,
+      "test_unique_keys": 6316,
+      "train_only_keys": 5283,
+      "val_unseen_in_train": 675,
+      "test_unseen_in_train": 774,
+      "val_unseen_mapped_to_zero_verified": true,
+      "test_unseen_mapped_to_zero_verified": true
+    },
+    "addr1": {
+      "train_unique_keys": 318,
+      "val_unique_keys": 116,
+      "test_unique_keys": 83,
+      "train_only_keys": 207,
+      "val_unseen_in_train": 12,
+      "test_unseen_in_train": 2,
+      "val_unseen_mapped_to_zero_verified": true,
+      "test_unseen_mapped_to_zero_verified": true
+    },
+    "P_emaildomain": {
+      "train_unique_keys": 59,
+      "val_unique_keys": 59,
+      "test_unique_keys": 59,
+      "train_only_keys": 0,
+      "val_unseen_in_train": 0,
+      "test_unseen_in_train": 0,
+      "val_unseen_mapped_to_zero_verified": true,
+      "test_unseen_mapped_to_zero_verified": true
+    },
+    "DeviceInfo": {
+      "train_unique_keys": 1546,
+      "val_unique_keys": 752,
+      "test_unique_keys": 746,
+      "train_only_keys": 744,
+      "val_unseen_in_train": 135,
+      "test_unseen_in_train": 155,
+      "val_unseen_mapped_to_zero_verified": true,
+      "test_unseen_mapped_to_zero_verified": true
+    }
+  },
+  "entity_key_definition": "Entity Proxy Key = card1 + '_' + addr1 + '_' + P_emaildomain (with strict 'unresolved_<TransactionID>' fallback)",
+  "bootstrap_significance": {
+    "n_replicates": 5000,
+    "delta_precision": {
+      "mean": 0.151473,
+      "ci_95_lower": 0.134328,
+      "ci_95_upper": 0.169081
+    },
+    "delta_recall": {
+      "mean": -0.071029,
+      "ci_95_lower": -0.08156,
+      "ci_95_upper": -0.060956
+    },
+    "delta_f1": {
+      "mean": -0.020792,
+      "ci_95_lower": -0.031933,
+      "ci_95_upper": -0.009673
+    },
+    "delta_fpr": {
+      "mean": -0.005352,
+      "ci_95_lower": -0.005865,
+      "ci_95_upper": -0.004844
+    },
+    "delta_tp": {
+      "mean": -218.85,
+      "ci_95_lower": -252.0,
+      "ci_95_upper": -187.0
+    },
+    "delta_fp": {
+      "mean": -457.6,
+      "ci_95_lower": -501.0,
+      "ci_95_upper": -414.0
+    }
+  },
+  "relational_rescues": [
+    {
+      "TransactionID": 3495186,
+      "TransactionDT": 13305085.0,
+      "entity_proxy": "unresolved_3495186",
+      "isFraud": 1,
+      "A_t": 0.587237,
+      "P_t": 0.0,
+      "G_t": 0.6,
+      "R_t": 0.617237,
+      "action": "VERIFY"
+    },
+    {
+      "TransactionID": 3497140,
+      "TransactionDT": 13364530.0,
+      "entity_proxy": "unresolved_3497140",
+      "isFraud": 1,
+      "A_t": 0.579872,
+      "P_t": 0.0,
+      "G_t": 0.6,
+      "R_t": 0.609872,
+      "action": "VERIFY"
+    },
+    {
+      "TransactionID": 3521766,
+      "TransactionDT": 14078747.0,
+      "entity_proxy": "unresolved_3521766",
+      "isFraud": 1,
+      "A_t": 0.591497,
+      "P_t": 0.0,
+      "G_t": 0.6,
+      "R_t": 0.621497,
+      "action": "VERIFY"
+    },
+    {
+      "TransactionID": 3539310,
+      "TransactionDT": 14591537.0,
+      "entity_proxy": "unresolved_3539310",
+      "isFraud": 1,
+      "A_t": 0.567705,
+      "P_t": 0.0,
+      "G_t": 0.6,
+      "R_t": 0.597705,
+      "action": "ALLOW"
+    }
+  ],
+  "slow_burn_trajectory": {
+    "entity_proxy": "18370_251.0_yahoo.com",
+    "n_transactions": 2,
+    "has_pure_temporal_final_crossing": true,
+    "transactions": [
+      {
+        "TransactionID": 3489452,
+        "TransactionDT": 13179429.0,
+        "TransactionAmt": 59.0,
+        "isFraud": 1,
+        "A_t": 0.862313,
+        "E_t": 0.866024,
+        "P_t_before": 0.25,
+        "P_t_after": 0.3,
+        "G_t": 0.0,
+        "R_t": 1.0,
+        "baseline_decision": "BLOCK",
+        "trustgraph_decision": "BLOCK"
+      },
+      {
+        "TransactionID": 3494184,
+        "TransactionDT": 13287414.0,
+        "TransactionAmt": 49.0,
+        "isFraud": 1,
+        "A_t": 0.35558,
+        "E_t": 0.712891,
+        "P_t_before": 0.3,
+        "P_t_after": 0.35,
+        "G_t": 0.0,
+        "R_t": 0.65558,
+        "baseline_decision": "ALLOW",
+        "trustgraph_decision": "THROTTLE"
+      }
+    ]
+  }
+}

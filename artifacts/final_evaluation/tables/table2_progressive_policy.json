@@ -1,0 +1,90 @@
+{
+  "table": [
+    {
+      "Tier": "Tier 1",
+      "Decision Threshold": "R >= 0.60",
+      "Actions Included": "VERIFY + THROTTLE + BLOCK",
+      "TP": 1343,
+      "FP": 798,
+      "FN": 1740,
+      "TN": 84699,
+      "Precision": 0.6272769733769267,
+      "Recall": 0.43561466104443725,
+      "F1": 0.5141653905053598,
+      "FPR": 0.009333660830204569,
+      "Legitimate Friction": 0.009333660830204569
+    },
+    {
+      "Tier": "Tier 2",
+      "Decision Threshold": "R >= 0.65",
+      "Actions Included": "THROTTLE + BLOCK",
+      "TP": 1274,
+      "FP": 627,
+      "FN": 1809,
+      "TN": 84870,
+      "Precision": 0.6701735928458706,
+      "Recall": 0.41323386312033733,
+      "F1": 0.5112359550561798,
+      "FPR": 0.00733359065230359,
+      "Legitimate Friction": 0.00733359065230359
+    },
+    {
+      "Tier": "Tier 3",
+      "Decision Threshold": "R >= 0.80",
+      "Actions Included": "BLOCK only",
+      "TP": 1081,
+      "FP": 295,
+      "FN": 2002,
+      "TN": 85202,
+      "Precision": 0.7856104651162791,
+      "Recall": 0.3506325008108985,
+      "F1": 0.4848620766988114,
+      "FPR": 0.0034504134647999345,
+      "Legitimate Friction": 0.0034504134647999345
+    }
+  ],
+  "confidence_intervals": {
+    "Tier 1": {
+      "precision_ci_95": [
+        0.606585,
+        0.647513
+      ],
+      "recall_ci_95": [
+        0.418203,
+        0.453187
+      ],
+      "fpr_ci_95": [
+        0.008711,
+        0.010001
+      ]
+    },
+    "Tier 2": {
+      "precision_ci_95": [
+        0.648714,
+        0.690946
+      ],
+      "recall_ci_95": [
+        0.395971,
+        0.430713
+      ],
+      "fpr_ci_95": [
+        0.006783,
+        0.007928
+      ]
+    },
+    "Tier 3": {
+      "precision_ci_95": [
+        0.763147,
+        0.806484
+      ],
+      "recall_ci_95": [
+        0.333984,
+        0.367652
+      ],
+      "fpr_ci_95": [
+        0.003079,
+        0.003866
+      ]
+    }
+  }
+}

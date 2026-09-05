@@ -1,0 +1,31 @@
+{
+  "case_id": "case_01_agreement_block",
+  "title": "Case 1: Agreement / High Risk / Block",
+  "description": "Real dataset transaction showing analyst agreement and deterministic BLOCK",
+  "source": "IEEE-CIS Fraud Detection held-out TEST dataset (test_risk_scores.parquet)",
+  "dataset_split": "TEST",
+  "transaction_id": 3570805,
+  "dataset_row_identifier": "3570805",
+  "label": 1,
+  "amount": 82.63,
+  "expected_behavior": {
+    "transaction_analyst": "CRITICAL",
+    "slow_burn_analyst": "CRITICAL",
+    "risk_council": "AGREEMENT",
+    "risk_engine_decision": "BLOCK"
+  },
+  "actual_pipeline_outputs": {
+    "A_t": 0.9921,
+    "P_t": 0.95,
+    "G_t": 0.7375,
+    "R_t": 0.9922,
+    "decision": "BLOCK",
+    "council_status": "AGREEMENT",
+    "evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "graph_context_exists": true,
+    "sufficient_history_exists": true
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "threshold": 0.5942984109122026,
+  "selected_on": "validation",
+  "selection_criterion": "maximise F1",
+  "validation_f1": 0.5767731878409977
+}

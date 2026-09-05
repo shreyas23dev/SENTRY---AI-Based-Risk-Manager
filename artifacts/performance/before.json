@@ -1,0 +1,71 @@
+{
+  "phase": "before",
+  "timestamp": "2026-09-01T18:59:59Z",
+  "sample_size": 5000,
+  "warmup_runs": 50,
+  "seed": 42,
+  "components": {
+    "preprocessing": {
+      "mean_ms": 14.5954,
+      "p50_ms": 14.4956,
+      "p95_ms": 15.5919,
+      "p99_ms": 16.385,
+      "max_ms": 24.431,
+      "min_ms": 13.361
+    },
+    "model_inference": {
+      "mean_ms": 4.4186,
+      "p50_ms": 3.7464,
+      "p95_ms": 6.9017,
+      "p99_ms": 15.9138,
+      "max_ms": 71.9562,
+      "min_ms": 3.4859
+    },
+    "temporal": {
+      "mean_ms": 0.0468,
+      "p50_ms": 0.0483,
+      "p95_ms": 0.0563,
+      "p99_ms": 0.0704,
+      "max_ms": 0.1467,
+      "min_ms": 0.0331
+    },
+    "relational_graph": {
+      "mean_ms": 0.021,
+      "p50_ms": 0.0205,
+      "p95_ms": 0.0291,
+      "p99_ms": 0.0441,
+      "max_ms": 0.2356,
+      "min_ms": 0.0144
+    },
+    "fusion": {
+      "mean_ms": 0.0198,
+      "p50_ms": 0.0136,
+      "p95_ms": 0.028,
+      "p99_ms": 0.2153,
+      "max_ms": 0.8678,
+      "min_ms": 0.009
+    },
+    "policy": {
+      "mean_ms": 0.0045,
+      "p50_ms": 0.0044,
+      "p95_ms": 0.0055,
+      "p99_ms": 0.0067,
+      "max_ms": 0.0293,
+      "min_ms": 0.0032
+    },
+    "end_to_end": {
+      "mean_ms": 19.1061,
+      "p50_ms": 18.4744,
+      "p95_ms": 21.8881,
+      "p99_ms": 30.3193,
+      "max_ms": 87.0686,
+      "min_ms": 17.2277
+    }
+  },
+  "batch_throughput_txns_per_sec": 19095,
+  "notes": {
+    "timing_scope": "Single-row DataFrame preprocessing + model + temporal + graph + fusion + policy",
+    "not_included": "Dataset loading, chronological splitting, graph construction from TRAIN",
+    "preprocessing_path": "pd.DataFrame single-row via BaselinePreprocessor.transform()"
+  }
+}

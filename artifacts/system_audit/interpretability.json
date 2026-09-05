@@ -1,0 +1,41 @@
+{
+  "framework": "Additive contextual decomposition: R_t = clip(A_t + 1.0*P_t + 0.05*G_t, 0, 1)",
+  "signal_roles": {
+    "A_t": "Point-in-time tabular risk probability from 432 static features",
+    "P_t": "Longitudinal velocity risk from repeated transactions on the same entity proxy",
+    "G_t": "Bipartite relational risk from cross-entity device sharing and velocity",
+    "R_t": "Fused risk score compared against frozen baseline threshold (0.594298)"
+  },
+  "representative_case_walkthroughs": [
+    {
+      "case_type": "Baseline-Dominated Fraud Case",
+      "TransactionID": 3489000,
+      "A_t": 0.8842,
+      "P_t": 0.0,
+      "G_t": 0.0,
+      "R_t": 0.8842,
+      "decision": "Flagged as Fraud (A_t >= 0.594298)",
+      "explanation": "High static tabular risk from anomalous transaction amount, card velocity, and domain mismatch. Zero context needed."
+    },
+    {
+      "case_type": "Temporal-Dominated Fraud Case",
+      "TransactionID": 3549990,
+      "A_t": 0.0181,
+      "P_t": 0.6,
+      "G_t": 0.0,
+      "R_t": 0.6181,
+      "decision": "Flagged as Fraud (R_t >= 0.594298)",
+      "explanation": "Low static risk (0.0181) but entity proxy exhibited rapid succession of sub-threshold bursts accumulating P_t=0.60."
+    },
+    {
+      "case_type": "Relational-Dominated Fraud Case",
+      "TransactionID": 3495186,
+      "A_t": 0.5853,
+      "P_t": 0.0,
+      "G_t": 0.6,
+      "R_t": 0.6153,
+      "decision": "Flagged as Fraud (R_t >= 0.594298)",
+      "explanation": "Borderline point-wise score (0.5853, gap=0.0090). Shared hardware device (Lenovo YT3-850M) linked to 8 distinct pseudonymous entities provided +0.0300 relational boost."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "rule": "F1",
+  "formula": "clip(A_t + alpha*P_t + beta*G_t, 0, 1)",
+  "params": {
+    "alpha": 1.0,
+    "beta": 0.05,
+    "tau_comb": 0.594298
+  },
+  "metrics": {
+    "tp": 1537,
+    "fp": 694,
+    "fn": 1505,
+    "tn": 84845,
+    "precision": 0.688929,
+    "recall": 0.50526,
+    "f1": 0.58297,
+    "fpr": 0.008113,
+    "fnr": 0.49474,
+    "pr_auc": 0.590364,
+    "roc_auc": 0.927584,
+    "additional_frauds_recovered": 57,
+    "additional_false_positives": 84,
+    "recall_gain_over_b0": 0.018738,
+    "fpr_change_over_b0": 0.000982
+  },
+  "invariance_diagnostics": {
+    "all_invariants_passed": true,
+    "zero_context_invariance_passed": true,
+    "max_zero_context_deviation": 0.0,
+    "zero_context_transactions": 82630,
+    "non_suppression_passed": true,
+    "suppression_violations": 0,
+    "max_suppression_amount": 0.0,
+    "boundedness_passed": true,
+    "min_R_t": 6.751296488050747e-05,
+    "max_R_t": 1.0
+  }
+}

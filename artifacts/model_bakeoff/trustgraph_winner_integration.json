@@ -1,0 +1,30 @@
+{
+  "LightGBM_V2_TRUSTGRAPH": {
+    "fused_metrics": {
+      "roc_auc": 0.90668,
+      "pr_auc": 0.548547,
+      "precision": 0.778846,
+      "recall": 0.367824,
+      "f1": 0.49967,
+      "fpr": 0.003766,
+      "tp": 1134,
+      "fp": 322,
+      "fn": 1949,
+      "tn": 85175,
+      "threshold": 0.594298
+    },
+    "block_tier_metrics": {
+      "roc_auc": 0.90668,
+      "pr_auc": 0.548547,
+      "precision": 0.83101,
+      "recall": 0.309439,
+      "f1": 0.450957,
+      "fpr": 0.002269,
+      "tp": 954,
+      "fp": 194,
+      "fn": 2129,
+      "tn": 85303,
+      "threshold": 0.8
+    }
+  }
+}

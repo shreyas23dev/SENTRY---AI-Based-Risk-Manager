@@ -1,0 +1,50 @@
+{
+  "total_found": 4,
+  "statement": "Found 4 pure relational threshold-crossing frauds.",
+  "sample_cases": [
+    {
+      "TransactionID": 3495186,
+      "TransactionDT": 13305085.0,
+      "entity_proxy": "unresolved_3495186",
+      "isFraud": 1,
+      "A_t": 0.587237,
+      "P_t": 0.0,
+      "G_t": 0.6,
+      "R_t": 0.617237,
+      "action": "VERIFY"
+    },
+    {
+      "TransactionID": 3497140,
+      "TransactionDT": 13364530.0,
+      "entity_proxy": "unresolved_3497140",
+      "isFraud": 1,
+      "A_t": 0.579872,
+      "P_t": 0.0,
+      "G_t": 0.6,
+      "R_t": 0.609872,
+      "action": "VERIFY"
+    },
+    {
+      "TransactionID": 3521766,
+      "TransactionDT": 14078747.0,
+      "entity_proxy": "unresolved_3521766",
+      "isFraud": 1,
+      "A_t": 0.591497,
+      "P_t": 0.0,
+      "G_t": 0.6,
+      "R_t": 0.621497,
+      "action": "VERIFY"
+    },
+    {
+      "TransactionID": 3539310,
+      "TransactionDT": 14591537.0,
+      "entity_proxy": "unresolved_3539310",
+      "isFraud": 1,
+      "A_t": 0.567705,
+      "P_t": 0.0,
+      "G_t": 0.6,
+      "R_t": 0.597705,
+      "action": "ALLOW"
+    }
+  ]
+}

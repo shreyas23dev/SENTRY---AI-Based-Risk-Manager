@@ -1,0 +1,66 @@
+{
+  "sample_size": 10000,
+  "mismatches": 14,
+  "max_diff_A_t": 0.2654705,
+  "max_diff_R_t": 0.86001445,
+  "equivalence_verified": false,
+  "components": {
+    "preprocessing": {
+      "mean_ms": 0.214,
+      "p50_ms": 0.2134,
+      "p95_ms": 0.2549,
+      "p99_ms": 0.296,
+      "max_ms": 2.0331,
+      "min_ms": 0.1397
+    },
+    "model_inference": {
+      "mean_ms": 2.3662,
+      "p50_ms": 2.3223,
+      "p95_ms": 2.9201,
+      "p99_ms": 3.3601,
+      "max_ms": 12.3951,
+      "min_ms": 1.5637
+    },
+    "temporal": {
+      "mean_ms": 0.0406,
+      "p50_ms": 0.041,
+      "p95_ms": 0.0506,
+      "p99_ms": 0.0651,
+      "max_ms": 0.3141,
+      "min_ms": 0.022
+    },
+    "relational_graph": {
+      "mean_ms": 0.0444,
+      "p50_ms": 0.0423,
+      "p95_ms": 0.0628,
+      "p99_ms": 0.0803,
+      "max_ms": 0.702,
+      "min_ms": 0.0225
+    },
+    "fusion": {
+      "mean_ms": 0.0362,
+      "p50_ms": 0.028,
+      "p95_ms": 0.0491,
+      "p99_ms": 0.2865,
+      "max_ms": 1.5998,
+      "min_ms": 0.0096
+    },
+    "policy": {
+      "mean_ms": 0.0007,
+      "p50_ms": 0.0007,
+      "p95_ms": 0.001,
+      "p99_ms": 0.0012,
+      "max_ms": 0.0324,
+      "min_ms": 0.0003
+    },
+    "end_to_end": {
+      "mean_ms": 2.7021,
+      "p50_ms": 2.6546,
+      "p95_ms": 3.327,
+      "p99_ms": 3.804,
+      "max_ms": 12.7479,
+      "min_ms": 1.8139
+    }
+  },
+  "batch_throughput_txns_per_sec": 1039
+}

@@ -1,0 +1,6 @@
+{
+  "throughput_limits": "34,000+ batch transactions/sec end-to-end; 65+ txns/sec sequential online per single core (15.3 ms latency)",
+  "entity_scaling": "Linear O(E) memory growth for temporal tracking; zero cross-entity contention",
+  "graph_scaling": "Causal bipartite graph bounded by k_attr_max=25 ceiling prevents combinatorial explosion on generic attributes",
+  "bottleneck_identification": "Per-row DataFrame preprocessing overhead (11.8 ms p50) dominates model/graph execution (3.1 ms + 0.01 ms)"
+}

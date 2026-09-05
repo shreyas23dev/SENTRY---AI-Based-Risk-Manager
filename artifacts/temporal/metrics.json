@@ -1,0 +1,135 @@
+{
+  "global_stream": {
+    "metrics": {
+      "partition": "test_global",
+      "total_transactions": 88580,
+      "fraud_count": 3083,
+      "legit_count": 85497,
+      "fraud_prevalence": 0.034805,
+      "baseline_threshold": 0.5942984109122026,
+      "temporal_threshold": 0.5,
+      "B0_baseline": {
+        "roc_auc": 0.901943,
+        "pr_auc": 0.534008,
+        "precision": 0.634913,
+        "recall": 0.425884,
+        "f1": 0.509804,
+        "fpr": 0.008831,
+        "fnr": 0.574116,
+        "tp": 1313,
+        "fp": 755,
+        "tn": 84742,
+        "fn": 1770
+      },
+      "B1_temporal": {
+        "roc_auc": 0.901785,
+        "pr_auc": 0.532758,
+        "precision": 0.630947,
+        "recall": 0.425884,
+        "f1": 0.508521,
+        "fpr": 0.008983,
+        "fnr": 0.574116,
+        "tp": 1313,
+        "fp": 768,
+        "tn": 84729,
+        "fn": 1770
+      },
+      "comparative_delta": {
+        "additional_frauds_recovered": 0,
+        "baseline_false_negatives": 1770,
+        "pct_baseline_fn_recovered": 0.0,
+        "additional_false_positives": 13,
+        "recall_gain": 0.0,
+        "f1_gain": -0.001283,
+        "fpr_change": 0.000152,
+        "precision_change": -0.003966
+      }
+    },
+    "parameters": {
+      "beta": 0.3,
+      "gamma": 0.5,
+      "lambda": 0.05,
+      "delta": 0.1,
+      "temporal_threshold": 0.5
+    },
+    "timing": {
+      "total_seconds": 0.8387,
+      "throughput_txn_per_s": 105616.2,
+      "latency_ms_per_txn": 0.009468
+    }
+  },
+  "entity_stream_card_email": {
+    "metrics": {
+      "partition": "test_entity_card_email",
+      "total_transactions": 88580,
+      "fraud_count": 3083,
+      "legit_count": 85497,
+      "fraud_prevalence": 0.034805,
+      "baseline_threshold": 0.5942984109122026,
+      "temporal_threshold": 0.6,
+      "B0_baseline": {
+        "roc_auc": 0.901943,
+        "pr_auc": 0.534008,
+        "precision": 0.634913,
+        "recall": 0.425884,
+        "f1": 0.509804,
+        "fpr": 0.008831,
+        "fnr": 0.574116,
+        "tp": 1313,
+        "fp": 755,
+        "tn": 84742,
+        "fn": 1770
+      },
+      "B1_temporal": {
+        "roc_auc": 0.90205,
+        "pr_auc": 0.519652,
+        "precision": 0.628285,
+        "recall": 0.426533,
+        "f1": 0.508114,
+        "fpr": 0.0091,
+        "fnr": 0.573467,
+        "tp": 1315,
+        "fp": 778,
+        "tn": 84719,
+        "fn": 1768
+      },
+      "comparative_delta": {
+        "additional_frauds_recovered": 2,
+        "baseline_false_negatives": 1770,
+        "pct_baseline_fn_recovered": 0.11,
+        "additional_false_positives": 23,
+        "recall_gain": 0.000649,
+        "f1_gain": -0.00169,
+        "fpr_change": 0.000269,
+        "precision_change": -0.006628
+      }
+    },
+    "parameters": {
+      "entity_key": "card_email",
+      "beta": 0.5,
+      "gamma": 0.5,
+      "lambda": 0.05,
+      "delta": 0.05,
+      "temporal_threshold": 0.6,
+      "f1": 0.5791820120178329,
+      "recall": 0.4911242603550296,
+      "precision": 0.7057156353330184,
+      "fpr": 0.007283227533639626,
+      "frauds_recovered": 14,
+      "extra_fp": 13
+    },
+    "timing": {
+      "total_seconds": 0.9891,
+      "throughput_txn_per_s": 89555.6,
+      "latency_ms_per_txn": 0.011166
+    }
+  },
+  "slow_burn_results": {
+    "attack_magnitude_At": 0.4,
+    "baseline_threshold": 0.5942984109122026,
+    "temporal_threshold": 0.5,
+    "point_wise_detected": false,
+    "temporal_detected": false,
+    "detection_delay_steps": -1
+  }
+}

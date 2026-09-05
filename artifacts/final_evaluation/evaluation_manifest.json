@@ -1,0 +1,98 @@
+{
+  "evaluation_manifest_version": "1.0.0-FINAL",
+  "frozen_at_utc": "2026-09-02T17:51:59.993732+00:00",
+  "git_commit_hash": "COMMITTED_EVAL_FREEZE",
+  "dataset": {
+    "name": "IEEE-CIS Fraud Detection",
+    "test_partition": "Held-out Chronological TEST",
+    "N_total": 88580,
+    "fraud_count": 3083,
+    "legitimate_count": 85497,
+    "base_fraud_prevalence": 0.034805,
+    "temporal_range_seconds": [
+      13151945,
+      15811131
+    ]
+  },
+  "model_and_pipeline_configuration": {
+    "model_type": "LightGBM Binary Classifier (432 base tabular features)",
+    "scale_pos_weight": 27.43,
+    "num_leaves": 256,
+    "learning_rate": 0.05,
+    "temporal_engine": {
+      "beta": 0.3,
+      "gamma": 0.5,
+      "lambda": 0.05,
+      "delta": 0.05,
+      "entity_key": "card_addr_email"
+    },
+    "relational_engine": {
+      "attribute": "DeviceInfo",
+      "k_attr_max": 25,
+      "window_sec": 86400.0,
+      "d_ref": 3.0,
+      "v_ref": 10.0,
+      "w_D": 0.6,
+      "w_V": 0.4
+    },
+    "fusion_rule": "R_t = clip(A_t + 1.0 * P_t + 0.05 * G_t, 0.0, 1.0)",
+    "frozen_baseline_threshold": 0.594298,
+    "policy_thresholds": {
+      "tau_verify": 0.6,
+      "tau_throttle": 0.65,
+      "tau_block": 0.8
+    }
+  },
+  "evaluation_artifacts": {
+    "report": "artifacts/final_evaluation/FINAL_EVALUATION.md",
+    "table1_model_evolution": "artifacts/final_evaluation/tables/table1_model_evolution.csv",
+    "table2_progressive_policy": "artifacts/final_evaluation/tables/table2_progressive_policy.csv",
+    "table3_operational_stratification": "artifacts/final_evaluation/tables/table3_operational_stratification.csv",
+    "transaction_audit": "artifacts/final_evaluation/transaction_level_audit.json",
+    "plots": [
+      "artifacts/final_evaluation/plots/01_risk_action_distribution.png",
+      "artifacts/final_evaluation/plots/02_fraud_enrichment_by_tier.png",
+      "artifacts/final_evaluation/plots/03_progressive_precision_recall_tradeoff.png",
+      "artifacts/final_evaluation/plots/04_fpr_vs_fraud_capture.png"
+    ],
+    "predictions_csv": [
+      "results/policy_predictions.csv",
+      "results/fusion_predictions.csv"
+    ]
+  },
+  "headline_metrics": {
+    "B0_baseline": {
+      "precision": 0.6349129593810445,
+      "recall": 0.42588387933830685,
+      "f1": 0.5098039215686275,
+      "fpr": 0.008830719206521866,
+      "tp": 1313,
+      "fp": 755
+    },
+    "B3_conditional_fusion": {
+      "precision": 0.6234367762853172,
+      "recall": 0.4365877392150503,
+      "f1": 0.5135444486837084,
+      "fpr": 0.009509105582652022,
+      "tp": 1346,
+      "fp": 813
+    },
+    "progressive_tier_1_verify_plus": {
+      "precision": 0.6272769733769267,
+      "recall": 0.43561466104443725,
+      "f1": 0.5141653905053598,
+      "fpr": 0.009333660830204569,
+      "tp": 1343,
+      "fp": 798
+    },
+    "progressive_tier_3_block": {
+      "precision": 0.7856104651162791,
+      "recall": 0.3506325008108985,
+      "f1": 0.4848620766988114,
+      "fpr": 0.0034504134647999345,
+      "tp": 1081,
+      "fp": 295,
+      "enrichment": 22.57
+    }
+  }
+}

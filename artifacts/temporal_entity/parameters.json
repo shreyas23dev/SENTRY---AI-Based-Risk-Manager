@@ -1,0 +1,27 @@
+{
+  "selected_parameters": {
+    "entity_key": "card_email",
+    "beta": 0.3,
+    "gamma": 0.5,
+    "lambda": 0.05,
+    "delta": 0.05,
+    "temporal_threshold": 0.7,
+    "f1": 0.5790188093853015,
+    "recall": 0.4907955292570677,
+    "precision": 0.7059101654846336,
+    "fpr": 0.007271536959749354,
+    "frauds_recovered": 13,
+    "extra_fp": 12
+  },
+  "baseline_validation": {
+    "f1": 0.5767731878409976,
+    "recall": 0.48652202498356345,
+    "precision": 0.7081339712918661,
+    "fpr": 0.007131250073066087,
+    "tp": 1480,
+    "fp": 610,
+    "fn": 1562
+  },
+  "selection_criterion": "maximise Validation F1 on B1_entity = Baseline + Entity Temporal",
+  "tuning_duration_seconds": 84.4
+}
