@@ -1,4 +1,5 @@
-# SENTRY — AI Payment Risk Manager
+# SENTRY — AI-Based Multi-Agent Payment Risk Manager
+
 ### Stop Merchants Losing Margin to Fraud, False Positives, and Chargebacks
 **Built for Razorpay /buildathon — Track 02: AI Risk Manager**
 
