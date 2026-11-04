@@ -14,6 +14,11 @@ from trustgraph.policy.evaluator import (
     evaluate_policy,
     compare_baseline_and_progressive_policy,
 )
+from trustgraph.policy.rl_policy import (
+    JEVBanditPolicy,
+    JEVContext,
+    EconomicEnvironment,
+)
 
 __all__ = [
     "PolicyAction",
@@ -25,4 +30,7 @@ __all__ = [
     "verify_policy_invariants",
     "evaluate_policy",
     "compare_baseline_and_progressive_policy",
+    "JEVBanditPolicy",
+    "JEVContext",
+    "EconomicEnvironment",
 ]

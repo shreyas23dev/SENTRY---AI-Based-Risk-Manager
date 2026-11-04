@@ -287,6 +287,97 @@ async def ask_investigator(transaction_id: int, req: AskQuestionRequest):
 # ---------------------------------------------------------------------------
 
 from trustgraph.council import get_risk_council
+from trustgraph.policy.rl_policy import JEVBanditPolicy, JEVContext, EconomicEnvironment
+
+_jev_policy_singleton: Optional[JEVBanditPolicy] = None
+
+def get_jev_policy() -> JEVBanditPolicy:
+    global _jev_policy_singleton
+    if _jev_policy_singleton is None:
+        _jev_policy_singleton = JEVBanditPolicy(alpha=0.3)
+    return _jev_policy_singleton
+
+
+class RLFeedbackRequest(BaseModel):
+    transaction_id: int
+    action: str
+    amount: float = 100.0
+    is_fraud: int = 0
+    otp_passed: Optional[bool] = None
+
+
+@app.get(
+    "/api/v1/policy/rl-decision/{transaction_id}",
+    summary="JEV Safe Reinforcement Learning Policy Decision",
+    description="Evaluate transaction through the Joint Expected Value (JEV) Safe RL Bandit Policy, returning optimal economic action and UCB scores.",
+)
+async def get_rl_policy_decision(transaction_id: int):
+    service = get_investigator_service()
+    rec = service.get_transaction_risk_record(transaction_id)
+    if not rec:
+        raise HTTPException(status_code=404, detail="Transaction not found.")
+
+    a_t = float(rec.get("base_risk", rec.get("base_risk_A_t", rec.get("A_t", 0.0))))
+    p_t = float(rec.get("temporal_risk", rec.get("temporal_risk_P_t", rec.get("P_t", 0.0))))
+    g_t = float(rec.get("graph_risk", rec.get("graph_risk_G_t", rec.get("G_t", 0.0))))
+    r_t = float(rec.get("final_risk", rec.get("final_risk_R_t", rec.get("R_t", 0.0))))
+    amt = float(rec.get("amount", rec.get("TransactionAmt", 100.0)))
+    static_act = rec.get("action", rec.get("policy_action", "ALLOW"))
+
+    ctx = JEVContext(
+        A_t=a_t,
+        P_t=p_t,
+        G_t=g_t,
+        R_t=r_t,
+        amount=amt,
+        degree=int(rec.get("graph_degree", 0)),
+        velocity=int(rec.get("velocity_count", 0)),
+    )
+    policy = get_jev_policy()
+    res = policy.select_action(ctx, explore=True)
+    return {
+        "transaction_id": transaction_id,
+        "static_baseline_action": static_act,
+        "jev_rl_policy": res,
+    }
+
+
+@app.post(
+    "/api/v1/policy/rl-feedback",
+    summary="Submit Operational Feedback to JEV RL Agent",
+    description="Submit post-challenge verification or chargeback outcome to update the Contextual Bandit policy via real-time Sherman-Morrison updates.",
+)
+async def submit_rl_feedback(req: RLFeedbackRequest):
+    service = get_investigator_service()
+    rec = service.get_transaction_risk_record(req.transaction_id)
+    policy = get_jev_policy()
+
+    from trustgraph.policy.config import PolicyAction
+    try:
+        act = PolicyAction(req.action.upper())
+    except ValueError:
+        raise HTTPException(status_code=422, detail=f"Invalid action: {req.action}")
+
+    ctx = JEVContext(
+        A_t=float(rec.get("base_risk", rec.get("base_risk_A_t", rec.get("A_t", 0.5)))) if rec else 0.5,
+        P_t=float(rec.get("temporal_risk", rec.get("temporal_risk_P_t", rec.get("P_t", 0.0)))) if rec else 0.0,
+        G_t=float(rec.get("graph_risk", rec.get("graph_risk_G_t", rec.get("G_t", 0.0)))) if rec else 0.0,
+        R_t=float(rec.get("final_risk", rec.get("final_risk_R_t", rec.get("R_t", 0.5)))) if rec else 0.5,
+        amount=req.amount,
+    )
+    reward = policy.env.compute_instant_reward(
+        action=act,
+        amount=req.amount,
+        is_fraud=req.is_fraud,
+        otp_passed=req.otp_passed,
+    )
+    policy.update(ctx, act, reward=reward)
+    return {
+        "status": "UPDATED",
+        "action": act.value,
+        "computed_reward_inr": round(reward, 2),
+        "total_updates_for_action": policy.action_counts[act],
+    }
 
 
 @app.get(
